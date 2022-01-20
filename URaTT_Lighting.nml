@@ -3,8 +3,8 @@ grf {
 	name: string(STR_GRF_NAME_LIGHTING);
 	desc: string(STR_GRF_DESCRIPTION_LIGHTING);
 	url:  string(STR_GRF_URL);
-	version: 1;
-	min_compatible_version: 1;
+	version: 30;
+	min_compatible_version: 25;
 	}
 
 	if (ttd_platform != PLATFORM_OPENTTD || (openttd_version < version_openttd(1, 10, 0, 0))) {
@@ -535,18 +535,58 @@ spriteset(catenary_front_lignting_left, "gfx/CATENARY/FONT_LIGHTING_LEFT.png") {
 //									Road Definitions
 //==================================================================================================================================
 //===========================================================
+//					HIGHWAY (WRD0)	
+//===========================================================
+if ((grf_future_status("UFI\88")) || (grf_future_status("UFI\89"))) {
+		item(FEAT_ROADTYPES, WRD0_road, 21) {
+			property {
+			label: 							"WRD0";
+			introduces_roadtype_list:		["WRD2", "WRD3", "WRD4"];
+			}
+		}
+	}
+//===========================================================
+//					EXPRESSWAY (WRD1)	
+//===========================================================
+if (grf_future_status("UFI\89")) {
+		item(FEAT_ROADTYPES, WRD1_road, 22) {
+			property {
+			label: 							"WRD1";
+			introduces_roadtype_list:		["WRD5", "WRD6", "WRD7"];
+			}
+		}
+	}
+//===========================================================
+//					IMPROVED ASPHALT ROAD /W STRIPES (ARD3)	
+//===========================================================
+if ((grf_future_status("UFI\88")) || (grf_future_status("UFI\89"))) {
+item(FEAT_ROADTYPES, ARD3_road, 16) {
+	if ((param["UFI\88", 1] == 1) || (param["UFI\89", 1] == 2)) {
+			property {
+			label: 							"ROAD";
+			introduces_roadtype_list:		["WRD2", "WRD3", "WRD4", "WRD5", "WRD6", "WRD7", "URD4"];
+			}
+		} else {
+			property {
+			label: 							"ARD3";
+			introduces_roadtype_list:		["URD4"];
+			}
+		}
+	}
+}
+//===========================================================
 //					HIGHWAY (BOTH) (WRD2)	
 //===========================================================
 if ((grf_future_status("UFI\88")) || (grf_future_status("UFI\89"))) {
 	if (roadtype_available("WRD2") || loading_stage == LOADING_STAGE_RESERVE) {
 		item(FEAT_ROADTYPES, WRD2_road, 46) {
 			property {
-			label:		"WRD2";
-			name: 							string(STR_NAME_WRD2);
-			toolbar_caption: 				string(STR_TOOLBAR_CAPTION_ROAD);
+			label:							"WRD2";
+			name: 							string(STR_STRING_2, string(STR_NAME_WRD0), string(STR_LIGHTING_BOTH));
+			toolbar_caption: 				string(STR_STRING_3, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION), string(STR_LIGHTING_BOTH));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TEXT_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_TEXT_ROAD);
+			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "TRD_", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
 											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "WRD2", "WRD3", "WRD4", "WRD5", "WRD6", "WRD7",
 											 "URD0", "URD1", "URD2", "URD3", "URD4", "IRD0", "IRD1", "IRD2", "IRD3",
@@ -562,11 +602,11 @@ if ((grf_future_status("UFI\88")) || (grf_future_status("UFI\89"))) {
 			}
 		if (param["UFI\89", 9] == 1) {
 			property {
-			menu_text: 						string(STR_MENU_TEXT_WRD2_1);
+			menu_text: 						string(STR_STRING_4, string(STR_NAME_WRD0), string(STR_CONSTRUCTION), string(STR_LIGHTING_BOTH), string(STR_BUS));
 				}
 			} else {
 			property {
-			menu_text: 						string(STR_MENU_TEXT_WRD2);
+			menu_text: 						string(STR_STRING_3, string(STR_NAME_WRD0), string(STR_CONSTRUCTION), string(STR_LIGHTING_BOTH));
 				}
 			}
 			graphics {
@@ -596,12 +636,12 @@ if ((grf_future_status("UFI\88")) || (grf_future_status("UFI\89"))) {
 	if (roadtype_available("WRD3") || loading_stage == LOADING_STAGE_RESERVE) {
 		item(FEAT_ROADTYPES, WRD3_road, 47) {
 			property {
-			label:		"WRD3";
-			name: 							string(STR_NAME_WRD3);
-			toolbar_caption: 				string(STR_TOOLBAR_CAPTION_ROAD);
+			label:							"WRD3";
+			name: 							string(STR_STRING_2, string(STR_NAME_WRD0), string(STR_LIGHTING_RIGHT));
+			toolbar_caption: 				string(STR_STRING_3, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION), string(STR_LIGHTING_RIGHT));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TEXT_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_TEXT_ROAD);
+			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "TRD_", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
 											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "WRD2", "WRD3", "WRD4", "WRD5", "WRD6", "WRD7",
 											 "URD0", "URD1", "URD2", "URD3", "URD4", "IRD0", "IRD1", "IRD2", "IRD3",
@@ -617,11 +657,11 @@ if ((grf_future_status("UFI\88")) || (grf_future_status("UFI\89"))) {
 			}
 		if (param["UFI\89", 9] == 1) {
 			property {
-			menu_text: 						string(STR_MENU_TEXT_WRD3_1);
+			menu_text: 						string(STR_STRING_4, string(STR_NAME_WRD0), string(STR_CONSTRUCTION), string(STR_LIGHTING_RIGHT), string(STR_BUS));
 				}
 			} else {
 			property {
-			menu_text: 						string(STR_MENU_TEXT_WRD3);
+			menu_text: 						string(STR_STRING_3, string(STR_NAME_WRD0), string(STR_CONSTRUCTION), string(STR_LIGHTING_RIGHT));
 				}
 			}
 			graphics {
@@ -651,12 +691,12 @@ if ((grf_future_status("UFI\88")) || (grf_future_status("UFI\89"))) {
 	if (roadtype_available("WRD4") || loading_stage == LOADING_STAGE_RESERVE) {
 		item(FEAT_ROADTYPES, WRD4_road, 48) {
 			property {
-			label:		"WRD4";
-			name: 							string(STR_NAME_WRD4);
-			toolbar_caption: 				string(STR_TOOLBAR_CAPTION_ROAD);
+			label:							"WRD4";
+			name: 							string(STR_STRING_2, string(STR_NAME_WRD0), string(STR_LIGHTING_LEFT));
+			toolbar_caption: 				string(STR_STRING_3, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION), string(STR_LIGHTING_LEFT));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TEXT_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_TEXT_ROAD);
+			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "TRD_", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
 											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "WRD2", "WRD3", "WRD4", "WRD5", "WRD6", "WRD7",
 											 "URD0", "URD1", "URD2", "URD3", "URD4", "IRD0", "IRD1", "IRD2", "IRD3",
@@ -672,11 +712,11 @@ if ((grf_future_status("UFI\88")) || (grf_future_status("UFI\89"))) {
 			}
 		if (param["UFI\89", 9] == 1) {
 			property {
-			menu_text: 						string(STR_MENU_TEXT_WRD4_1);
+			menu_text: 						string(STR_STRING_4, string(STR_NAME_WRD0), string(STR_CONSTRUCTION), string(STR_LIGHTING_LEFT), string(STR_BUS));
 				}
 			} else {
 			property {
-			menu_text: 						string(STR_MENU_TEXT_WRD4);
+			menu_text: 						string(STR_STRING_3, string(STR_NAME_WRD0), string(STR_CONSTRUCTION), string(STR_LIGHTING_LEFT));
 				}
 			}
 			graphics {
@@ -706,12 +746,12 @@ if (grf_future_status("UFI\89")) {
 	if (roadtype_available("WRD5") || loading_stage == LOADING_STAGE_RESERVE) {
 		item(FEAT_ROADTYPES, WRD5_road, 49) {
 			property {
-			label:		"WRD5";
-			name: 							string(STR_NAME_WRD5);
-			toolbar_caption: 				string(STR_TOOLBAR_CAPTION_ROAD);
+			label:							"WRD5";
+			name: 							string(STR_STRING_2, string(STR_NAME_WRD1), string(STR_LIGHTING_BOTH));
+			toolbar_caption: 				string(STR_STRING_3, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION), string(STR_LIGHTING_BOTH));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TEXT_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_TEXT_ROAD);
+			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "TRD_", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
 											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "WRD2", "WRD3", "WRD4", "WRD5", "WRD6", "WRD7",
 											 "URD0", "URD1", "URD2", "URD3", "URD4", "IRD0", "IRD1", "IRD2", "IRD3",
@@ -727,11 +767,11 @@ if (grf_future_status("UFI\89")) {
 			}
 		if (param["UFI\89", 9] == 1) {
 			property {
-			menu_text: 						string(STR_MENU_TEXT_WRD5_1);
+			menu_text: 						string(STR_STRING_5, string(STR_NAME_WRD1), string(STR_CONSTRUCTION), string(STR_LIGHTING_BOTH), string(STR_BUS), string(STR_TRAIN));
 				}
 			} else {
 			property {
-			menu_text: 						string(STR_MENU_TEXT_WRD5);
+			menu_text: 						string(STR_STRING_3, string(STR_NAME_WRD1), string(STR_CONSTRUCTION), string(STR_LIGHTING_BOTH));
 				}
 			}
 			graphics {
@@ -761,12 +801,12 @@ if (grf_future_status("UFI\89")) {
 	if (roadtype_available("WRD6") || loading_stage == LOADING_STAGE_RESERVE) {
 		item(FEAT_ROADTYPES, WRD6_road, 50) {
 			property {
-			label:		"WRD6";
-			name: 							string(STR_NAME_WRD5);
-			toolbar_caption: 				string(STR_TOOLBAR_CAPTION_ROAD);
+			label:							"WRD6";
+			name: 							string(STR_STRING_2, string(STR_NAME_WRD1), string(STR_LIGHTING_RIGHT));
+			toolbar_caption: 				string(STR_STRING_3, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION), string(STR_LIGHTING_RIGHT));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TEXT_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_TEXT_ROAD);
+			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "TRD_", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
 											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "WRD2", "WRD3", "WRD4", "WRD5", "WRD6", "WRD7",
 											 "URD0", "URD1", "URD2", "URD3", "URD4", "IRD0", "IRD1", "IRD2", "IRD3",
@@ -782,11 +822,11 @@ if (grf_future_status("UFI\89")) {
 			}
 		if (param["UFI\89", 9] == 1) {
 			property {
-			menu_text: 						string(STR_MENU_TEXT_WRD6_1);
+			menu_text: 						string(STR_STRING_5, string(STR_NAME_WRD1), string(STR_CONSTRUCTION), string(STR_LIGHTING_RIGHT), string(STR_BUS), string(STR_TRAIN));
 				}
 			} else {
 			property {
-			menu_text: 						string(STR_MENU_TEXT_WRD6);
+			menu_text: 						string(STR_STRING_3, string(STR_NAME_WRD1), string(STR_CONSTRUCTION), string(STR_LIGHTING_BOTH));
 				}
 			}
 			graphics {
@@ -816,12 +856,12 @@ if (grf_future_status("UFI\89")) {
 	if (roadtype_available("WRD7") || loading_stage == LOADING_STAGE_RESERVE) {
 		item(FEAT_ROADTYPES, WRD7_road, 51) {
 			property {
-			label:		"WRD7";
-			name: 							string(STR_NAME_WRD7);
-			toolbar_caption: 				string(STR_TOOLBAR_CAPTION_ROAD);
+			label:							"WRD7";
+			name: 							string(STR_STRING_2, string(STR_NAME_WRD1), string(STR_LIGHTING_LEFT));
+			toolbar_caption: 				string(STR_STRING_3, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION), string(STR_LIGHTING_LEFT));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TEXT_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_TEXT_ROAD);
+			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "TRD_", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
 											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "WRD2", "WRD3", "WRD4", "WRD5", "WRD6", "WRD7",
 											 "URD0", "URD1", "URD2", "URD3", "URD4", "IRD0", "IRD1", "IRD2", "IRD3",
@@ -837,11 +877,11 @@ if (grf_future_status("UFI\89")) {
 			}
 		if (param["UFI\89", 9] == 1) {
 			property {
-			menu_text: 						string(STR_MENU_TEXT_WRD7_1);
+			menu_text: 						string(STR_STRING_5, string(STR_NAME_WRD1), string(STR_CONSTRUCTION), string(STR_LIGHTING_LEFT), string(STR_BUS), string(STR_TRAIN));
 				}
 			} else {
 			property {
-			menu_text: 						string(STR_MENU_TEXT_WRD7);
+			menu_text: 						string(STR_STRING_3, string(STR_NAME_WRD1), string(STR_CONSTRUCTION), string(STR_LIGHTING_LEFT));
 				}
 			}
 			graphics {
@@ -870,14 +910,24 @@ if (grf_future_status("UFI\89")) {
 if ((grf_future_status("UFI\88")) || (grf_future_status("UFI\89"))) {
 	if (roadtype_available("URD4") || loading_stage == LOADING_STAGE_RESERVE) {
 		item(FEAT_ROADTYPES, URD4_road, 52) {
+	if (grf_future_status("UFI\88")) {
 			property {
-			label:		"URD4";
-			name: 							string(STR_NAME_URD4);
-			toolbar_caption: 				string(STR_TOOLBAR_CAPTION_ROAD);
-			menu_text: 						string(STR_MENU_TEXT_URD4);
+			name: 							string(STR_STRING_2, string(STR_NAME_URD), string(STR_LIGHTING_BOTH));
+			menu_text: 						string(STR_STRING_4, string(STR_NAME_URD), string(STR_CONSTRUCTION), string(STR_LIGHTING_BOTH), string(STR_WHITE));
+		}
+	} else
+	if (grf_future_status("UFI\89")) {
+			property {
+			name: 							string(STR_STRING_2, string(STR_NAME_URDS), string(STR_LIGHTING_BOTH));
+			menu_text: 						string(STR_STRING_4, string(STR_NAME_URDS), string(STR_CONSTRUCTION), string(STR_LIGHTING_BOTH), string(STR_WHITE));
+		}
+	}
+			property {
+			label:							"URD4";
+			toolbar_caption: 				string(STR_STRING_3, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION), string(STR_LIGHTING_BOTH));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TEXT_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_TEXT_ROAD);
+			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "TRD_", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
 											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "WRD2", "WRD3", "WRD4", "WRD5", "WRD6", "WRD7", 
 											 "URD0", "URD1", "URD2", "URD3", "URD4", "IRD0", "IRD1", "IRD2", "IRD3",

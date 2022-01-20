@@ -1,14 +1,15 @@
-##grflangid 0x01
-STR_GRF_NAME					:U&RaTT 0.6
+##grflangid 0x01 
+
+STR_GRF_NAME					:U&RaTT 0.7
 STR_GRF_DESCRIPTION				:New graphics roads with a wide variety, from dirt roads to highways, including trolleybuses and trams: {YELLOW}U&RaTT{}{}{BLACK}Requires version 1.10.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: GPL v3{}
 STR_GRF_URL				    	:https://www.tt-forums.net/viewtopic.php?f=67&t=84591
 
-STR_GRF_NAME_MINI				:U&RaTT: Mini
+STR_GRF_NAME_MINI				:U&RaTT: Mini v2
 STR_GRF_DESCRIPTION_MINI		:These kits belong to {YELLOW}U&RaTT{BLACK}.{}Road (including trolleybus and tram) types, which are minimized to simplify the gameplay.{}{}{BLACK}Requires version 1.10.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: GPL v3{}
 STR_ERROR						:{ORANGE}Incompatibility {YELLOW}U&RaTT
 
-STR_GRF_NAME_LIGHTING			:U&RaTT: Lighting
-STR_GRF_DESCRIPTION_LIGHTING	:These are additional road types with lighting: highway, expressways and urban. It is necessary to connect the sets {YELLOW}U&RaTT 0.6 {BLACK}or {YELLOW}U&RaTT: Mini{}{}{BLACK}Requires version 1.10.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: GPL v3{}
+STR_GRF_NAME_LIGHTING			:U&RaTT: Lighting v2
+STR_GRF_DESCRIPTION_LIGHTING	:These are additional road types with lighting: highway, expressways and urban. It is necessary to connect the sets {YELLOW}U&RaTT {BLACK}or {YELLOW}U&RaTT: Mini{}{}{BLACK}Requires version 1.10.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: GPL v3{}
 
 STR_OPENTTD_VERSION								:1.10.0
 STR_PARAM_GUI_NAME		           	        	:OpenGFX GUI
@@ -60,233 +61,136 @@ STR_PARAM_IRDX_SPEED_NOLIMIT					:No limited
 STR_PARAM_ONE_WAY_NAME							:Type one-way road
 STR_PARAM_ONE_WAY_DESC							:To select one-way road options: road sign {BLACK}or road marking "Arrow"
 STR_PARAM_ONE_WAY_0								:Road sign
-STR_PARAM_ONE_WAY_1								:Road marking "Arrow"
+STR_PARAM_ONE_WAY_1								:Road marking "Arrows"
 
 STR_PARAM_STYLE_NAME							:Road style
 STR_PARAM_STYLE_DESC							:This parameter allows you to configure which road style appears in the game: European or American.
 STR_PARAM_EUROPEAN								:European
 STR_PARAM_AMERICAN								:American
 
-STR_PARAM_MENU_TEXT_NAME						:Enable the icon in the menu
-STR_PARAM_MENU_TEXT_DESC						:Show / hide the display of icons in the menu.{} {SILVER}{TRAIN} {BLACK}- Disable level crossings.{} {SILVER}{BUS} {BLACK}- Disallows house construction.
+STR_PARAM_MENU_NAME								:Enable the icon in the menu
+STR_PARAM_MENU_DESC								:Show / hide the display of icons in the menu.{} {SILVER}{TRAIN} {BLACK}- Disable level crossings.{} {SILVER}{BUS} {BLACK}- Disallows house construction.
 
 STR_PARAM_BUILD_NAME							:Construction costs
 STR_PARAM_BUILD_DESC							:For players who want to choose the economy of construction: easy, normal or hard or very hard.
-STR_PARAM_BUILD_EASY							:Easy
-STR_PARAM_BUILD_NORMAL							:Normal
-STR_PARAM_BUILD_HARD							:Hard
-STR_PARAM_BUILD_VERY_HARD						:Very hard
 
 STR_PARAM_MAINTENANCE_NAME						:Maintenance costs
 STR_PARAM_MAINTENANCE_DESC						:For players who want to choose the economy of maintenance: easy, normal or hard or very hard.
-STR_PARAM_MAINTENANCE_EASY						:Easy
-STR_PARAM_MAINTENANCE_NORMAL					:Normal
-STR_PARAM_MAINTENANCE_HARD						:Hard
-STR_PARAM_MAINTENANCE_VERY_HARD					:Very hard
 
-STR_DESC_IRD0									:Enable/disable Cobblestone Road
-
-STR_DESC_IRD2									:Enable/disable Cement slab of road
+STR_PARAM_GAME_EASY								:Easy
+STR_PARAM_GAME_NORMAL							:Normal
+STR_PARAM_GAME_HARD								:Hard
+STR_PARAM_GAME_VERY_HARD						:Very hard
 
 STR_PARAM_TUNNEL_NAME							:Custom tunnel
 STR_PARAM_TUNNEL_DESC							:if this option is disabled, the default graphics for tunnel portals will be used with the original.
 
 STR_BUILD_WINDOW_CAPTION_ROAD 			        :New road vehicle
-STR_AUTOREPLACE_TEXT_ROAD     				    :Road vehicles
-STR_NEW_ENGINE_TEXT_ROAD    				    :Road vehicle
+STR_AUTOREPLACE_ROAD 	    				    :Road vehicles
+STR_NEW_ENGINE_ROAD 		   				    :Road vehicle
 
 STR_BUILD_WINDOW_CAPTION_ELRD					:New electrified road vehicle
-STR_AUTOREPLACE_TEXT_ELRD						:Electrified road vehicles
-STR_NEW_ENGINE_TEXT_ELRD						:Electrified road vehicle
+STR_AUTOREPLACE_ELRD							:Electrified road vehicles
+STR_NEW_ENGINE_ELRD								:Electrified road vehicle
 
-STR_BUILD_WINDOW_CAPTION_TRAM					:New Tram Vehices
-STR_AUTOREPLACE_TEXT_TRAM						:Tram vehices
-STR_NEW_ENGINE_TEXT_TRAM						:Tram vehice
+STR_BUILD_WINDOW_CAPTION_TRAM					:New tram vehices
+STR_AUTOREPLACE_TRAM							:Tram vehices
+STR_NEW_ENGINE_TRAM								:Tram vehice
 
-STR_BUILD_WINDOW_CAPTION_TRAM_EL				:New electrified Tram Vehicle
-STR_AUTOREPLACE_TEXT_TRAM_EL					:Electrified tram vehicles
-STR_NEW_ENGINE_TEXT_TRAM_EL						:Electrified tram vehicle
+STR_BUILD_WINDOW_CAPTION_TRAM_EL				:New electrified tram vehicle
+STR_AUTOREPLACE_TRAM_EL							:Electrified tram vehicles
+STR_NEW_ENGINE_TRAM_EL							:Electrified tram vehicle
 
-STR_NAME_ROAD									:The local owner of the road
-STR_TOOLBAR_CAPTION_ROAD    		            :Road construction
+STR_BUILD_WINDOW_CAPTION_3RDR					:New Subway
+STR_AUTOREPLACE_3RDR							:Subway
+STR_NEW_ENGINE_3RDR								:Subway
+
+STR_ELECTRIFIELD								:{LTBLUE}(electrifield)
+STR_3RD_POWERED									:{GREEN}(3rd powered)
+
+STR_CLASS_C										:{SILVER}(class C)
+STR_CLASS_B										:{SILVER}(class B)
+STR_CLASS_A										:{SILVER}(class A)
+
+STR_LIGHTING_BOTH								:{YELLOW}(both)
+STR_LIGHTING_RIGHT								:{YELLOW}(right)
+STR_LIGHTING_LEFT								:{YELLOW}(left)
+
+STR_TRAIN										:{GRAY}{TRAIN}
+STR_BUS											:{GRAY}{BUS}
+
+STR_WHITE										:{WHITE}
+
+STR_NAME_ROAD									:Local owner's road
+STR_TOOLBAR_CAPTION_ROAD    		            :Road
+STR_TOOLBAR_CAPTION_TRAM						:Tramway
+
+STR_CONSTRUCTION								:construction
 
 STR_NAME_TRD_									:Pedestrian zone
-STR_MENU_TEXT_TRD_								:Pedestrian zone construction
-STR_MENU_TEXT_TRD_1								:Pedestrian zone construction {GRAY}{TRAIN}
 
 STR_NAME_ORD0							        :Field road
-STR_MENU_TEXT_ORD0          			    	:Field road construction {WHITE}
-STR_MENU_TEXT_ORD0_1          			    	:Field road construction {GRAY}{TRAIN} {BUS} {WHITE}
 
 STR_NAME_ORD1							        :Forest dirt road
-STR_MENU_TEXT_ORD1          			    	:Forest dirt road construction {WHITE}
-STR_MENU_TEXT_ORD1_1          			    	:Forest dirt road construction {GRAY}{TRAIN} {BUS} {WHITE}
 
 STR_NAME_ORD2         						    :Dirt road
-STR_MENU_TEXT_ORD2								:Dirt road construction {WHITE}
 
 STR_NAME_ORD3									:Gravel road
-STR_MENU_TEXT_ORD3			 					:Gravel road construction {WHITE}
-STR_MENU_TEXT_ORD3_1			 				:Gravel road construction {GRAY}{BUS} {WHITE}
 
 STR_NAME_ORD4          						    :Sandy road
-STR_MENU_TEXT_ORD4								:Sandy road construction {WHITE}
-STR_MENU_TEXT_ORD4_1							:Sandy road construction {GRAY}{TRAIN} {BUS}  {WHITE}
 
 STR_NAME_SRD0									:Paved stone road
-STR_MENU_TEXT_SRD0								:Paved stone road construction {WHITE}
 
 STR_NAME_SRD1									:Cement concrete road
-STR_MENU_TEXT_SRD1								:Cement concrete road construction {WHITE}
 
 STR_NAME_SRD2									:Concrete slab of road
-STR_MENU_TEXT_SRD2								:Concrete slab of road construction {WHITE}
-STR_MENU_TEXT_SRD2_1							:Concrete slab of road construction {GRAY}{BUS} {WHITE}
 
-STR_NAME_ARD0									:Asphalt road
-STR_MENU_TEXT_ARD0          					:Asphalt road construction {WHITE}
+STR_NAME_ARD									:Asphalt road
 
-STR_NAME_ARD1									:Asphalt road w/ stripes
-STR_MENU_TEXT_ARD1          					:Asphalt road w/ stripes construction {WHITE}
-
-STR_NAME_ARD2									:Improved asphalt road
-STR_MENU_TEXT_ARD2          					:Improved asphalt road construction {WHITE}
-
-STR_NAME_ARD3									:Improved asphalt road w/ stripes
-STR_MENU_TEXT_ARD3          					:Improved asphalt road w/ stripes construction {WHITE}
-
-STR_NAME_ARD4									:Modern asphalt road
-STR_MENU_TEXT_ARD4          					:Modern asphalt road construction {WHITE}
-
-STR_NAME_ARD5									:Modern asphalt road w/ stripes
-STR_MENU_TEXT_ARD5          					:Modern asphalt road w/ stripes construction {WHITE}
+STR_NAME_ARDS									:Asphalt road w/ stripes
 
 STR_NAME_WRD0									:Highway
-STR_MENU_TEXT_WRD0								:Highway construction
-STR_MENU_TEXT_WRD0_1							:Highway construction {GRAY}{TRAIN} {BUS}
 
 STR_NAME_WRD1									:Expressway
-STR_MENU_TEXT_WRD1								:Expressway construction
-STR_MENU_TEXT_WRD1_1							:Expressway construction {GRAY}{TRAIN} {BUS} {WHITE}
-
-STR_NAME_WRD2									:Highway {YELLOW}(Both)
-STR_MENU_TEXT_WRD2								:Highway construction {YELLOW}(Both)
-STR_MENU_TEXT_WRD2_1							:Highway construction {YELLOW}(Both) {GRAY}{TRAIN} {BUS}
-
-STR_NAME_WRD3									:Highway {YELLOW}(Right)
-STR_MENU_TEXT_WRD3								:Highway construction {YELLOW}(Right)
-STR_MENU_TEXT_WRD3_1							:Highway construction {YELLOW}(Right) {GRAY}{TRAIN} {BUS}
-
-STR_NAME_WRD4									:Highway {YELLOW}(Left)
-STR_MENU_TEXT_WRD4								:Highway construction {YELLOW}(Left)
-STR_MENU_TEXT_WRD4_1							:Highway construction {YELLOW}(Left) {GRAY}{TRAIN} {BUS}
-
-STR_NAME_WRD5									:Expressway {YELLOW}(Both)
-STR_MENU_TEXT_WRD5								:Expressway construction {YELLOW}(Both)
-STR_MENU_TEXT_WRD5_1							:Expressway construction {YELLOW}(Both) {GRAY}{TRAIN} {BUS}
-
-STR_NAME_WRD6									:Expressway {YELLOW}(Right)
-STR_MENU_TEXT_WRD6								:Expressway construction {YELLOW}(Right)
-STR_MENU_TEXT_WRD6_1							:Expressway construction {YELLOW}(Right) {GRAY}{TRAIN} {BUS}
-
-STR_NAME_WRD7									:Expressway {YELLOW}(Left)
-STR_MENU_TEXT_WRD7								:Expressway construction {YELLOW}(Left)
-STR_MENU_TEXT_WRD7_1							:Expressway construction {YELLOW}(Left) {GRAY}{TRAIN} {BUS}
 
 STR_NAME_URD0									:Paving slabs
-STR_MENU_TEXT_URD0								:Paving slabs construction {WHITE}
 
-STR_NAME_URD1									:Urban asphalt road
-STR_MENU_TEXT_URD1								:Urban asphalt road construction {WHITE}
+STR_NAME_URD									:Urban asphalt road
 
-STR_NAME_URD2									:Urban asphalt road w/ stripes
-STR_MENU_TEXT_URD2								:Urban asphalt road w/ stripes construction {WHITE}
+STR_NAME_URDS									:Urban asphalt road w/ stripes
 
-STR_NAME_URD3									:Road verge 
-STR_MENU_TEXT_URD3								:Road verge construction {WHITE}
-
-STR_NAME_URD4									:Urban asphalt road w/ stripes {YELLOW}(Both)
-STR_MENU_TEXT_URD4								:Urban asphalt road w/ stripes construction {YELLOW}(Both) {WHITE}
+STR_NAME_URD3									:Road verge
 
 STR_NAME_IRD0									:Cobble stones road
-STR_MENU_TEXT_IRD0								:Cobble stones road construction {WHITE}
 
 STR_NAME_IRD1									:ISR road
-STR_MENU_TEXT_IRD1								:ISR road construction {WHITE}
-STR_MENU_TEXT_IRD1_1							:ISR road construction {GRAY}{BUS} {WHITE}
 
 STR_NAME_IRD2									:Cement slab of road
-STR_MENU_TEXT_IRD2								:Cement slab of road construction {WHITE}
-STR_MENU_TEXT_IRD2_1							:Cement slab of road construction {GRAY}{BUS} {WHITE}
 
 STR_NAME_IRD3									:Asphalt concrete road
-STR_MENU_TEXT_IRD3								:Asphalt concrete road construction {WHITE}
-STR_MENU_TEXT_IRD3_1							:Asphalt concrete road construction {GRAY}{BUS} {WHITE}
 
-STR_NAME_ELRD									:Paved stone road {LTBLUE}(electrified)
-STR_MENU_TEXT_ELRD								:Paved stone road construction {LTBLUE}(electrified) {WHITE}
+STR_NAME_NAAN									:Tram track no ballast
 
-STR_NAME_AER0									:Asphalt road {LTBLUE}(electrified)
-STR_MENU_TEXT_AER0								:Asphalt road construction {LTBLUE}(electrified) {WHITE}
+STR_NAME_NBAN									:Tram track
 
-STR_NAME_AER1									:Asphalt road w/ stripes {LTBLUE}(electrified)
-STR_MENU_TEXT_AER1								:Asphalt road w/ stripes construction {LTBLUE}(electrified) {WHITE}
+STR_NAME_NCAN									:Modern tram track
 
-STR_NAME_AER3									:Improved asphalt road w/ stripes {LTBLUE}(electrified)
-STR_MENU_TEXT_AER3          					:Improved asphalt road w/ stripes construction {LTBLUE}(electrified) {WHITE}
+STR_NAME_NUAN									:Urban tram track
 
-STR_NAME_AER5									:Modern asphalt road w/ stripes {LTBLUE}(electrified)
-STR_MENU_TEXT_AER5          					:Modern asphalt road w/ stripes construction {LTBLUE}(electrified) {WHITE}
+STR_NAME_NUBN									:Modern urban tram track
 
-STR_NAME_UER0									:Paving slabs {LTBLUE}(electrified)
-STR_MENU_TEXT_UER0								:Paving slabs construction {LTBLUE}(electrified) {WHITE}
+STR_NAME_NIAN									:ISR tram track
 
-STR_NAME_UER1									:Urban asphalt road {LTBLUE}(electrified)
-STR_MENU_TEXT_UER1								:Urban asphalt road construction {LTBLUE}(electrified) {WHITE}
+STR_NAME_NAA3									:Metro line
 
-STR_NAME_UER2									:Urban asphalt road w/ stripes {LTBLUE}(electrified)
-STR_MENU_TEXT_UER2          					:Urban asphalt road w/ stripes construction {LTBLUE}(electrified) {WHITE}
-
-STR_NAME_RAIL									:Tram track no ballast
-STR_TOOLBAR_CAPTION_TRAM    		            :Tramway construction
-STR_MENU_TEXT_RAIL								:Tram track no ballast construction {WHITE}
-STR_MENU_TEXT_RAIL_1							:Tram track no ballast construction {GRAY}{TRAIN} {WHITE}
-
-STR_NAME_ELRL									:Tram track no ballast {LTBLUE}(electrified)
-STR_MENU_TEXT_ELRL								:Tram track no ballast construction {LTBLUE}(electrified) {WHITE}
-STR_MENU_TEXT_ELRL_1							:Tram track no ballast construction {LTBLUE}(electrified) {GRAY}{TRAIN} {WHITE}
-
-STR_NAME_RAL0									:Tram track
-STR_MENU_TEXT_RAL0								:Tram track construction {WHITE}
-
-STR_NAME_ERL0									:Tram track {LTBLUE}(electrified)
-STR_MENU_TEXT_ERL0								:Tram track construction {LTBLUE}(electrified) {WHITE}
-
-STR_NAME_RAL1									:Modern tram track
-STR_MENU_TEXT_RAL1								:Modern tram track construction {WHITE}
-
-STR_NAME_ERL1									:Modern tram track {LTBLUE}(electrified)
-STR_MENU_TEXT_ERL1								:Modern tram track construction {LTBLUE}(electrified) {WHITE}
-
-STR_NAME_RAL2									:Urban Tram track
-STR_MENU_TEXT_RAL2								:Urban Tram track construction {WHITE}
-
-STR_NAME_ERL2									:Urban Tram track {LTBLUE}(electrified)
-STR_MENU_TEXT_ERL2								:Urban Tram track construction {LTBLUE}(electrified) {WHITE}
-
-STR_NAME_RAL3									:Modern Urban Tram track
-STR_MENU_TEXT_RAL3								:Modern Urban Tram track construction {WHITE}
-
-STR_NAME_ERL3									:Modern Urban Tram track {LTBLUE}(electrified)
-STR_MENU_TEXT_ERL3								:Modern Urban Tram track construction {LTBLUE}(electrified) {WHITE}
-
-STR_NAME_RAL4									:ISR Tram track
-STR_MENU_TEXT_RAL4								:ISR Tram track construction {WHITE}
-
-STR_NAME_ERL4									:ISR Tram track {LTBLUE}(electrified)
-STR_MENU_TEXT_ERL4								:ISR Tram track construction {LTBLUE}(electrified) {WHITE}
+STR_NAME_NUA3									:Urban metro line
 
 STR_URTO										:U&RaTT: Object
 STR_URaTT_Urban_Objects							:Paving slab
 STR_URaTT_Industrial_Objects					:Cement slab
 STR_URaTT_Industrial_Objects_1					:Cobble stones slabs
+
+STR_STRING_2									:{STRING} {STRING}
+STR_STRING_3									:{STRING} {STRING} {STRING}
+STR_STRING_4									:{STRING} {STRING} {STRING} {STRING}
+STR_STRING_5									:{STRING} {STRING} {STRING} {STRING} {STRING}
