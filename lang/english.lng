@@ -25,6 +25,9 @@ STR_PARAM_ROAD_AVAILABLE_2						:Always available {GRAY}(compatibility with outd
 STR_PEDESTRIAN_ZONE_NAME						:Pedestrian zone
 STR_PEDESTRIAN_ZONE_DESC						:Pedestrian zone is an urban area exclusively for pedestrian traffic, where movement by motor vehicles is prohibited.
 
+STR_METRO_TRACK_NAME						:Metro track
+STR_METRO_TRACK_DESC						:Metro tracks are a track types exclusively for metro vehicles, which require a special type of track.
+
 STR_PARAM_ORDX_SPEED_NAME						:Speed limit for all unpaved roads
 STR_PARAM_ORDX_SPEED_DESC						:For players who want to choose speed limits on all unpaved roads: dirt, gravel...
 STR_PARAM_ORDX_SPEED_VERY_SLOW					:Very slow
