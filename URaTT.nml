@@ -35,6 +35,7 @@ grf {
             desc: string(STR_PEDESTRIAN_ZONE_DESC);
             def_value: 0;
 				}
+			}
 			param 3 {	
 		param_metro_track {
 			type: bool;
