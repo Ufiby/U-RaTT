@@ -35,8 +35,15 @@ grf {
             desc: string(STR_PEDESTRIAN_ZONE_DESC);
             def_value: 0;
 				}
+			param 3 {	
+		param_metro_track {
+			type: bool;
+            name: string(STR_METRO_TRACK_NAME);
+            desc: string(STR_METRO_TRACK_DESC);
+            def_value: 0;
+				}
 			}			
-			param 3 {
+			param 4 {
         param_ordx_speed {
             type: int;
             name: string(STR_PARAM_ORDX_SPEED_NAME);
@@ -51,7 +58,7 @@ grf {
                     };
 				}
 			}
-			param 4 {
+			param 5 {
         param_ardx_speed {
             type: int;
             name: string(STR_PARAM_ARDX_SPEED_NAME);
@@ -69,7 +76,7 @@ grf {
                     };
 				}
 			}
-			param 5 {
+			param 6 {
         param_urdx_speed {
             type: int;
             name: string(STR_PARAM_URDX_SPEED_NAME);
@@ -87,7 +94,7 @@ grf {
                     };
 				}
 			}
-			param 6 {
+			param 7 {
         param_irdx_speed {
             type: int;
             name: string(STR_PARAM_IRDX_SPEED_NAME);
@@ -105,7 +112,7 @@ grf {
                     };
 				}
 			}
-		    param 7 {
+		    param 8 {
         param_road_one_way {
             type: int;
             name: string(STR_PARAM_ONE_WAY_NAME);
@@ -119,7 +126,7 @@ grf {
                     };
 				}
 			}
-			param 8 {
+			param 9 {
         param_style {
             type: int;
             name: string(STR_PARAM_STYLE_NAME);
@@ -133,7 +140,7 @@ grf {
                     };
 				}
 			}
-			param 9 {
+			param 10 {
 		param_menu_text {
 			type: bool;
 			name: string(STR_PARAM_MENU_NAME);
@@ -141,7 +148,7 @@ grf {
 			def_value: 1;
 				}
 			}
-		    param 10 {
+		    param 11 {
         param_build {
             type: int;
             name: string(STR_PARAM_BUILD_NAME);
@@ -157,7 +164,7 @@ grf {
                     };
 				}
 			}
-		    param 11 {
+		    param 12 {
         param_maintenance {
             type: int;
             name: string(STR_PARAM_MAINTENANCE_NAME);
@@ -173,7 +180,7 @@ grf {
                     };
 				}
 			}
-			param 12 {
+			param 13 {
         param_tunnel {
             type: bool;
             name: string(STR_PARAM_TUNNEL_NAME);
@@ -5709,6 +5716,7 @@ item(FEAT_ROADTYPES, ARD3_road, 16) {
 //===========================================================
 //					METRO LINE (NAA3)
 //===========================================================
+if (param_metro_track) {
 	if (tramtype_available("NAA3") || loading_stage == LOADING_STAGE_RESERVE) {	
 		item(FEAT_TRAMTYPES, NAA3_tram, 48) {
 			property {
@@ -5743,9 +5751,11 @@ item(FEAT_ROADTYPES, ARD3_road, 16) {
 			}
 		}
 	}
+}
 //===========================================================
 //				URBAN METRO LINE (NUA3)
 //===========================================================
+if (param_metro_track) {
 	if (tramtype_available("NUA3") || loading_stage == LOADING_STAGE_RESERVE) {	
 		item(FEAT_TRAMTYPES, NUA3_tram, 49) {
 			property {
@@ -5782,6 +5792,7 @@ item(FEAT_ROADTYPES, ARD3_road, 16) {
 			}
 		}
 	}
+]}
 //==================================================================================================================================
 //												ONE_WAY_ROAD
 //==================================================================================================================================
