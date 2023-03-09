@@ -1,102 +1,73 @@
 ##grflangid 0x07
 
-STR_GRF_DESCRIPTION				:Новая графика дорог с большим разнообразием, от грунтовых дорог до магистралей, включая троллейбусы и трамваи: {YELLOW}U&RaTT{}{}{BLACK}Требуемая версия {SILVER}1.10.0 {BLACK}и позднее{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: {SILVER}GPL v3{}
-STR_GRF_URL				    	:https://www.tt-forums.net/viewtopic.php?f=67&t=84591
+STR_GRF_DESCRIPTION				:Добавляет новые графические дороги для использования функций, поддерживаемых NRT. Этот набор включает в себя широкий выбор дорог: грунтовые, асфальтированные и "декоративные" дороги.{}Трамвайные и троллейбусные пути доступны, если вы подключены другие трамвайные и троллейбусные наборы.{}{}{BLACK}Требуемая версия {SILVER}13.0 {BLACK}и позднее{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: {SILVER}GPL v3{}
 
-STR_GRF_DESCRIPTION_MINI		:Эти наборы принадлежат {YELLOW}U&RaTT{BLACK}.{}Типы дорог (включая троллейбус и трамвай), которые сведены к минимуму для упрощения игрового процесса.{}{}{BLACK}Требуемая версия {SILVER}1.10.0 {BLACK}и позднее{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: {SILVER}GPL v3{}
+STR_GRF_DESCRIPTION_MINI		:Эти наборы принадлежат {YELLOW}U&RaTT{BLACK}.{}Типы дорог (включая троллейбус и трамвай), которые сведены к минимуму для упрощения игрового процесса и регулируют ограничения скорости на каждой дороге.{}{}{BLACK}Требуемая версия {SILVER}13.0 {BLACK}и позднее{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: {SILVER}GPL v3{}
 STR_ERROR						:{ORANGE}Несовместимость {YELLOW}U&RaTT
 
-STR_GRF_DESCRIPTION_LIGHTING	:Это дополнительные дорожные типы с освещением: автомагистрали, скоростные автомагистрали и городские. Необходимо подключить наборы {YELLOW}U&RaTT {BLACK}или {YELLOW}U&RaTT: Mini{}{}{BLACK}Требуемая версия {SILVER}1.10.0 {BLACK}и позднее{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: {SILVER}GPL v3{}
-
-STR_OPENTTD_VERSION								:1.10.0
-STR_PARAM_GUI_NAME		           	        	:OpenGFX GUI
-STR_PARAM_GUI_DESC             		    	    :Отображает соответствующие графические иконки и курсоры в стиле OpenGFX.
+STR_PARAM_GUI_NAME		           	        	:Интерфейс
+STR_PARAM_GUI_DESC             		    	    :Отображает соответствующие графические значки и курсоры в стиле OpenTTD.{}Если вы выбрали стиль интерфейса {SILVER}U&GUI{BLACK}, вам необходимо подключить newgrf: {SILVER}U&GUI
 
 STR_PARAM_ROAD_AVAILABLE_NAME					:Использованная эпоха времени
-STR_PARAM_ROAD_AVAILABLE_DESC					:Этот переключатель устанавливает эру, на которой берутся некоторые типы доступных дорог и используется дорога в городской зоне.{}{SILVER}По умолчанию {BLACK}это поведение, при котором каждый тип дороги вводится только через определенные годы.{}{SILVER}По последовательности{BLACK}, дорога, которая для городской зоны меняется с течением времени и скорость движения ограничена {SILVER}50 {BLACK}км/ч.{}{SILVER}Всегда доступны. {BLACK}Все типы дорог, включая трамвайные и троллейбусные, будут доступны навсегда, независимо от времени года.
-STR_PARAM_ROAD_AVAILABLE_DESC_MINI				:Этот переключатель устанавливает эру, на которой берутся некоторые типы доступных дорог и используется дорога в городской зоне.{}{SILVER}По умолчанию {BLACK}это поведение, при котором каждый тип дороги вводится только через определенные годы.{}{SILVER}Всегда доступны. {BLACK}Все типы дорог, включая трамвайные и троллейбусные, будут доступны навсегда, независимо от времени года.
+STR_PARAM_ROAD_AVAILABLE_DESC					:Этот переключатель устанавливает эру, на которой берутся некоторые типы доступных дорог и используется дорога в городской зоне.{}{SILVER}По умолчанию {BLACK}это поведение, при котором каждый тип дороги вводится только через определенные годы.{}{SILVER}По последовательности{BLACK}, дорога, которая для городской зоны меняется с течением времени и скорость движения ограничена {SILVER}50 {BLACK}км/ч.
 STR_PARAM_ROAD_AVAILABLE_0						:По умолчанию
 STR_PARAM_ROAD_AVAILABLE_1						:Последовательность
-STR_PARAM_ROAD_AVAILABLE_2						:Всегда доступны {GRAY}(совместимость с устаревшим ИИ)
-
-STR_PEDESTRIAN_ZONE_NAME						:Пешеходная зона
-STR_PEDESTRIAN_ZONE_DESC						:Пешеходная зона - городская территория, предназначенная исключительно для пешеходного движения, где запрещено движение автотранспорта.
 
 STR_PARAM_ORDX_SPEED_NAME						:Ограничения скорости для всех дорог без покрытия
 STR_PARAM_ORDX_SPEED_DESC						:Для игроков, которые хотят выбрать ограничения скорости на всех дорогах без покрытия: горунтовых, гравийных...
-STR_PARAM_ORDX_SPEED_VERY_SLOW					:Очень медленный
-STR_PARAM_ORDX_SPEED_SLOW						:Медленный
-STR_PARAM_ORDX_SPEED_DEFAULT					:По умолчанию
 
 STR_PARAM_ARDX_SPEED_NAME						:Ограничение скорости для всех асфальтированных дорог
 STR_PARAM_ARDX_SPEED_DESC						:Для игроков, которые хотят выбрать ограничения скорости на всех асфальтированных дорогах: старых, новых и современных.
-STR_PARAM_ARDX_SPEED_VERYSLOW					:Очень медленный
-STR_PARAM_ARDX_SPEED_SLOW						:Медленный
-STR_PARAM_ARDX_SPEED_DEFAULT					:По умолчанию
-STR_PARAM_ARDX_SPEED_FAST						:Быстрый
-STR_PARAM_ARDX_SPEED_VERYFAST					:Очень быстрый
-STR_PARAM_ARDX_SPEED_NOLIMIT					:Нет ограничений
 
 STR_PARAM_URDX_SPEED_NAME						:Ограничение скорости для всех городских асфальтированных дорог
 STR_PARAM_URDX_SPEED_DESC						:Для игроков, которые хотят выбрать ограничения скорости на всех городских асфальтированных дорогах.
-STR_PARAM_URDX_SPEED_VERYSLOW					:Очень медленный
-STR_PARAM_URDX_SPEED_SLOW						:Медленный
-STR_PARAM_URDX_SPEED_DEFAULT					:По умолчанию
-STR_PARAM_URDX_SPEED_FAST						:Быстрый
-STR_PARAM_URDX_SPEED_VERYFAST					:Очень быстрый
-STR_PARAM_URDX_SPEED_NOLIMIT					:Нет ограничений
 
-STR_PARAM_IRDX_SPEED_NAME						:Ограничение скорости для всей дороги для промышленной зоны
-STR_PARAM_IRDX_SPEED_DESC						:Для игроков, которые хотят выбрать ограничения скорости на всех дорогах для промышленных зон.
-STR_PARAM_IRDX_SPEED_VERYSLOW					:Очень медленный
-STR_PARAM_IRDX_SPEED_SLOW						:Медленный
-STR_PARAM_IRDX_SPEED_DEFAULT					:По умолчанию
-STR_PARAM_IRDX_SPEED_FAST						:Быстрый
-STR_PARAM_IRDX_SPEED_VERYFAST					:Очень быстрый
-STR_PARAM_IRDX_SPEED_NOLIMIT					:Нет ограничений
+STR_PARAM_DRDX_SPEED_NAME						:Ограничение скорости на всей "декоративной" дороге
+STR_PARAM_DRDX_SPEED_DESC						:Для игроков, которые хотят выбрать ограничения скорости на всех "декоративных" дорогах.
 
-STR_PARAM_ONE_WAY_NAME							:Тип дороги с односторонним движением
-STR_PARAM_ONE_WAY_DESC							:Чтобы выбрать варианты дороги с односторонним движением: {SILVER}Дорожный знак {BLACK}или {SILVER}Дорожная разметка "Стрелка"
-STR_PARAM_ONE_WAY_0								:Дорожный знак
-STR_PARAM_ONE_WAY_1								:Дорожная разметка "Стрелка"
+STR_PARAM_SPEED_SLOW							:Строгие ограничений
+STR_PARAM_SPEED_DEFAULT							:По умолчанию
+STR_PARAM_SPEED_FAST							:Смягчение ограничений
+STR_PARAM_SPEED_UNLIMIT							:Без ограниченний
 
-STR_PARAM_STYLE_NAME							:Стиль дороги
-STR_PARAM_STYLE_DESC							:Этот параметр позволяет настроить, какой стиль дороги отображается в игре: Европейский или Американский.
-STR_PARAM_EUROPEAN								:Европейский
-STR_PARAM_AMERICAN								:Американский
+STR_PARAM_WRD0_SPEED_NAME						:Ограничения скорости на автомагистралях (км/ч)
+STR_PARAM_WRD0_SPEED_DESC						:Устанавливать ограничения скорости на автомагистралях.
+
+STR_PEDESTRIAN_ZONE_NAME						:Пешеходная зона
+STR_PEDESTRIAN_ZONE_DESC						:Пешеходная зона - это городская территория, предназначенная исключительно для движения пешеходов.
+STR_PEDESTRIAN_ZONE_0							:Отключено
+STR_PEDESTRIAN_ZONE_1							:Включено / запрещено
+STR_PEDESTRIAN_ZONE_2							:Включено / разрешено, с ограниченной скоростью 30 км/ч
+STR_PEDESTRIAN_ZONE_3							:Включено / разрешено, с ограниченной скоростью 60 км/ч
+
+STR_PARAM_STYLE_NAME							:Окраска полос и линий
+STR_PARAM_STYLE_DESC							:Этот параметр позволяет настроить, какой стиль применяется к дорожному покрытию, цвет полос и линий: {WHITE}белый {BLACK}или {YELLOW}жёлтый{BLACK}.
+STR_PARAM_STYLE_WHITE							:{WHITE}белый
+STR_PARAM_STYLE_YELLOW							:{YELLOW}жёлтый
 
 STR_PARAM_MENU_NAME								:Включить значок в меню
 STR_PARAM_MENU_DESC								:Показать / скрыть отображение значков в меню.{} {SILVER}{TRAIN} {BLACK}- Железнодорожный переезд на дороге запрещено.{} {SILVER}{BUS} {BLACK}- Запрещает строительство домов.
 
-STR_PARAM_BUILD_NAME							:Затраты на строительство
-STR_PARAM_BUILD_DESC							:Для игроков, которые хотят выбрать экономику строительства: лёгкую, нормальную или жесткую или очень жесткую.
+STR_PARAM_DISABLE_NAME							:Удалите ненужные и неиспользуемые некоторые типы
+STR_PARAM_DISABLE_DESC							:Освободить место для некоторых типов дорог (включая все электрифицированные) и неэлектрифицированных трамваев и использовать с другими типами.{}При включении вы не сможете пользоваться троллейбусом, неэлектрифицированными трамваями
 
-STR_PARAM_MAINTENANCE_NAME						:Эксплуатационные расходы
-STR_PARAM_MAINTENANCE_DESC						:Для игроков, которые хотят выбрать экономию обслуживания: лёгкую, нормальную или жесткую или очень жесткую.
-
-STR_PARAM_GAME_EASY								:Лёгкий
-STR_PARAM_GAME_NORMAL							:Нормальный
-STR_PARAM_GAME_HARD								:Жесткий
-STR_PARAM_GAME_VERY_HARD						:Очень жесткий
-
-STR_PARAM_TUNNEL_NAME							:Пользовательский туннель
-STR_PARAM_TUNNEL_DESC							:Если эта опция отключена, графика по умолчанию для порталов туннелей будет использоваться с оригинальными.
+STR_STRING_UNLIMITED                            :Без ограниченний
 
 STR_BUILD_WINDOW_CAPTION_ROAD 			        :Новый автомобиль
-STR_AUTOREPLACE_ROAD     					    :Дорожные транспортные средства
-STR_NEW_ENGINE_ROAD   		 				    :Дорожное транспортное средство
+STR_AUTOREPLACE_ROAD     					    :дорожные транспортные средства
+STR_NEW_ENGINE_ROAD   		 				    :дорожное транспортное средство
 
-STR_BUILD_WINDOW_CAPTION_ELRD					:Новый электрифицированный дорожный транспорт
-STR_AUTOREPLACE_ELRD							:Электрифицированные дорожные транспортные средства
-STR_NEW_ENGINE_ELRD								:Электрифицированное дорожное транспортное средство
+STR_BUILD_WINDOW_CAPTION_ELRD					:Новый эл. дорожный транспорт
+STR_AUTOREPLACE_ELRD							:эл. дорожные транспортные средства
+STR_NEW_ENGINE_ELRD								:эл. дорожное транспортное средство
 
 STR_BUILD_WINDOW_CAPTION_TRAM					:Новый трамвай
-STR_AUTOREPLACE_TRAM							:Трамвайные транспортные средства
-STR_NEW_ENGINE_TRAM								:Трамвайное транспортное средство
+STR_AUTOREPLACE_TRAM							:трамвайные транспортные средства
+STR_NEW_ENGINE_TRAM								:трамвайное транспортное средство
 
 STR_BUILD_WINDOW_CAPTION_TRAM_EL				:Новый электрифицированный трамвай
-STR_AUTOREPLACE_TRAM_EL							:Электрифицированные трамвайные транспортные средства
-STR_NEW_ENGINE_TRAM_EL							:Электрифицированное трамвайное транспортное средство
+STR_AUTOREPLACE_TRAM_EL							:эл. трамвайные транспортные средства
+STR_NEW_ENGINE_TRAM_EL							:эл. трамвайное транспортное средство
 
 STR_BUILD_WINDOW_CAPTION_3RDR					:Невый метро
 STR_AUTOREPLACE_3RDR							:Метро
@@ -109,9 +80,11 @@ STR_CLASS_C										:{SILVER}(класс C)
 STR_CLASS_B										:{SILVER}(класс B)
 STR_CLASS_A										:{SILVER}(класс A)
 
-STR_LIGHTING_BOTH								:{YELLOW}(оба)
-STR_LIGHTING_RIGHT								:{YELLOW}(правые)
-STR_LIGHTING_LEFT								:{YELLOW}(левые)
+STR_NAME_LIGHTING								:Освещение 
+
+STR_BOTH										:{YELLOW}(оба)
+STR_RIGHT										:{YELLOW}(правые)
+STR_LEFT										:{YELLOW}(левые)
 
 STR_NAME_ROAD									:Дорога местного владельца
 STR_TOOLBAR_CAPTION_ROAD    		            :Коммуникация
@@ -119,65 +92,70 @@ STR_TOOLBAR_CAPTION_TRAM						:Коммуникация
 
 STR_CONSTRUCTION								:
 
-STR_NAME_TRD_									:Пешеходная зона
-
 STR_NAME_ORD0							        :Полевая дорога
-
 STR_NAME_ORD1							        :Лесная грунтовая дорога
-
 STR_NAME_ORD2         						    :Грунтовая дорога
-
-STR_NAME_ORD3									:Гравийная дорога
-
-STR_NAME_ORD4          						    :Песчаная дорога
-
+STR_NAME_ORD3									:Песчанная дорога
+STR_NAME_ORD4          						    :Гравийная дорога
 STR_NAME_SRD0									:Мощеная каменная дорога
-
 STR_NAME_SRD1									:Цементно бетонная дорога
-
 STR_NAME_SRD2									:Бетонно плиточная дорога
-
-STR_NAME_ARD									:Асфальтированная дорога
-
-STR_NAME_ARDS									:Асфальтированная дорога с полосами
-
+STR_NAME_ARD0									:Асфальтированная дорога
+STR_NAME_ARD1									:Асфальтированная дорога с полосами
 STR_NAME_WRD0									:Автомагистраль
-
 STR_NAME_WRD1									:Скоростная автомагистраль
+STR_NAME_URD0									:Городская асфальт.дорога
+STR_NAME_URD1									:Городская асфальт.дорога с полосами
+STR_NAME_URD2									:Городская дорога с газонами
+STR_NAME_DRD0									:Пешеходная зона
+STR_NAME_DRD1									:Тротуарная плитка
+STR_NAME_DRD2									:Булыжная дорога
+STR_NAME_DRD3									:Промышленная дорога
+STR_NAME_DRD4									:Цементно плиточная дорога
+STR_NAME_DRD5									:Бетонная дорога
 
-STR_NAME_URD0									:Тротуарная плитка
-
-STR_NAME_URD									:Городская асфальтированная дорога
-
-STR_NAME_URDS									:Городская асфальтированная дорога с полосами
-
-STR_NAME_URD3									:Городская дорога с газонами
-
-STR_NAME_IRD0									:Булыжная дорога
-
-STR_NAME_IRD1									:Промышленная дорога
-
-STR_NAME_IRD2									:Цементно плиточная дорога
-
-STR_NAME_IRD3									:Асфальтобетонная дорога
-
-STR_NAME_NAAN									:Трамвайный путь без балласта
-
-STR_NAME_NBAN									:Трамвайный путь
-
-STR_NAME_NCAN									:Современный трамвайный путь
-
+STR_NAME_RAIL									:Трамвайный путь
+STR_NAME_NBAN									:Улучшенный трамвайный путь
 STR_NAME_NUAN									:Городской трамвайный путь
-
-STR_NAME_NUBN									:Современный городской трамвайный путь
-
+STR_NAME_NUBN									:Современный город.трамвайный путь
+STR_NAME_NUCN									:Озелененный трамвайный путь
 STR_NAME_NIAN									:Промышленный трамвайный путь
 
 STR_NAME_NAA3									:Метрополитен
-
 STR_NAME_NUA3									:Городской метрополитен
 
-STR_URTO										:U&RaTT: Объекты
-STR_URaTT_Urban_Objects							:Тротуарная плитка
-STR_URaTT_Industrial_Objects					:Цементная плита
-STR_URaTT_Industrial_Objects_1					:Булыжная плитка
+STR_PARAM_ORD2_SPEED_NAME						:Ограничения скорости на грунтовой дороге (км/ч)
+STR_PARAM_ORD2_SPEED_DESC						:Установите ограничения скорости на {SILVER}грунтовой дороге
+
+STR_PARAM_ORD3_SPEED_NAME						:Ограничения скорости на гравийной дороге (км/ч)
+STR_PARAM_ORD3_SPEED_DESC						:Установите ограничения скорости на {SILVER}гравнийной дороге
+
+STR_PARAM_SRD1_SPEED_NAME						:Ограничения скорости на бетонно-плиточной дороге (км/ч)
+STR_PARAM_SRD1_SPEED_DESC						:Установите ограничения скорости на {SILVER}бетонно-плиточной дороге
+
+STR_PARAM_ARD0_SPEED_NAME						:Ограничения скорости на асфальтированной дороге (км/ч)
+STR_PARAM_ARD0_SPEED_DESC						:Установите ограничения скорости на {SILVER}асфальтированной дороге
+
+STR_PARAM_ARD3_SPEED_NAME						:Ограничения скорости на асфальтированной дороге (класс B) (км/ч)
+STR_PARAM_ARD3_SPEED_DESC						:Установите ограничения скорости на {SILVER}асфальтированной дороге (класс B)
+
+STR_PARAM_ARD5_SPEED_NAME						:Ограничения скорости на асфальтированной дороге (класс A) (км/ч)
+STR_PARAM_ARD5_SPEED_DESC						:Установите ограничения скорости на {SILVER}асфальтированной дороге (класс A)
+
+STR_PARAM_DRD3_SPEED_NAME						:Ограничения скорости на промышленной дороге (км/ч)
+STR_PARAM_DRD3_SPEED_DESC						:Установите ограничения скорости на {SILVER}промышленной дороге
+
+STR_PARAM_RAIL_SPEED_NAME						:Ограничения скорости на трамвайных путях (км/ч)
+STR_PARAM_RAIL_SPEED_DESC						:Установите ограничения скорости на {SILVER}трамвайных путях
+
+STR_PARAM_ELRL_SPEED_NAME						:Ограничения скорости на эл.трамвайных путях (км/ч)
+STR_PARAM_ELRL_SPEED_DESC						:Установите ограничения скорости на {SILVER}эл.трамвайных путях
+
+STR_PARAM_NIAE_SPEED_NAME						:Ограничения скорости на промышленных трамвайных путях (км/ч)
+STR_PARAM_NIAE_SPEED_DESC						:Установите ограничения скорости на {SILVER}промышленных трамвайных путях
+
+STR_PARAM_NAA3_SPEED_NAME						:Ограничения скорости на метро (км/ч)
+STR_PARAM_NAA3_SPEED_DESC						:Установите ограничения скорости на {SILVER}Metro
+
+STR_PARAM_NUA3_SPEED_NAME						:Ограничения скорости на городских метро (км/ч)
+STR_PARAM_NUA3_SPEED_DESC						:Установите ограничения скорости на {SILVER}городских метро

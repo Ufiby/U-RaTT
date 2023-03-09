@@ -1,105 +1,87 @@
 ##grflangid 0x01 
 
-STR_GRF_NAME					:U&RaTT 0.7
-STR_GRF_DESCRIPTION				:New graphics roads with a wide variety, from dirt roads to highways, including trolleybuses and trams: {YELLOW}U&RaTT{}{}{BLACK}Requires version 1.10.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: GPL v3{}
-STR_GRF_URL				    	:https://www.tt-forums.net/viewtopic.php?f=67&t=84591
+STR_GRF_NAME					:U&RaTT 0.8
+STR_GRF_DESCRIPTION				:Adds new graphical roads to use the features supported by NRT. This set includes a wide selection of roads: unpaved, asphalt and "decorative" roads.{}Tram and trolleybus tracks are available if you have connected other tram and trolleybus sets.{}{}{BLACK}Requires version {SILVER}13.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: {SILVER}GPL v3{}
+STR_GRF_URL				    	:https://www.tt-forums.net/viewtopic.php?t=84591
 
-STR_GRF_NAME_MINI				:U&RaTT: Mini v2
-STR_GRF_DESCRIPTION_MINI		:These kits belong to {YELLOW}U&RaTT{BLACK}.{}Road (including trolleybus and tram) types, which are minimized to simplify the gameplay.{}{}{BLACK}Requires version 1.10.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: GPL v3{}
+STR_GRF_NAME_MINI				:U&RaTT: Mini v4
+STR_GRF_DESCRIPTION_MINI		:These kits belong to {YELLOW}U&RaTT{BLACK}.{}Types of roads (including trolleybus and tram) that are minimized to simplify the gameplay, and adjust the speed limits on each road.{}{}{BLACK}Requires version {SILVER}13.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: {SILVER}GPL v3{}
 STR_ERROR						:{ORANGE}Incompatibility {YELLOW}U&RaTT
 
-STR_GRF_NAME_LIGHTING			:U&RaTT: Lighting v2
-STR_GRF_DESCRIPTION_LIGHTING	:These are additional road types with lighting: highway, expressways and urban. It is necessary to connect the sets {YELLOW}U&RaTT {BLACK}or {YELLOW}U&RaTT: Mini{}{}{BLACK}Requires version 1.10.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: GPL v3{}
+STR_GRF_NAME_LIGHTING			:U&RaTT: Lighting v4
+STR_GRF_DESCRIPTION_LIGHTING	:This set replaces the tram tracks and overheads with eye candy objects.{}{}{BLACK}Requires version {SILVER}13.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: {SILVER}GPL v3{}
 
-STR_OPENTTD_VERSION								:1.10.0
-STR_PARAM_GUI_NAME		           	        	:OpenGFX GUI
-STR_PARAM_GUI_DESC             		    	    :Displays the corresponding graphic icons and cursors in the OpenGFX style.
+STR_GRF_NAME_SUBWAY				:Metro(NRT)
+STR_GRF_DESCRIPTION_SUBWAY		:Adds a subway in the form of tram tracks. Required label: NAA3{}{}{BLACK}Requires version {SILVER}13.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: {SILVER}GPL v2{}
+
+STR_OPENTTD_VERSION								:13.0
+
+STR_PARAM_GUI_NAME		           	        	:GUI
+STR_PARAM_GUI_DESC             		    	    :Displays the corresponding graphical icons and cursors in the OpenTTD style.{}If you have chosen the {SILVER}U&GUI {BLACK}interface style, you need to connect newgrf: {SILVER}U&GUI
+STR_PARAM_GUI_0									:TTD
+STR_PARAM_GUI_1									:OpenGFX
+STR_PARAM_GUI_2									:U&GUI
 
 STR_PARAM_ROAD_AVAILABLE_NAME					:Time era used
-STR_PARAM_ROAD_AVAILABLE_DESC					:This switch sets the era, which are taken some types of road available and use a road in an town zone.{}{SILVER}By default{BLACK}, this is the behavior where each road type is entered only after certain years.{}{SILVER}By sequence{BLACK}, road, which for the town zone changes as time passes and of speed limited {SILVER}50 {BLACK}km/h.{}{SILVER}Always available. {BLACK}All types of roads, including tram and trolleybus, will be available forever, regardless of the time of year.
-STR_PARAM_ROAD_AVAILABLE_DESC_MINI				:This switch sets the era, which are taken some types of road available and use a road in an town zone.{}{SILVER}By default{BLACK}, this is the behavior where each road type is entered only after certain years.{}{SILVER}Always available. {BLACK}All types of roads, including tram and trolleybus, will be available forever, regardless of the time of year.
+STR_PARAM_ROAD_AVAILABLE_DESC					:This switch sets the era, which are taken some types of road available and use a road in an town zone.{}{SILVER}By default{BLACK}, this is the behavior where each road type is entered only after certain years.{}{SILVER}By sequence{BLACK}, road, which for the town zone changes as time passes and of speed limited {SILVER}50 {BLACK}km/h.
 STR_PARAM_ROAD_AVAILABLE_0						:Default
 STR_PARAM_ROAD_AVAILABLE_1						:Sequence
-STR_PARAM_ROAD_AVAILABLE_2						:Always available {GRAY}(compatibility with outdated AI)
-
-STR_PEDESTRIAN_ZONE_NAME						:Pedestrian zone
-STR_PEDESTRIAN_ZONE_DESC						:Pedestrian zone is an urban area exclusively for pedestrian traffic, where movement by motor vehicles is prohibited.
 
 STR_PARAM_ORDX_SPEED_NAME						:Speed limit for all unpaved roads
 STR_PARAM_ORDX_SPEED_DESC						:For players who want to choose speed limits on all unpaved roads: dirt, gravel...
-STR_PARAM_ORDX_SPEED_VERY_SLOW					:Very slow
-STR_PARAM_ORDX_SPEED_SLOW						:Slow
-STR_PARAM_ORDX_SPEED_DEFAULT					:Default
 
 STR_PARAM_ARDX_SPEED_NAME						:Speed limit for all asphalt roads
-STR_PARAM_ARDX_SPEED_DESC						:For players who want to choose speed limits on all asphalt roads: old, new and modern.
-STR_PARAM_ARDX_SPEED_VERYSLOW					:Very slow
-STR_PARAM_ARDX_SPEED_SLOW						:Slow
-STR_PARAM_ARDX_SPEED_DEFAULT					:Default
-STR_PARAM_ARDX_SPEED_FAST						:Fast
-STR_PARAM_ARDX_SPEED_VERYFAST					:Very fast
-STR_PARAM_ARDX_SPEED_NOLIMIT					:No limited
+STR_PARAM_ARDX_SPEED_DESC						:For players who want to choose speed limits on all asphalt roads: old, improved and modern.
 
 STR_PARAM_URDX_SPEED_NAME						:Speed limit for all urban asphalt roads
 STR_PARAM_URDX_SPEED_DESC						:For players who want to choose speed limits on all urban asphalt roads.
-STR_PARAM_URDX_SPEED_VERYSLOW					:Very slow
-STR_PARAM_URDX_SPEED_SLOW						:Slow
-STR_PARAM_URDX_SPEED_DEFAULT					:Default
-STR_PARAM_URDX_SPEED_FAST						:Fast
-STR_PARAM_URDX_SPEED_VERYFAST					:Very fast
-STR_PARAM_URDX_SPEED_NOLIMIT					:No limited
 
-STR_PARAM_IRDX_SPEED_NAME						:Speed limit for all road for industries zone
-STR_PARAM_IRDX_SPEED_DESC						:For players who want to choose speed limits on all roads for industrial zones.
-STR_PARAM_IRDX_SPEED_VERYSLOW					:Very slow
-STR_PARAM_IRDX_SPEED_SLOW						:Slow
-STR_PARAM_IRDX_SPEED_DEFAULT					:Default
-STR_PARAM_IRDX_SPEED_FAST						:Fast
-STR_PARAM_IRDX_SPEED_VERYFAST					:Very fast
-STR_PARAM_IRDX_SPEED_NOLIMIT					:No limited
+STR_PARAM_DRDX_SPEED_NAME						:Speed limit on all "decorative" roads
+STR_PARAM_DRDX_SPEED_DESC						:For players who want to choose speed limits on all "decorative" roads.
 
-STR_PARAM_ONE_WAY_NAME							:Type one-way road
-STR_PARAM_ONE_WAY_DESC							:To select one-way road options: road sign {BLACK}or road marking "Arrow"
-STR_PARAM_ONE_WAY_0								:Road sign
-STR_PARAM_ONE_WAY_1								:Road marking "Arrows"
+STR_PARAM_SPEED_SLOW							:Slow
+STR_PARAM_SPEED_DEFAULT							:Default
+STR_PARAM_SPEED_FAST							:Fast
+STR_PARAM_SPEED_UNLIMIT							:Unlimited
 
-STR_PARAM_STYLE_NAME							:Road style
-STR_PARAM_STYLE_DESC							:This parameter allows you to configure which road style appears in the game: European or American.
-STR_PARAM_EUROPEAN								:European
-STR_PARAM_AMERICAN								:American
+STR_PARAM_WRD0_SPEED_NAME						:Speed limit: Highway (km/h)
+STR_PARAM_WRD0_SPEED_DESC						:Set speed limits on {SILVER}Highway
+
+STR_PEDESTRIAN_ZONE_NAME						:Pedestrian zone
+STR_PEDESTRIAN_ZONE_DESC						:A pedestrian zone is an urban area designed exclusively for pedestrian traffic.
+STR_PEDESTRIAN_ZONE_0							:Disable
+STR_PEDESTRIAN_ZONE_1							:Enable / Forbidden
+STR_PEDESTRIAN_ZONE_2							:Enable / Allowed, with a limited 30 km/h
+STR_PEDESTRIAN_ZONE_3							:Enable / Allowed, with a limited 60 km/h
+
+STR_PARAM_STYLE_NAME							:Stripe and line coloring
+STR_PARAM_STYLE_DESC							:This parameter allows you to configure which style is applied to the road surface, the color of the stripes and lines: {WHITE}white {BLACK}or {YELLOW}yellow
+STR_PARAM_STYLE_WHITE							:{WHITE}White
+STR_PARAM_STYLE_YELLOW							:{YELLOW}Yellow
 
 STR_PARAM_MENU_NAME								:Enable the icon in the menu
-STR_PARAM_MENU_DESC								:Show / hide the display of icons in the menu.{} {SILVER}{TRAIN} {BLACK}- Disable level crossings.{} {SILVER}{BUS} {BLACK}- Disallows house construction.
+STR_PARAM_MENU_DESC								:Show / hide the display of icons in the menu{} {SILVER}{TRAIN} {BLACK}- Disable level crossings{} {SILVER}{BUS} {BLACK}- Disallows house construction
 
-STR_PARAM_BUILD_NAME							:Construction costs
-STR_PARAM_BUILD_DESC							:For players who want to choose the economy of construction: easy, normal or hard or very hard.
+STR_PARAM_DISABLE_NAME							:Remove unnecessary and unused some types
+STR_PARAM_DISABLE_DESC							:To make room for some road (including all electrified), and non-electrified tram types and to use with other types.{}When turned on, you will not be able to use trolleybus, non-electrified trams
 
-STR_PARAM_MAINTENANCE_NAME						:Maintenance costs
-STR_PARAM_MAINTENANCE_DESC						:For players who want to choose the economy of maintenance: easy, normal or hard or very hard.
+STR_STRING_UNLIMITED                            :Unlimited
 
-STR_PARAM_GAME_EASY								:Easy
-STR_PARAM_GAME_NORMAL							:Normal
-STR_PARAM_GAME_HARD								:Hard
-STR_PARAM_GAME_VERY_HARD						:Very hard
-
-STR_PARAM_TUNNEL_NAME							:Custom tunnel
-STR_PARAM_TUNNEL_DESC							:if this option is disabled, the default graphics for tunnel portals will be used with the original.
-
-STR_BUILD_WINDOW_CAPTION_ROAD 			        :New road vehicle
+STR_BUILD_WINDOW_CAPTION_ROAD 			        :New Vehicles
 STR_AUTOREPLACE_ROAD 	    				    :Road vehicles
-STR_NEW_ENGINE_ROAD 		   				    :Road vehicle
+STR_NEW_ENGINE_ROAD 		   				    :Road vehicles
 
 STR_BUILD_WINDOW_CAPTION_ELRD					:New electrified road vehicle
 STR_AUTOREPLACE_ELRD							:Electrified road vehicles
-STR_NEW_ENGINE_ELRD								:Electrified road vehicle
+STR_NEW_ENGINE_ELRD								:Electrified road vehicles
 
 STR_BUILD_WINDOW_CAPTION_TRAM					:New tram vehices
 STR_AUTOREPLACE_TRAM							:Tram vehices
-STR_NEW_ENGINE_TRAM								:Tram vehice
+STR_NEW_ENGINE_TRAM								:Tram vehices
 
 STR_BUILD_WINDOW_CAPTION_TRAM_EL				:New electrified tram vehicle
 STR_AUTOREPLACE_TRAM_EL							:Electrified tram vehicles
-STR_NEW_ENGINE_TRAM_EL							:Electrified tram vehicle
+STR_NEW_ENGINE_TRAM_EL							:Electrified tram vehicles
 
 STR_BUILD_WINDOW_CAPTION_3RDR					:New Subway
 STR_AUTOREPLACE_3RDR							:Subway
@@ -112,13 +94,15 @@ STR_CLASS_C										:{SILVER}(class C)
 STR_CLASS_B										:{SILVER}(class B)
 STR_CLASS_A										:{SILVER}(class A)
 
-STR_LIGHTING_BOTH								:{YELLOW}(both)
-STR_LIGHTING_RIGHT								:{YELLOW}(right)
-STR_LIGHTING_LEFT								:{YELLOW}(left)
+STR_NAME_LIGHTING								:Lighting 
 
-STR_TRAIN										:{GRAY}{TRAIN}
-STR_BUS											:{GRAY}{BUS}
+STR_BOTH										:{YELLOW}(both)
+STR_RIGHT										:{YELLOW}(right)
+STR_LEFT										:{YELLOW}(left)
 
+STR_TRAIN										:{GRAY}{TRAIN}{WHITE}
+STR_BUS											:{GRAY}{BUS}{WHITE}
+STR_BUS_TRAIN									:{GRAY}{BUS} {TRAIN}{WHITE}
 STR_WHITE										:{WHITE}
 
 STR_NAME_ROAD									:Local owner's road
@@ -127,68 +111,74 @@ STR_TOOLBAR_CAPTION_TRAM						:Tramway
 
 STR_CONSTRUCTION								:construction
 
-STR_NAME_TRD_									:Pedestrian zone
-
+STR_NAME_TRD0									:Town road
 STR_NAME_ORD0							        :Field road
-
 STR_NAME_ORD1							        :Forest dirt road
-
 STR_NAME_ORD2         						    :Dirt road
-
-STR_NAME_ORD3									:Gravel road
-
-STR_NAME_ORD4          						    :Sandy road
-
+STR_NAME_ORD3									:Sandy road
+STR_NAME_ORD4          						    :Gravel road
 STR_NAME_SRD0									:Paved stone road
-
 STR_NAME_SRD1									:Cement concrete road
-
 STR_NAME_SRD2									:Concrete slab of road
-
-STR_NAME_ARD									:Asphalt road
-
-STR_NAME_ARDS									:Asphalt road w/ stripes
-
+STR_NAME_ARD0									:Asphalt road
+STR_NAME_ARD1									:Asphalt road w/ stripes
 STR_NAME_WRD0									:Highway
-
 STR_NAME_WRD1									:Expressway
+STR_NAME_URD0									:Urban asphalt road
+STR_NAME_URD1									:Urban asphalt road w/ stripes
+STR_NAME_URD2									:Road verge
+STR_NAME_DRD0									:Pedestrian zone
+STR_NAME_DRD1									:Paving slabs
+STR_NAME_DRD2									:Cobble stones road
+STR_NAME_DRD3									:ISR road
+STR_NAME_DRD4									:Cement slab of road
+STR_NAME_DRD5									:Concrete road
 
-STR_NAME_URD0									:Paving slabs
-
-STR_NAME_URD									:Urban asphalt road
-
-STR_NAME_URDS									:Urban asphalt road w/ stripes
-
-STR_NAME_URD3									:Road verge
-
-STR_NAME_IRD0									:Cobble stones road
-
-STR_NAME_IRD1									:ISR road
-
-STR_NAME_IRD2									:Cement slab of road
-
-STR_NAME_IRD3									:Asphalt concrete road
-
-STR_NAME_NAAN									:Tram track no ballast
-
-STR_NAME_NBAN									:Tram track
-
-STR_NAME_NCAN									:Modern tram track
-
+STR_NAME_RAIL									:Tram track
+STR_NAME_NBAN									:Improved tram track
 STR_NAME_NUAN									:Urban tram track
-
 STR_NAME_NUBN									:Modern urban tram track
-
+STR_NAME_NUCN									:Green tram track
 STR_NAME_NIAN									:ISR tram track
 
 STR_NAME_NAA3									:Metro line
-
 STR_NAME_NUA3									:Urban metro line
 
-STR_URTO										:U&RaTT: Object
-STR_URaTT_Urban_Objects							:Paving slab
-STR_URaTT_Industrial_Objects					:Cement slab
-STR_URaTT_Industrial_Objects_1					:Cobble stones slabs
+STR_PARAM_ORD2_SPEED_NAME						:Speed limit: Dirt road (km/h)
+STR_PARAM_ORD2_SPEED_DESC						:Set speed limits on {SILVER}Dirt road
+
+STR_PARAM_ORD3_SPEED_NAME						:Speed limit: Gravel road (km/h)
+STR_PARAM_ORD3_SPEED_DESC						:Set speed limits on {SILVER}Gravel road
+
+STR_PARAM_SRD1_SPEED_NAME						:Speed limit: Cement concrete road (km/h)
+STR_PARAM_SRD1_SPEED_DESC						:Set speed limits on {SILVER}Cement concrete road
+
+STR_PARAM_ARD0_SPEED_NAME						:Speed limit: Asphalt road (km/h)
+STR_PARAM_ARD0_SPEED_DESC						:Set speed limits on {SILVER}Asphalt road
+
+STR_PARAM_ARD3_SPEED_NAME						:Speed limit: Asphalt road (class B) (km/h)
+STR_PARAM_ARD3_SPEED_DESC						:Set speed limits on {SILVER}Asphalt road (class B)
+
+STR_PARAM_ARD5_SPEED_NAME						:Speed limit: Asphalt road (class A) (km/h)
+STR_PARAM_ARD5_SPEED_DESC						:Set speed limits on {SILVER}Asphalt road (class A)
+
+STR_PARAM_DRD3_SPEED_NAME						:Speed limit: ISR road (km/h)
+STR_PARAM_DRD3_SPEED_DESC						:Set speed limits on {SILVER}ISR road
+
+STR_PARAM_RAIL_SPEED_NAME						:Speed limit: Tramway (km/h)
+STR_PARAM_RAIL_SPEED_DESC						:Set speed limits on {SILVER}Tramway
+
+STR_PARAM_ELRL_SPEED_NAME						:Speed limit: Electric tramway (km/h)
+STR_PARAM_ELRL_SPEED_DESC						:Set speed limits on {SILVER}Electric tramway
+
+STR_PARAM_NIAE_SPEED_NAME						:Speed limit: ISR tramway (electric) (km/h)
+STR_PARAM_NIAE_SPEED_DESC						:Set speed limits on {SILVER}ISR tramway (Electric)
+
+STR_PARAM_NAA3_SPEED_NAME						:Speed limit: Metro (km/h)
+STR_PARAM_NAA3_SPEED_DESC						:Set speed limit on {SILVER}Metro
+
+STR_PARAM_NUA3_SPEED_NAME						:Speed limit: Urban metro (km/h)
+STR_PARAM_NUA3_SPEED_DESC						:Set speed limit on {SILVER}Urban metro
 
 STR_STRING_2									:{STRING} {STRING}
 STR_STRING_3									:{STRING} {STRING} {STRING}
