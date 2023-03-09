@@ -4,7 +4,7 @@ grf {
 	desc: string(STR_GRF_DESCRIPTION_MINI);
 	url:  string(STR_GRF_URL);
 	version: 120;
-	min_compatible_version: 90;
+	min_compatible_version: 100;
 			param 0 {
         param_gui {
             type: int;
@@ -644,6 +644,41 @@ switch (FEAT_ROADTYPES, SELF, switch_ORD4_gui, param_gui) {										//GUI
     1: ORD4_gui_opengfx;
     2: ORD4_gui_UGUI;
 	ORD4_gui_ttd;
+}
+//===========================================================
+//			PAVED STONE ROAD (SRD0)
+//===========================================================
+spriteset(normal_SRD0_underlay_1, "gfx/R_SRD0.png") {
+    tmpl_underlay_overlay(161)
+}
+spriteset(snow_SRD0_underlay_1, "gfx/R_SRD0.png") {
+    tmpl_underlay_overlay(241)
+}
+switch(FEAT_ROADTYPES, SELF, switch_SRD0_underlay_1, terrain_type) {
+    TILETYPE_SNOW: snow_SRD0_underlay_1;
+    normal_SRD0_underlay_1;
+}
+
+spriteset(normal_SRD0_bridge, "gfx/R_SRD0.png") {
+    tmpl_bridge_surfaces(0)
+}
+spriteset(snow_SRD0_bridge, "gfx/R_SRD0.png") {
+    tmpl_bridge_surfaces(414)
+}
+switch(FEAT_ROADTYPES, SELF, switch_SRD0_bridge, terrain_type) {								//BRIDGE
+    TILETYPE_SNOW: snow_SRD0_bridge;
+    normal_SRD0_bridge;
+}
+
+spriteset(normal_SRD0_tunnels_1, "gfx/R_SRD0.png") {
+    tmpl_tunnels(0,36)
+}
+spriteset(snow_SRD0_tunnels_1, "gfx/R_SRD0.png") {
+    tmpl_tunnels(276,36)
+}
+switch(FEAT_ROADTYPES, SELF, switch_SRD0_tunnels_1, terrain_type) {
+    TILETYPE_SNOW: snow_SRD0_tunnels_1;
+    normal_SRD0_tunnels_1;
 }
 //===========================================================
 //				CEMENT CONCRETE ROAD (SRD1)
@@ -1761,12 +1796,12 @@ spriteset(oneway_ARROWS_SIGN_1,     "gfx/ONE_WAY.png") {
 //===========================================================
 switch(FEAT_ROADTYPES, SELF, switch_ROAD_underlay, town_zone) {
 	TOWNZONE_EDGE: switch_ORD2_underlay_0;
-	switch_SRD1_underlay_1;
+	switch_SRD0_underlay_1;
 }
 
 switch(FEAT_ROADTYPES, SELF, switch_ROAD_tunnels, town_zone) {
 	TOWNZONE_EDGE: switch_ORD2_tunnels_0;
-	switch_SRD1_tunnels_1;
+	switch_SRD0_tunnels_1;
 }
 //==================================================================================================================================
 //									Road Definitions
@@ -1788,7 +1823,7 @@ switch(FEAT_ROADTYPES, SELF, switch_ROAD_tunnels, town_zone) {
 			}
 		graphics {
 				underlay: 					switch_ROAD_underlay;
-				bridge_surfaces: 			switch_SRD1_bridge;
+				bridge_surfaces: 			switch_SRD0_bridge;
 				tunnels:					switch_ROAD_tunnels;
 			}
 		}
