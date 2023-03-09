@@ -335,22 +335,22 @@ template tmpl_arrows_oneway(y) {
 template tmpl_arrows_sign_oneway(y,a,b) {
 	[      1,    1+y,     26,     13,    -12,     -7]
 	[     28,    1+y,     26,     13,    -12,     -7]
-	[   71+a,     55,     34,     22,    -16,    -14]     //STOP
+	[   71+a,     55,     34,     22,    -16,    -14]    	  //STOP
 	[     82,    1+y,     26,     13,    -12,     -7]
 	[    109,    1+y,     26,     13,    -12,     -7]
-	[  176+b,     55,     34,     22,    -16,    -14]     //STOP
+	[  176+b,     55,     34,     22,    -16,    -14]    	  //STOP
 	[    163,    1+y,     26,     17,    -12,    -10]
 	[    190,    1+y,     26,     17,    -12,    -10]
-	[   71+a,     78,     34,     22,    -16,    -14]     //STOP
+	[   71+a,     78,     34,     22,    -16,    -14]     	  //STOP
 	[    244,    1+y,     26,     17,    -12,    -10]
 	[    271,    1+y,     26,     17,    -12,    -10]
-	[  176+b,     78,     34,     22,    -16,    -14]     //STOP
+	[  176+b,     78,     34,     22,    -16,    -14]     	  //STOP
 	[    325,    1+y,     26,     11,    -12,     -5]
 	[    352,    1+y,     26,     11,    -12,     -5]
-	[   71+a,    101,     34,     22,    -16,    -14]     //STOP
+	[   71+a,    101,     34,     22,    -16,    -14]    	  //STOP
 	[    406,    1+y,     26,     11,    -12,     -5]
 	[    433,    1+y,     26,     11,    -12,     -5]
-	[  176+b,    101,     34,     22,    -16,    -14]     //STOP
+	[  176+b,    101,     34,     22,    -16,    -14]     	  //STOP
 }
 
 template tmpl_gui_icon(x, y) { [x, y, 20, 20, 0, 0]
@@ -4501,8 +4501,8 @@ if (roadtype_available("ORD3") || loading_stage == LOADING_STAGE_RESERVE) {
 			name: 					string(STR_NAME_ORD3);
 			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
 								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
 								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
