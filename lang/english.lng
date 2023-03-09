@@ -4,7 +4,7 @@ STR_GRF_NAME					:U&RaTT 0.8
 STR_GRF_DESCRIPTION				:Adds new graphical roads to use the features supported by NRT. This set includes a wide selection of roads: unpaved, asphalt and "decorative" roads.{}Tram and trolleybus tracks are available if you have connected other tram and trolleybus sets.{}{}{BLACK}Requires version {SILVER}13.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: {SILVER}GPL v3{}
 STR_GRF_URL				    	:https://www.tt-forums.net/viewtopic.php?t=84591
 
-STR_GRF_NAME_MINI				:U&RaTT: Mini v4
+STR_GRF_NAME_MINI				:U&RaTT: Mini v5
 STR_GRF_DESCRIPTION_MINI		:These kits belong to {YELLOW}U&RaTT{BLACK}.{}Types of roads (including trolleybus and tram) that are minimized to simplify the gameplay, and adjust the speed limits on each road.{}{}{BLACK}Requires version {SILVER}13.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: {SILVER}GPL v3{}
 STR_ERROR						:{ORANGE}Incompatibility {YELLOW}U&RaTT
 
