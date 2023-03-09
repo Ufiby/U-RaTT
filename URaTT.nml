@@ -5,7 +5,7 @@ grf {
 	url:  string(STR_GRF_URL);
 	version: 300;
 	min_compatible_version: 280;
-			param 0 {
+	param 0 {
         param_gui {
             type: int;
             name: string(STR_PARAM_GUI_NAME);
@@ -14,13 +14,13 @@ grf {
 			max_value: 2;
             def_value: 0;
            names: {
-					0: string(STR_PARAM_GUI_0);
-					1: string(STR_PARAM_GUI_1);
-                    2: string(STR_PARAM_GUI_2);
-                    };
-				}
-			}
-		    param 1 {
+			0: string(STR_PARAM_GUI_0);
+			1: string(STR_PARAM_GUI_1);
+			2: string(STR_PARAM_GUI_2);
+			};
+		}
+	}
+	param 1 {
         param_road_available {
             type: int;
             name: string(STR_PARAM_ROAD_AVAILABLE_NAME);
@@ -29,12 +29,12 @@ grf {
 			max_value: 1;
             def_value: 0;
             names: {
-					0: string(STR_PARAM_ROAD_AVAILABLE_0);
-					1: string(STR_PARAM_ROAD_AVAILABLE_1);
-                    };
-				}
-			}
-			param 2 {
+			0: string(STR_PARAM_ROAD_AVAILABLE_0);
+			1: string(STR_PARAM_ROAD_AVAILABLE_1);
+			};
+		}
+	}
+	param 2 {
         param_ordx_speed {
             type: int;
             name: string(STR_PARAM_ORDX_SPEED_NAME);
@@ -43,13 +43,13 @@ grf {
             max_value: 2;
             def_value: 1;
             names: {
-					0: string(STR_PARAM_SPEED_SLOW);
-					1: string(STR_PARAM_SPEED_DEFAULT);
-                    2: string(STR_PARAM_SPEED_FAST);
-                    };
-				}
-			}
-			param 3 {
+			0: string(STR_PARAM_SPEED_SLOW);
+			1: string(STR_PARAM_SPEED_DEFAULT);
+			2: string(STR_PARAM_SPEED_FAST);
+			};
+		}
+	}
+	param 3 {
         param_ardx_speed {
             type: int;
             name: string(STR_PARAM_ARDX_SPEED_NAME);
@@ -58,14 +58,14 @@ grf {
             max_value: 3;
             def_value: 1;
             names: {
-					0: string(STR_PARAM_SPEED_SLOW);
-					1: string(STR_PARAM_SPEED_DEFAULT);
-                    2: string(STR_PARAM_SPEED_FAST);
-					3: string(STR_PARAM_SPEED_UNLIMIT);
-                    };
-				}
-			}
-			param 4 {
+			0: string(STR_PARAM_SPEED_SLOW);
+			1: string(STR_PARAM_SPEED_DEFAULT);
+			2: string(STR_PARAM_SPEED_FAST);
+			3: string(STR_PARAM_SPEED_UNLIMIT);
+ 			};
+		}
+	}
+	param 4 {
         param_urdx_speed {
             type: int;
             name: string(STR_PARAM_URDX_SPEED_NAME);
@@ -74,14 +74,14 @@ grf {
             max_value: 3;
             def_value: 1;
             names: {
-					0: string(STR_PARAM_SPEED_SLOW);
-					1: string(STR_PARAM_SPEED_DEFAULT);
-                    2: string(STR_PARAM_SPEED_FAST);
-					3: string(STR_PARAM_SPEED_UNLIMIT);
-                    };
-				}
-			}
-			param 5 {
+			0: string(STR_PARAM_SPEED_SLOW);
+			1: string(STR_PARAM_SPEED_DEFAULT);
+			2: string(STR_PARAM_SPEED_FAST);
+			3: string(STR_PARAM_SPEED_UNLIMIT);
+			};
+		}
+	}
+	param 5 {
         param_drdx_speed {
             type: int;
             name: string(STR_PARAM_DRDX_SPEED_NAME);
@@ -90,27 +90,27 @@ grf {
             max_value: 3;
             def_value: 1;
             names: {
-					0: string(STR_PARAM_SPEED_SLOW);
-					1: string(STR_PARAM_SPEED_DEFAULT);
-                    2: string(STR_PARAM_SPEED_FAST);
-					3: string(STR_PARAM_SPEED_UNLIMIT);
-                    };
-				}
-			}
-			param 6 {
-		param_WRD0_speed {
-			type: int;
-			name: string(STR_PARAM_WRD0_SPEED_NAME);
-			desc: string(STR_PARAM_WRD0_SPEED_DESC);
-			min_value: 29;
-			max_value: 255;
-			def_value: 121;
-			names: {
-				29: string(STR_STRING_UNLIMITED);
-					};
-				}
-			}
-			param 7 {
+			0: string(STR_PARAM_SPEED_SLOW);
+			1: string(STR_PARAM_SPEED_DEFAULT);
+			2: string(STR_PARAM_SPEED_FAST);
+			3: string(STR_PARAM_SPEED_UNLIMIT);
+			};
+		}
+	}
+	param 6 {
+	param_WRD0_speed {
+	    type: int;
+	    name: string(STR_PARAM_WRD0_SPEED_NAME);
+	    desc: string(STR_PARAM_WRD0_SPEED_DESC);
+	    min_value: 29;
+	    max_value: 255;
+	    def_value: 121;
+	    names: {
+			29: string(STR_STRING_UNLIMITED);
+			};
+		}
+	}
+	param 7 {
         param_pedestrian_zone {
             type: int;
             name: string(STR_PEDESTRIAN_ZONE_NAME);
@@ -119,14 +119,14 @@ grf {
             max_value: 3;
             def_value: 0;
             names: {
-					0: string(STR_PEDESTRIAN_ZONE_0);
-					1: string(STR_PEDESTRIAN_ZONE_1);
-                    2: string(STR_PEDESTRIAN_ZONE_2);
-					3: string(STR_PEDESTRIAN_ZONE_3);
-                    };
-				}
-			}			
-			param 8 {
+			0: string(STR_PEDESTRIAN_ZONE_0);
+			1: string(STR_PEDESTRIAN_ZONE_1);
+			2: string(STR_PEDESTRIAN_ZONE_2);
+			3: string(STR_PEDESTRIAN_ZONE_3);
+			};
+		}
+	}			
+	param 8 {
         param_style {
             type: int;
             name: string(STR_PARAM_STYLE_NAME);
@@ -135,28 +135,28 @@ grf {
             max_value: 1;
             def_value: 0;
             names: {
-					0: string(STR_PARAM_STYLE_WHITE);
-                    1: string(STR_PARAM_STYLE_YELLOW);
-                    };
-				}
-			}
-			param 9 {
-		param_menu_text {
-			type: bool;
-			name: string(STR_PARAM_MENU_NAME);
-			desc: string(STR_PARAM_MENU_DESC);
-			def_value: 1;
-				}
-			}
-			param 10 {
-		param_disable {
-			type: bool;
-			name: string(STR_PARAM_DISABLE_NAME);
-			desc: string(STR_PARAM_DISABLE_DESC);
-			def_value: 0;
-				}
-			}
+			0: string(STR_PARAM_STYLE_WHITE);
+			1: string(STR_PARAM_STYLE_YELLOW);
+			};
+		}
 	}
+	param 9 {
+	param_menu_text {
+	type: bool;
+	name: string(STR_PARAM_MENU_NAME);
+	desc: string(STR_PARAM_MENU_DESC);
+	def_value: 1;
+		}
+	}
+	param 10 {
+	param_disable {
+	type: bool;
+	name: string(STR_PARAM_DISABLE_NAME);
+	desc: string(STR_PARAM_DISABLE_DESC);
+	def_value: 0;
+		}
+	}
+}
 
 if (ttd_platform != PLATFORM_OPENTTD || (openttd_version < version_openttd(1, 13, 0, 0))) {
 		error(FATAL, REQUIRES_OPENTTD, string(STR_OPENTTD_VERSION));
@@ -380,10 +380,9 @@ template tmpl_gui_ttd() {
     tmpl_gui_icon( 64, 700)
     tmpl_gui_icon( 85, 700)
     tmpl_gui_icon(106, 700)
-
     [    1,  754,   64,   36,  -18,  -8]
-	[   66,  754,   62,   36,  -16,  -8]
-	[  129,  754,   56,   36,    0,   0]
+    [   66,  754,   62,   36,  -16,  -8]
+    [  129,  754,   56,   36,    0,   0]
     tmpl_gui_cursor(186, 754)
     tmpl_gui_cursor(219, 754)
     tmpl_gui_cursor(252, 754)
@@ -411,8 +410,7 @@ template ground_catenary(x, y) { [x, y, 64, 54, -31, -23] }
 template tmpl_catenary_combinations() {
     ground_catenary(  1,  1)
     ground_catenary( 66,  1)
-
-	ground_catenary(131,  1)
+    ground_catenary(131,  1)
     ground_catenary(196,  1)
     ground_catenary(261,  1)
     ground_catenary(326,  1)
@@ -421,7 +419,7 @@ template tmpl_catenary_combinations() {
 template tmpl_catenary_corners() {
     ground_catenary(  1, 58)
     ground_catenary( 66, 58)
-	ground_catenary(131, 58)
+    ground_catenary(131, 58)
     ground_catenary(196, 58)
 }
 template tmpl_catenary_slopes() {
@@ -433,29 +431,29 @@ template tmpl_catenary_slopes() {
 template tmpl_catenary_dead_ends() {
     ground_catenary(  1,113)
     ground_catenary( 66,113)
-	ground_catenary(131,113)
+    ground_catenary(131,113)
     ground_catenary(196,113)
 }
 template tmpl_catenary_tunnels() {
     ground_catenary(261,113)
     ground_catenary(326,113)
     ground_catenary(391,113)
-	ground_catenary(456,113)
+    ground_catenary(456,113)
 }
 template tmpl_catenary_bridge() {
     ground_catenary(  1,168)
     ground_catenary( 66,168)
-	ground_catenary(131,168)
-	[    196,  168,	  64,	46,	  -31,	-23]
-	[	 261,  168,	  64,	46,	  -31,	-23]
+    ground_catenary(131,168)
+    [    196,  168,	  64,	46,	  -31,	-23]
+    [	 261,  168,	  64,	46,	  -31,	-23]
     ground_catenary(326,168)
 }
 template tmpl_catenary() {
     tmpl_catenary_combinations()
-	tmpl_catenary_corners()
-	tmpl_catenary_slopes()
-	tmpl_catenary_dead_ends()
-	tmpl_catenary_tunnels()
+    tmpl_catenary_corners()
+    tmpl_catenary_slopes()
+    tmpl_catenary_dead_ends()
+    tmpl_catenary_tunnels()
     tmpl_catenary_bridge()
 }
 //==================================================================================================================================
@@ -484,7 +482,7 @@ switch(FEAT_ROADTYPES, SELF, switch_ORD0_underlay_1, terrain_type) {							//UND
     TILETYPE_SNOW: snow_ORD0_underlay_1;
     normal_ORD0_underlay_1;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD0_underlay, town_zone) {									//UNDERLAY
+switch(FEAT_ROADTYPES, SELF, switch_ORD0_underlay, town_zone) {								//UNDERLAY
 	TOWNZONE_EDGE: switch_ORD0_underlay_0;
 	switch_ORD0_underlay_1;
 }
@@ -495,7 +493,7 @@ spriteset(normal_ORD0_bridge, "gfx/R_ORD0.png") {
 spriteset(snow_ORD0_bridge, "gfx/R_ORD0.png") {
     tmpl_bridge_surfaces(414)
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD0_bridge, terrain_type) {								//BRIDGE
+switch(FEAT_ROADTYPES, SELF, switch_ORD0_bridge, terrain_type) {							//BRIDGE
     TILETYPE_SNOW: snow_ORD0_bridge;
     normal_ORD0_bridge;
 }
@@ -506,7 +504,7 @@ spriteset(normal_ORD0_depots, "gfx/R_ORD0.png") {
 spriteset(snow_ORD0_depots, "gfx/R_ORD0.png") {
     tmpl_depot(414)
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD0_depots, terrain_type) {								//DEPOT
+switch(FEAT_ROADTYPES, SELF, switch_ORD0_depots, terrain_type) {							//DEPOT
     TILETYPE_SNOW: snow_ORD0_depots;
     normal_ORD0_depots;
 }
@@ -517,7 +515,7 @@ spriteset(normal_ORD0_roadstop, "gfx/R_ORD0.png") {
 spriteset(snow_ORD0_roadstop, "gfx/R_ORD0.png") {
     tmpl_roadstop(276)
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD0_roadstops, terrain_type) {								//ROADSTOP
+switch(FEAT_ROADTYPES, SELF, switch_ORD0_roadstops, terrain_type) {							//ROADSTOP
     TILETYPE_SNOW: snow_ORD0_roadstop;
     normal_ORD0_roadstop;
 }
@@ -542,12 +540,12 @@ switch(FEAT_ROADTYPES, SELF, switch_ORD0_tunnels_1, terrain_type) {
     TILETYPE_SNOW: snow_ORD0_tunnels_1;
     normal_ORD0_tunnels_1;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD0_tunnels, town_zone) {									//TUNNELS
+switch(FEAT_ROADTYPES, SELF, switch_ORD0_tunnels, town_zone) {								//TUNNELS
 	TOWNZONE_EDGE: switch_ORD0_tunnels_0;
 	switch_ORD0_tunnels_1;
 }
 
-spriteset(ORD0_gui_UGUI, "gfx/R_ORD0.png") {													//GUI						
+spriteset(ORD0_gui_UGUI, "gfx/R_ORD0.png") {										//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(ORD0_gui_opengfx, "gfx/R_ORD0.png") {
@@ -556,7 +554,7 @@ spriteset(ORD0_gui_opengfx, "gfx/R_ORD0.png") {
 spriteset(ORD0_gui_ttd, "gfx/R_ORD0.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_ORD0_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_ORD0_gui, param_gui) {								//GUI
     1: ORD0_gui_opengfx;
     2: ORD0_gui_UGUI;
 	ORD0_gui_ttd;
@@ -574,7 +572,7 @@ switch(FEAT_ROADTYPES, SELF, switch_ORD1_underlay_0, terrain_type) {							//UND
     TILETYPE_SNOW: snow_ORD1_underlay;
     normal_ORD1_underlay;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD1_underlay, town_zone) {									//UNDERLAY
+switch(FEAT_ROADTYPES, SELF, switch_ORD1_underlay, town_zone) {								//UNDERLAY
 	TOWNZONE_EDGE: switch_ORD1_underlay_0;
 	switch_ORD0_underlay_1;
 }
@@ -585,7 +583,7 @@ spriteset(normal_ORD1_depots, "gfx/R_ORD1.png") {
 spriteset(snow_ORD1_depots, "gfx/R_ORD1.png") {
     tmpl_depot(414)
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD1_depots, terrain_type) {								//DEPOT
+switch(FEAT_ROADTYPES, SELF, switch_ORD1_depots, terrain_type) {							//DEPOT
     TILETYPE_SNOW: snow_ORD1_depots;
     normal_ORD1_depots;
 }
@@ -600,12 +598,12 @@ switch(FEAT_ROADTYPES, SELF, switch_ORD1_tunnels_0, terrain_type) {
     TILETYPE_SNOW: snow_ORD1_tunnels;
     normal_ORD1_tunnels;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD1_tunnels, town_zone) {									//TUNNELS
+switch(FEAT_ROADTYPES, SELF, switch_ORD1_tunnels, town_zone) {								//TUNNELS
 	TOWNZONE_EDGE: switch_ORD1_tunnels_0;
 	switch_ORD0_tunnels_1;
 }
 
-spriteset(ORD1_gui_UGUI, "gfx/R_ORD1.png") {													//GUI						
+spriteset(ORD1_gui_UGUI, "gfx/R_ORD1.png") {										//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(ORD1_gui_opengfx, "gfx/R_ORD1.png") {
@@ -614,7 +612,7 @@ spriteset(ORD1_gui_opengfx, "gfx/R_ORD1.png") {
 spriteset(ORD1_gui_ttd, "gfx/R_ORD1.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_ORD1_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_ORD1_gui, param_gui) {								//GUI
     1: ORD1_gui_opengfx;
     2: ORD1_gui_UGUI;
 	ORD1_gui_ttd;
@@ -632,7 +630,7 @@ switch(FEAT_ROADTYPES, SELF, switch_ORD2_underlay_0, terrain_type) {
     TILETYPE_SNOW: snow_ORD2_underlay;
     normal_ORD2_underlay;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD2_underlay, town_zone) {									//UNDERLAY
+switch(FEAT_ROADTYPES, SELF, switch_ORD2_underlay, town_zone) {								//UNDERLAY
 	TOWNZONE_EDGE: switch_ORD2_underlay_0;
 	switch_ORD0_underlay_1;
 }
@@ -643,7 +641,7 @@ spriteset(normal_ORD2_depots, "gfx/R_ORD2.png") {
 spriteset(snow_ORD2_depots, "gfx/R_ORD2.png") {
     tmpl_depot(414)
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD2_depots, terrain_type) {								//DEPOT
+switch(FEAT_ROADTYPES, SELF, switch_ORD2_depots, terrain_type) {							//DEPOT
     TILETYPE_SNOW: snow_ORD2_depots;
     normal_ORD2_depots;
 }
@@ -654,7 +652,7 @@ spriteset(normal_ORD2_roadstop, "gfx/R_ORD2.png") {
 spriteset(snow_ORD2_roadstop, "gfx/R_ORD2.png") {
     tmpl_roadstop(276)
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD2_roadstops, terrain_type) {								//ROADSTOP
+switch(FEAT_ROADTYPES, SELF, switch_ORD2_roadstops, terrain_type) {							//ROADSTOP
     TILETYPE_SNOW: snow_ORD2_roadstop;
     normal_ORD2_roadstop;
 }
@@ -669,12 +667,12 @@ switch(FEAT_ROADTYPES, SELF, switch_ORD2_tunnels_0, terrain_type) {
     TILETYPE_SNOW: snow_ORD2_tunnels;
     normal_ORD2_tunnels;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD2_tunnels, town_zone) {									//TUNNELS
+switch(FEAT_ROADTYPES, SELF, switch_ORD2_tunnels, town_zone) {								//TUNNELS
 	TOWNZONE_EDGE: switch_ORD2_tunnels_0;
 	switch_ORD0_tunnels_1;
 }
 
-spriteset(ORD2_gui_UGUI, "gfx/R_ORD2.png") {													//GUI						
+spriteset(ORD2_gui_UGUI, "gfx/R_ORD2.png") {										//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(ORD2_gui_opengfx, "gfx/R_ORD2.png") {
@@ -683,7 +681,7 @@ spriteset(ORD2_gui_opengfx, "gfx/R_ORD2.png") {
 spriteset(ORD2_gui_ttd, "gfx/R_ORD2.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_ORD2_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_ORD2_gui, param_gui) {								//GUI
     1: ORD2_gui_opengfx;
     2: ORD2_gui_UGUI;
 	ORD2_gui_ttd;
@@ -711,7 +709,7 @@ switch(FEAT_ROADTYPES, SELF, switch_ORD3_underlay_1, terrain_type) {
     TILETYPE_SNOW: snow_ORD3_underlay_1;
     normal_ORD3_underlay_1;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD3_underlay, town_zone) {									//UNDERLAY TOWNZONE
+switch(FEAT_ROADTYPES, SELF, switch_ORD3_underlay, town_zone) {								//UNDERLAY TOWNZONE
 	TOWNZONE_EDGE: switch_ORD3_underlay_0;
 	switch_ORD3_underlay_1;
 }
@@ -722,7 +720,7 @@ spriteset(normal_ORD3_bridge, "gfx/R_ORD3.png") {
 spriteset(snow_ORD3_bridge, "gfx/R_ORD3.png") {
     tmpl_bridge_surfaces(414)
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD3_bridge, terrain_type) {								//BRIDGE
+switch(FEAT_ROADTYPES, SELF, switch_ORD3_bridge, terrain_type) {							//BRIDGE
     TILETYPE_SNOW: snow_ORD3_bridge;
     normal_ORD3_bridge;
 }
@@ -733,7 +731,7 @@ spriteset(normal_ORD3_depots, "gfx/R_ORD3.png") {
 spriteset(snow_ORD3_depots, "gfx/R_ORD3.png") {
     tmpl_depot(414)
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD3_depots, terrain_type) {								//DEPOT
+switch(FEAT_ROADTYPES, SELF, switch_ORD3_depots, terrain_type) {							//DEPOT
     TILETYPE_SNOW: snow_ORD3_depots;
     normal_ORD3_depots;
 }
@@ -744,7 +742,7 @@ spriteset(normal_ORD3_roadstop, "gfx/R_ORD3.png") {
 spriteset(snow_ORD3_roadstop, "gfx/R_ORD3.png") {
     tmpl_roadstop(276)
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD3_roadstops, terrain_type) {								//ROADSTOP
+switch(FEAT_ROADTYPES, SELF, switch_ORD3_roadstops, terrain_type) {							//ROADSTOP
     TILETYPE_SNOW: snow_ORD3_roadstop;
     normal_ORD3_roadstop;
 }
@@ -769,12 +767,12 @@ switch(FEAT_ROADTYPES, SELF, switch_ORD3_tunnels_1, terrain_type) {
     TILETYPE_SNOW: snow_ORD3_tunnels_1;
     normal_ORD3_tunnels_1;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD3_tunnels, town_zone) {									//TUNNELS
+switch(FEAT_ROADTYPES, SELF, switch_ORD3_tunnels, town_zone) {								//TUNNELS
 	TOWNZONE_EDGE: switch_ORD3_tunnels_0;
 	switch_ORD3_tunnels_1;
 }
 
-spriteset(ORD3_gui_UGUI, "gfx/R_ORD3.png") {													//GUI						
+spriteset(ORD3_gui_UGUI, "gfx/R_ORD3.png") {										//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(ORD3_gui_opengfx, "gfx/R_ORD3.png") {
@@ -783,7 +781,7 @@ spriteset(ORD3_gui_opengfx, "gfx/R_ORD3.png") {
 spriteset(ORD3_gui_ttd, "gfx/R_ORD3.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_ORD3_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_ORD3_gui, param_gui) {								//GUI
     1: ORD3_gui_opengfx;
     2: ORD3_gui_UGUI;
 	ORD3_gui_ttd;
@@ -811,7 +809,7 @@ switch(FEAT_ROADTYPES, SELF, switch_ORD4_underlay_1, terrain_type) {
     TILETYPE_SNOW: snow_ORD4_underlay_1;
     normal_ORD4_underlay_1;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD4_underlay, town_zone) {									//UNDERLAY TOWNZONE
+switch(FEAT_ROADTYPES, SELF, switch_ORD4_underlay, town_zone) {								//UNDERLAY TOWNZONE
 	TOWNZONE_EDGE: switch_ORD4_underlay_0;
 	switch_ORD4_underlay_1;
 }
@@ -822,7 +820,7 @@ spriteset(normal_ORD4_bridge, "gfx/R_ORD4.png") {
 spriteset(snow_ORD4_bridge, "gfx/R_ORD4.png") {
     tmpl_bridge_surfaces(414)
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD4_bridge, terrain_type) {								//BRIDGE
+switch(FEAT_ROADTYPES, SELF, switch_ORD4_bridge, terrain_type) {							//BRIDGE
     TILETYPE_SNOW: snow_ORD4_bridge;
     normal_ORD4_bridge;
 }
@@ -833,7 +831,7 @@ spriteset(normal_ORD4_depots, "gfx/R_ORD4.png") {
 spriteset(snow_ORD4_depots, "gfx/R_ORD4.png") {
     tmpl_depot(414)
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD4_depots, terrain_type) {								//DEPOT
+switch(FEAT_ROADTYPES, SELF, switch_ORD4_depots, terrain_type) {							//DEPOT
     TILETYPE_SNOW: snow_ORD4_depots;
     normal_ORD4_depots;
 }
@@ -844,7 +842,7 @@ spriteset(normal_ORD4_roadstop, "gfx/R_ORD4.png") {
 spriteset(snow_ORD4_roadstop, "gfx/R_ORD4.png") {
     tmpl_roadstop(276)
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD4_roadstops, terrain_type) {								//ROADSTOP
+switch(FEAT_ROADTYPES, SELF, switch_ORD4_roadstops, terrain_type) {							//ROADSTOP
     TILETYPE_SNOW: snow_ORD4_roadstop;
     normal_ORD4_roadstop;
 }
@@ -869,12 +867,12 @@ switch(FEAT_ROADTYPES, SELF, switch_ORD4_tunnels_1, terrain_type) {
     TILETYPE_SNOW: snow_ORD4_tunnels_1;
     normal_ORD4_tunnels_1;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ORD4_tunnels, town_zone) {									//TUNNELS
+switch(FEAT_ROADTYPES, SELF, switch_ORD4_tunnels, town_zone) {								//TUNNELS
 	TOWNZONE_EDGE: switch_ORD4_tunnels_0;
 	switch_ORD4_tunnels_1;
 }
 
-spriteset(ORD4_gui_UGUI, "gfx/R_ORD4.png") {													//GUI						
+spriteset(ORD4_gui_UGUI, "gfx/R_ORD4.png") {										//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(ORD4_gui_opengfx, "gfx/R_ORD4.png") {
@@ -883,7 +881,7 @@ spriteset(ORD4_gui_opengfx, "gfx/R_ORD4.png") {
 spriteset(ORD4_gui_ttd, "gfx/R_ORD4.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_ORD4_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_ORD4_gui, param_gui) {								//GUI
     1: ORD4_gui_opengfx;
     2: ORD4_gui_UGUI;
 	ORD4_gui_ttd;
@@ -911,7 +909,7 @@ switch(FEAT_ROADTYPES, SELF, switch_SRD0_underlay_1, terrain_type) {
     TILETYPE_SNOW: snow_SRD0_underlay_1;
     normal_SRD0_underlay_1;
 }
-switch(FEAT_ROADTYPES, SELF, switch_SRD0_underlay, town_zone) {									//UNDERLAY TOWNZONE
+switch(FEAT_ROADTYPES, SELF, switch_SRD0_underlay, town_zone) {								//UNDERLAY TOWNZONE
 	TOWNZONE_EDGE: switch_SRD0_underlay_0;
 	switch_SRD0_underlay_1;
 }
@@ -922,7 +920,7 @@ spriteset(normal_SRD0_bridge, "gfx/R_SRD0.png") {
 spriteset(snow_SRD0_bridge, "gfx/R_SRD0.png") {
     tmpl_bridge_surfaces(414)
 }
-switch(FEAT_ROADTYPES, SELF, switch_SRD0_bridge, terrain_type) {								//BRIDGE
+switch(FEAT_ROADTYPES, SELF, switch_SRD0_bridge, terrain_type) {							//BRIDGE
     TILETYPE_SNOW: snow_SRD0_bridge;
     normal_SRD0_bridge;
 }
@@ -933,7 +931,7 @@ spriteset(normal_SRD0_depots, "gfx/R_SRD0.png") {
 spriteset(snow_SRD0_depots, "gfx/R_SRD0.png") {
     tmpl_depot(414)
 }
-switch(FEAT_ROADTYPES, SELF, switch_SRD0_depots, terrain_type) {								//DEPOT
+switch(FEAT_ROADTYPES, SELF, switch_SRD0_depots, terrain_type) {							//DEPOT
     TILETYPE_SNOW: snow_SRD0_depots;
     normal_SRD0_depots;
 }
@@ -944,7 +942,7 @@ spriteset(normal_SRD0_roadstop, "gfx/R_SRD0.png") {
 spriteset(snow_SRD0_roadstop, "gfx/R_SRD0.png") {
     tmpl_roadstop(276)
 }
-switch(FEAT_ROADTYPES, SELF, switch_SRD0_roadstops, terrain_type) {								//ROADSTOP
+switch(FEAT_ROADTYPES, SELF, switch_SRD0_roadstops, terrain_type) {							//ROADSTOP
     TILETYPE_SNOW: snow_SRD0_roadstop;
     normal_SRD0_roadstop;
 }
@@ -969,12 +967,12 @@ switch(FEAT_ROADTYPES, SELF, switch_SRD0_tunnels_1, terrain_type) {
     TILETYPE_SNOW: snow_SRD0_tunnels_1;
     normal_SRD0_tunnels_1;
 }
-switch(FEAT_ROADTYPES, SELF, switch_SRD0_tunnels, town_zone) {									//TUNNELS
+switch(FEAT_ROADTYPES, SELF, switch_SRD0_tunnels, town_zone) {								//TUNNELS
 	TOWNZONE_EDGE: switch_SRD0_tunnels_0;
 	switch_SRD0_tunnels_1;
 }
 
-spriteset(SRD0_gui_UGUI, "gfx/R_SRD0.png") {													//GUI						
+spriteset(SRD0_gui_UGUI, "gfx/R_SRD0.png") {										//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(SRD0_gui_opengfx, "gfx/R_SRD0.png") {
@@ -983,7 +981,7 @@ spriteset(SRD0_gui_opengfx, "gfx/R_SRD0.png") {
 spriteset(SRD0_gui_ttd, "gfx/R_SRD0.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_SRD0_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_SRD0_gui, param_gui) {								//GUI
     1: SRD0_gui_opengfx;
     2: SRD0_gui_UGUI;
 	SRD0_gui_ttd;
@@ -1011,7 +1009,7 @@ switch(FEAT_ROADTYPES, SELF, switch_SRD1_underlay_1, terrain_type) {
     TILETYPE_SNOW: snow_SRD1_underlay_1;
     normal_SRD1_underlay_1;
 }
-switch(FEAT_ROADTYPES, SELF, switch_SRD1_underlay, town_zone) {									//UNDERLAY TOWNZONE
+switch(FEAT_ROADTYPES, SELF, switch_SRD1_underlay, town_zone) {								//UNDERLAY TOWNZONE
 	TOWNZONE_EDGE: switch_SRD1_underlay_0;
 	switch_SRD1_underlay_1;
 }
@@ -1022,7 +1020,7 @@ spriteset(normal_SRD1_bridge, "gfx/R_SRD1.png") {
 spriteset(snow_SRD1_bridge, "gfx/R_SRD1.png") {
     tmpl_bridge_surfaces(414)
 }
-switch(FEAT_ROADTYPES, SELF, switch_SRD1_bridge, terrain_type) {								//BRIDGE
+switch(FEAT_ROADTYPES, SELF, switch_SRD1_bridge, terrain_type) {							//BRIDGE
     TILETYPE_SNOW: snow_SRD1_bridge;
     normal_SRD1_bridge;
 }
@@ -1074,7 +1072,7 @@ switch(FEAT_ROADTYPES, SELF, switch_SRD1_tunnels, town_zone) {									//TUNNELS
 	switch_SRD1_tunnels_1;
 }
 
-spriteset(SRD1_gui_UGUI, "gfx/R_SRD1.png") {													//GUI						
+spriteset(SRD1_gui_UGUI, "gfx/R_SRD1.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(SRD1_gui_opengfx, "gfx/R_SRD1.png") {
@@ -1083,7 +1081,7 @@ spriteset(SRD1_gui_opengfx, "gfx/R_SRD1.png") {
 spriteset(SRD1_gui_ttd, "gfx/R_SRD1.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_SRD1_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_SRD1_gui, param_gui) {									//GUI
     1: SRD1_gui_opengfx;
     2: SRD1_gui_UGUI;
 	SRD1_gui_ttd;
@@ -1174,7 +1172,7 @@ switch(FEAT_ROADTYPES, SELF, switch_SRD2_tunnels, town_zone) {									//TUNNELS
 	switch_SRD2_tunnels_1;
 }
 
-spriteset(SRD2_gui_UGUI, "gfx/R_SRD2.png") {													//GUI						
+spriteset(SRD2_gui_UGUI, "gfx/R_SRD2.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(SRD2_gui_opengfx, "gfx/R_SRD2.png") {
@@ -1183,7 +1181,7 @@ spriteset(SRD2_gui_opengfx, "gfx/R_SRD2.png") {
 spriteset(SRD2_gui_ttd, "gfx/R_SRD2.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_SRD2_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_SRD2_gui, param_gui) {									//GUI
     1: SRD2_gui_opengfx;
     2: SRD2_gui_UGUI;
 	SRD2_gui_ttd;
@@ -1260,7 +1258,7 @@ switch(FEAT_ROADTYPES, SELF, switch_ARD0_tunnels, town_zone) {									//TUNNELS
 	switch_ARD0_tunnels_1;
 }
 
-spriteset(ARD0_gui_UGUI, "gfx/R_ARD0.png") {													//GUI						
+spriteset(ARD0_gui_UGUI, "gfx/R_ARD0.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(ARD0_gui_opengfx, "gfx/R_ARD0.png") {
@@ -1269,7 +1267,7 @@ spriteset(ARD0_gui_opengfx, "gfx/R_ARD0.png") {
 spriteset(ARD0_gui_ttd, "gfx/R_ARD0.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_ARD0_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_ARD0_gui, param_gui) {									//GUI
     1: ARD0_gui_opengfx;
     2: ARD0_gui_UGUI;
 	ARD0_gui_ttd;
@@ -1293,7 +1291,7 @@ switch(FEAT_ROADTYPES, SELF, switch_ARD1_underlay, terrain_type) {								//UNDE
     TILETYPE_SNOW: snow_ARD1_underlay;
     normal_ARD1_underlay;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ARD1_underlay_A, terrain_type) {							//UNDERLAY
+switch(FEAT_ROADTYPES, SELF, switch_ARD1_underlay_A, terrain_type) {								//UNDERLAY
     TILETYPE_SNOW: snow_ARD1_underlay_A;
     normal_ARD1_underlay_A;
 }
@@ -1389,11 +1387,11 @@ switch(FEAT_ROADTYPES, SELF, switch_ARD1_tunnels_1, terrain_type) {
     TILETYPE_SNOW: snow_ARD1_tunnels_1;
     normal_ARD1_tunnels_1;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ARD1_tunnels_style_0, param_style ) {						//TUNNELS
+switch(FEAT_ROADTYPES, SELF, switch_ARD1_tunnels_style_0, param_style ) {							//TUNNELS
 	1: switch_ARD1_tunnels_A_0;
 	switch_ARD1_tunnels_0;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ARD1_tunnels_style_1, param_style ) {						//TUNNELS
+switch(FEAT_ROADTYPES, SELF, switch_ARD1_tunnels_style_1, param_style ) {							//TUNNELS
 	1: switch_ARD1_tunnels_A_1;
 	switch_ARD1_tunnels_1;
 }
@@ -1402,7 +1400,7 @@ switch(FEAT_ROADTYPES, SELF, switch_ARD1_tunnels, town_zone) {									//TUNNELS
 	switch_ARD1_tunnels_style_1;
 }
 
-spriteset(ARD1_gui_UGUI, "gfx/R_ARD1.png") {													//GUI						
+spriteset(ARD1_gui_UGUI, "gfx/R_ARD1.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(ARD1_gui_opengfx, "gfx/R_ARD1.png") {
@@ -1411,7 +1409,7 @@ spriteset(ARD1_gui_opengfx, "gfx/R_ARD1.png") {
 spriteset(ARD1_gui_ttd, "gfx/R_ARD1.png") {
     tmpl_gui_ttd()
 }
-spriteset(ARD1_gui_UGUI_A, "gfx/R_ARD1_A.png") {												//GUI						
+spriteset(ARD1_gui_UGUI_A, "gfx/R_ARD1_A.png") {										//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(ARD1_gui_opengfx_A, "gfx/R_ARD1_A.png") {
@@ -1432,7 +1430,7 @@ switch(FEAT_ROADTYPES, SELF, switch_ARD1_gui_UGUI, param_style) {
 	1: ARD1_gui_UGUI_A;
 	ARD1_gui_UGUI;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ARD1_gui, param_gui) {										//GUI
+switch(FEAT_ROADTYPES, SELF, switch_ARD1_gui, param_gui) {									//GUI
     1: switch_ARD1_gui_opengfx;
     2: switch_ARD1_gui_UGUI;
 	switch_ARD1_gui_ttd;
@@ -1523,7 +1521,7 @@ switch(FEAT_ROADTYPES, SELF, switch_ARD2_tunnels, town_zone) {									//TUNNELS
 	switch_ARD2_tunnels_1;
 }
 
-spriteset(ARD2_gui_UGUI, "gfx/R_ARD2.png") {													//GUI						
+spriteset(ARD2_gui_UGUI, "gfx/R_ARD2.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(ARD2_gui_opengfx, "gfx/R_ARD2.png") {
@@ -1532,7 +1530,7 @@ spriteset(ARD2_gui_opengfx, "gfx/R_ARD2.png") {
 spriteset(ARD2_gui_ttd, "gfx/R_ARD2.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_ARD2_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_ARD2_gui, param_gui) {									//GUI
     1: ARD2_gui_opengfx;
     2: ARD2_gui_UGUI;
 	ARD2_gui_ttd;
@@ -1580,11 +1578,11 @@ switch(FEAT_ROADTYPES, SELF, switch_ARD3_underlay_A_1, terrain_type) {
     TILETYPE_SNOW: snow_ARD3_underlay_A_1;
     normal_ARD3_underlay_A_1;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ARD3_underlay_style_0, param_style) {						//UNDERLAY
+switch(FEAT_ROADTYPES, SELF, switch_ARD3_underlay_style_0, param_style) {							//UNDERLAY
 	1: switch_ARD3_underlay_A_0;
 	switch_ARD3_underlay_0;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ARD3_underlay_style_1, param_style) {						//UNDERLAY
+switch(FEAT_ROADTYPES, SELF, switch_ARD3_underlay_style_1, param_style) {							//UNDERLAY
 	1: switch_ARD3_underlay_A_1;
 	switch_ARD3_underlay_1;
 }
@@ -1613,7 +1611,7 @@ switch(FEAT_ROADTYPES, SELF, switch_ARD3_bridge_A, terrain_type) {
     TILETYPE_SNOW: snow_ARD3_bridge_A;
     normal_ARD3_bridge_A;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ARD3_bridge_style, param_style) {							//BRIDGE
+switch(FEAT_ROADTYPES, SELF, switch_ARD3_bridge_style, param_style) {								//BRIDGE
 	1:	switch_ARD3_bridge_A;
 	switch_ARD3_bridge;
 }
@@ -1680,11 +1678,11 @@ switch(FEAT_ROADTYPES, SELF, switch_ARD3_tunnels_1, terrain_type) {
     TILETYPE_SNOW: snow_ARD3_tunnels_1;
     normal_ARD3_tunnels_1;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ARD3_tunnels_style_0, param_style ) {						//TUNNELS
+switch(FEAT_ROADTYPES, SELF, switch_ARD3_tunnels_style_0, param_style ) {							//TUNNELS
 	1: switch_ARD3_tunnels_A_0;
 	switch_ARD3_tunnels_0;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ARD3_tunnels_style_1, param_style ) {						//TUNNELS
+switch(FEAT_ROADTYPES, SELF, switch_ARD3_tunnels_style_1, param_style ) {							//TUNNELS
 	1: switch_ARD3_tunnels_A_1;
 	switch_ARD3_tunnels_1;
 }
@@ -1693,7 +1691,7 @@ switch(FEAT_ROADTYPES, SELF, switch_ARD3_tunnels, town_zone) {									//TUNNELS
 	switch_ARD3_tunnels_style_1;
 }
 
-spriteset(ARD3_gui_UGUI, "gfx/R_ARD3.png") {													//GUI						
+spriteset(ARD3_gui_UGUI, "gfx/R_ARD3.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(ARD3_gui_opengfx, "gfx/R_ARD3.png") {
@@ -1702,7 +1700,7 @@ spriteset(ARD3_gui_opengfx, "gfx/R_ARD3.png") {
 spriteset(ARD3_gui_ttd, "gfx/R_ARD3.png") {
     tmpl_gui_ttd()
 }
-spriteset(ARD3_gui_UGUI_A, "gfx/R_ARD3_A.png") {												//GUI						
+spriteset(ARD3_gui_UGUI_A, "gfx/R_ARD3_A.png") {										//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(ARD3_gui_opengfx_A, "gfx/R_ARD3_A.png") {
@@ -1723,7 +1721,7 @@ switch(FEAT_ROADTYPES, SELF, switch_ARD3_gui_UGUI, param_style) {
 	1: ARD3_gui_UGUI_A;
 	ARD3_gui_UGUI;
 }
-switch (FEAT_ROADTYPES, SELF, switch_ARD3_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_ARD3_gui, param_gui) {									//GUI
     1: switch_ARD3_gui_opengfx;
     2: switch_ARD3_gui_UGUI;
 	switch_ARD3_gui_ttd;
@@ -1786,7 +1784,7 @@ switch(FEAT_ROADTYPES, SELF, switch_ARD4_tunnels, terrain_type) {								//TUNNE
 	normal_ARD4_tunnels;
 }
 
-spriteset(ARD4_gui_UGUI, "gfx/R_ARD4.png") {													//GUI						
+spriteset(ARD4_gui_UGUI, "gfx/R_ARD4.png") {											/GUI						
     tmpl_gui_UGUI()
 }
 spriteset(ARD4_gui_opengfx, "gfx/R_ARD4.png") {
@@ -1795,13 +1793,13 @@ spriteset(ARD4_gui_opengfx, "gfx/R_ARD4.png") {
 spriteset(ARD4_gui_ttd, "gfx/R_ARD4.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_ARD4_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_ARD4_gui, param_gui) {									//GUI
     1: ARD4_gui_opengfx;
     2: ARD4_gui_UGUI;
 	ARD4_gui_ttd;
 }
 //===========================================================
-//		ASPHALT ROAD W/ LINE AND STRIPES (ARD5)													//TRAFFIC_SIDE_LEFT
+//		ASPHALT ROAD W/ LINE AND STRIPES (ARD5)										//TRAFFIC_SIDE_LEFT
 //===========================================================
 spriteset(normal_left_ARD5_underlay_0, "gfx/R_ARD5_1.png") {
     tmpl_underlay_overlay(1)
@@ -1923,11 +1921,11 @@ switch(FEAT_ROADTYPES, SELF, right_ARD5_underlay_style_1, param_style) {
 	1: right_ARD5_underlay_A_1;
 	right_ARD5_underlay_1;
 }
-switch(FEAT_ROADTYPES, SELF, traffic_side_ARD5_underlay_0, traffic_side) {						// UNDERLAY  TRAFFIC_SIDE
+switch(FEAT_ROADTYPES, SELF, traffic_side_ARD5_underlay_0, traffic_side) {							// UNDERLAY  TRAFFIC_SIDE
 	TRAFFIC_SIDE_LEFT: left_ARD5_underlay_style_0;
 	right_ARD5_underlay_style_0;
 }
-switch(FEAT_ROADTYPES, SELF, traffic_side_ARD5_underlay_1, traffic_side) {						// UNDERLAY  TRAFFIC_SIDE
+switch(FEAT_ROADTYPES, SELF, traffic_side_ARD5_underlay_1, traffic_side) {							// UNDERLAY  TRAFFIC_SIDE
 	TRAFFIC_SIDE_LEFT: left_ARD5_underlay_style_1;
 	right_ARD5_underlay_style_1;
 }
@@ -2031,11 +2029,11 @@ switch(FEAT_ROADTYPES, SELF, switch_ARD5_tunnels_1, terrain_type) {
     TILETYPE_SNOW: snow_ARD5_tunnels_1;
     normal_ARD5_tunnels_1;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ARD5_tunnels_style_0, param_style ) {						//TUNNELS
+switch(FEAT_ROADTYPES, SELF, switch_ARD5_tunnels_style_0, param_style ) {							//TUNNELS
 	1: switch_ARD5_tunnels_A_0;
 	switch_ARD5_tunnels_0;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ARD5_tunnels_style_1, param_style ) {						//TUNNELS
+switch(FEAT_ROADTYPES, SELF, switch_ARD5_tunnels_style_1, param_style ) {							//TUNNELS
 	1: switch_ARD5_tunnels_A_1;
 	switch_ARD5_tunnels_1;
 }
@@ -2044,7 +2042,7 @@ switch(FEAT_ROADTYPES, SELF, switch_ARD5_tunnels, town_zone) {									//TUNNELS
 	switch_ARD5_tunnels_style_1;
 }
 
-spriteset(ARD5_gui_UGUI, "gfx/R_ARD5.png") {													//GUI						
+spriteset(ARD5_gui_UGUI, "gfx/R_ARD5.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(ARD5_gui_opengfx, "gfx/R_ARD5.png") {
@@ -2053,7 +2051,7 @@ spriteset(ARD5_gui_opengfx, "gfx/R_ARD5.png") {
 spriteset(ARD5_gui_ttd, "gfx/R_ARD5.png") {
     tmpl_gui_ttd()
 }
-spriteset(ARD5_gui_UGUI_A, "gfx/R_ARD5_A.png") {												//GUI						
+spriteset(ARD5_gui_UGUI_A, "gfx/R_ARD5_A.png") {										//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(ARD5_gui_opengfx_A, "gfx/R_ARD5_A.png") {
@@ -2074,7 +2072,7 @@ switch(FEAT_ROADTYPES, SELF, switch_ARD5_gui_UGUI, param_style) {
 	1: ARD5_gui_UGUI_A;
 	ARD5_gui_UGUI;
 }
-switch (FEAT_ROADTYPES, SELF, switch_ARD5_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_ARD5_gui, param_gui) {									//GUI
     1: switch_ARD5_gui_opengfx;
     2: switch_ARD5_gui_UGUI;
 	switch_ARD5_gui_ttd;
@@ -2088,7 +2086,7 @@ spriteset(left_WRD0_ubderlay_2, "gfx/R_WRD0_1.png") {
 spriteset(snow_left_WRD0_ubderlay_2, "gfx/R_WRD0_1.png") {
     tmpl_underlay_overlay(241)
 }
-switch(FEAT_ROADTYPES, SELF, switch_left_WRD0_ubderlay_2, terrain_type) {						//UNDERLAY LEFT
+switch(FEAT_ROADTYPES, SELF, switch_left_WRD0_ubderlay_2, terrain_type) {							//UNDERLAY LEFT
     TILETYPE_SNOW: snow_left_WRD0_ubderlay_2;
     left_WRD0_ubderlay_2;
 }
@@ -2115,7 +2113,7 @@ switch(FEAT_ROADTYPES, SELF, switch_right_WRD0_underlay_2, terrain_type) {
     TILETYPE_SNOW: snow_right_WRD0_underlay_2;
     right_WRD0_underlay_2;
 }
-switch(FEAT_ROADTYPES, SELF, switch_WRD0_underlay_2, traffic_side) {							//UNDERLAY TRAFFIC_SIDE
+switch(FEAT_ROADTYPES, SELF, switch_WRD0_underlay_2, traffic_side) {								//UNDERLAY TRAFFIC_SIDE
 	TRAFFIC_SIDE_LEFT: switch_left_WRD0_ubderlay_2;
 	switch_right_WRD0_underlay_2;
 }
@@ -2155,7 +2153,7 @@ switch(FEAT_ROADTYPES, SELF, switch_WRD0_depots_2, terrain_type) {								//DEPO
     TILETYPE_SNOW: snow_WRD0_depots_2;
     normal_WRD0_depots_2;
 }
-switch(FEAT_ROADTYPES, SELF, switch_WRD0_depots, max(build_date - date(1989,1,1),0)) {			//DEPOT BUILD_DATE
+switch(FEAT_ROADTYPES, SELF, switch_WRD0_depots, max(build_date - date(1989,1,1),0)) {						//DEPOT BUILD_DATE
 	0: switch_WRD0_depots_1;
 	switch_WRD0_depots_2;
 }
@@ -2176,11 +2174,11 @@ switch(FEAT_ROADTYPES, SELF, switch_WRD0_roadstop_1, terrain_type) {
     TILETYPE_SNOW: snow_WRD0_roadstop_1;
     normal_WRD0_roadstop_1;
 }
-switch(FEAT_ROADTYPES, SELF, switch_WRD0_roadstop_2, terrain_type) {							//ROADSTOP
+switch(FEAT_ROADTYPES, SELF, switch_WRD0_roadstop_2, terrain_type) {								//ROADSTOP
     TILETYPE_SNOW: snow_WRD0_roadstop_2;
     normal_WRD0_roadstop_2;
 }
-switch (FEAT_ROADTYPES, SELF, switch_WRD0_roadstops, current_year) {							//ROADSTOP CURRENT_YEAR
+switch (FEAT_ROADTYPES, SELF, switch_WRD0_roadstops, current_year) {								//ROADSTOP CURRENT_YEAR
     0..1979: switch_WRD0_roadstop_1;
     switch_WRD0_roadstop_2;
 }
@@ -2210,7 +2208,7 @@ switch (FEAT_ROADTYPES, SELF, switch_WRD0_tunnels, current_year) {								//TUNN
     switch_WRD0_tunnels_2;
 }
 
-spriteset(WRD0_gui_UGUI, "gfx/R_WRD0.png") {													//GUI						
+spriteset(WRD0_gui_UGUI, "gfx/R_WRD0.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(WRD0_gui_opengfx, "gfx/R_WRD0.png") {
@@ -2219,7 +2217,7 @@ spriteset(WRD0_gui_opengfx, "gfx/R_WRD0.png") {
 spriteset(WRD0_gui_ttd, "gfx/R_WRD0.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_WRD0_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_WRD0_gui, param_gui) {									//GUI
     1: WRD0_gui_opengfx;
     2: WRD0_gui_UGUI;
 	WRD0_gui_ttd;
@@ -2296,7 +2294,7 @@ switch(FEAT_ROADTYPES, SELF, switch_WRD1_tunnels, terrain_type) {								//TUNNE
 	normal_WRD1_tunnels;
 }
 
-spriteset(WRD1_gui_UGUI, "gfx/R_WRD1.png") {													//GUI						
+spriteset(WRD1_gui_UGUI, "gfx/R_WRD1.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(WRD1_gui_opengfx, "gfx/R_WRD1.png") {
@@ -2305,7 +2303,7 @@ spriteset(WRD1_gui_opengfx, "gfx/R_WRD1.png") {
 spriteset(WRD1_gui_ttd, "gfx/R_WRD1.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_WRD1_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_WRD1_gui, param_gui) {									//GUI
     1: WRD1_gui_opengfx;
     2: WRD1_gui_UGUI;
 	WRD1_gui_ttd;
@@ -2346,7 +2344,7 @@ switch(FEAT_ROADTYPES, SELF, switch_URD0_roadstops, terrain_type) {								//ROA
     normal_URD0_roadstop;
 }
 
-spriteset(URD0_gui_UGUI, "gfx/R_URD0.png") {													//GUI						
+spriteset(URD0_gui_UGUI, "gfx/R_URD0.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(URD0_gui_opengfx, "gfx/R_URD0.png") {
@@ -2355,7 +2353,7 @@ spriteset(URD0_gui_opengfx, "gfx/R_URD0.png") {
 spriteset(URD0_gui_ttd, "gfx/R_URD0.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_URD0_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_URD0_gui, param_gui) {									//GUI
     1: URD0_gui_opengfx;
     2: URD0_gui_UGUI;
 	URD0_gui_ttd;
@@ -2546,7 +2544,7 @@ switch(FEAT_ROADTYPES, SELF, switch_URD1_tunnels, town_zone) {									//TUNNELS
 	switch_ARD3_tunnels_style_1;
 }
 
-spriteset(URD1_gui_UGUI, "gfx/R_URD1.png") {													//GUI						
+spriteset(URD1_gui_UGUI, "gfx/R_URD1.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(URD1_gui_opengfx, "gfx/R_URD1.png") {
@@ -2555,7 +2553,7 @@ spriteset(URD1_gui_opengfx, "gfx/R_URD1.png") {
 spriteset(URD1_gui_ttd, "gfx/R_URD1.png") {
     tmpl_gui_ttd()
 }
-spriteset(URD1_gui_UGUI_A, "gfx/R_URD1_A.png") {												//GUI						
+spriteset(URD1_gui_UGUI_A, "gfx/R_URD1_A.png") {										//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(URD1_gui_opengfx_A, "gfx/R_URD1_A.png") {
@@ -2576,7 +2574,7 @@ switch(FEAT_ROADTYPES, SELF, switch_URD1_gui_UGUI, param_style) {
 	1: URD1_gui_UGUI_A;
 	URD1_gui_UGUI;
 }
-switch (FEAT_ROADTYPES, SELF, switch_URD1_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_URD1_gui, param_gui) {									//GUI
     1: switch_URD1_gui_opengfx;
     2: switch_URD1_gui_UGUI;
 	switch_URD1_gui_ttd;
@@ -2709,7 +2707,7 @@ switch(FEAT_ROADTYPES, SELF, switch_URD2_tunnels_style, param_style ) {
 	switch_URD2_tunnels;
 }
 
-spriteset(URD2_gui_UGUI, "gfx/R_URD2.png") {													//GUI						
+spriteset(URD2_gui_UGUI, "gfx/R_URD2.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(URD2_gui_opengfx, "gfx/R_URD2.png") {
@@ -2718,7 +2716,7 @@ spriteset(URD2_gui_opengfx, "gfx/R_URD2.png") {
 spriteset(URD2_gui_ttd, "gfx/R_URD2.png") {
     tmpl_gui_ttd()
 }
-spriteset(URD2_gui_UGUI_A, "gfx/R_URD2_A.png") {												//GUI						
+spriteset(URD2_gui_UGUI_A, "gfx/R_URD2_A.png") {										//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(URD2_gui_opengfx_A, "gfx/R_URD2_A.png") {
@@ -2739,7 +2737,7 @@ switch(FEAT_ROADTYPES, SELF, switch_URD2_gui_UGUI, param_style) {
 	1: URD2_gui_UGUI_A;
 	URD2_gui_UGUI;
 }
-switch (FEAT_ROADTYPES, SELF, switch_URD2_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_URD2_gui, param_gui) {									//GUI
     1: switch_URD2_gui_opengfx;
     2: switch_URD2_gui_UGUI;
 	switch_URD2_gui_ttd;
@@ -2802,7 +2800,7 @@ switch(FEAT_ROADTYPES, SELF, switch_DRD0_tunnels, terrain_type) {								//TUNNE
     normal_DRD0_tunnels;
 }
 
-spriteset(DRD0_gui_UGUI, "gfx/R_DRD0.png") {													//GUI						
+spriteset(DRD0_gui_UGUI, "gfx/R_DRD0.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(DRD0_gui_opengfx, "gfx/R_DRD0.png") {
@@ -2811,7 +2809,7 @@ spriteset(DRD0_gui_opengfx, "gfx/R_DRD0.png") {
 spriteset(DRD0_gui_ttd, "gfx/R_DRD0.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_DRD0_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_DRD0_gui, param_gui) {									//GUI
     1: DRD0_gui_opengfx;
     2: DRD0_gui_UGUI;
 	DRD0_gui_ttd;
@@ -2874,7 +2872,7 @@ switch(FEAT_ROADTYPES, SELF, switch_DRD1_tunnels, terrain_type) {								//TUNNE
 	normal_DRD1_tunnels;
 }
 
-spriteset(DRD1_gui_UGUI, "gfx/R_DRD1.png") {													//GUI						
+spriteset(DRD1_gui_UGUI, "gfx/R_DRD1.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(DRD1_gui_opengfx, "gfx/R_DRD1.png") {
@@ -2883,7 +2881,7 @@ spriteset(DRD1_gui_opengfx, "gfx/R_DRD1.png") {
 spriteset(DRD1_gui_ttd, "gfx/R_DRD1.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_DRD1_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_DRD1_gui, param_gui) {									//GUI
     1: DRD1_gui_opengfx;
     2: DRD1_gui_UGUI;
 	DRD1_gui_ttd;
@@ -2946,7 +2944,7 @@ switch(FEAT_ROADTYPES, SELF, switch_DRD2_tunnels, terrain_type) {								//TUNNE
 	normal_DRD2_tunnels;
 }
 
-spriteset(DRD2_gui_UGUI, "gfx/R_DRD2.png") {													//GUI						
+spriteset(DRD2_gui_UGUI, "gfx/R_DRD2.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(DRD2_gui_opengfx, "gfx/R_DRD2.png") {
@@ -2955,7 +2953,7 @@ spriteset(DRD2_gui_opengfx, "gfx/R_DRD2.png") {
 spriteset(DRD2_gui_ttd, "gfx/R_DRD2.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_DRD2_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_DRD2_gui, param_gui) {									//GUI
     1: DRD2_gui_opengfx;
     2: DRD2_gui_UGUI;
 	DRD2_gui_ttd;
@@ -2999,11 +2997,11 @@ switch(FEAT_ROADTYPES, SELF, switch_DRD3_roadstops, terrain_type) {								//ROA
     normal_DRD3_roadstop;
 }
 
-spriteset(switch_DRD3_tunnels, "gfx/R_DRD3.png") {												//TUNNELS
+spriteset(switch_DRD3_tunnels, "gfx/R_DRD3.png") {										//TUNNELS
     tmpl_tunnels(0,0)
 }
 
-spriteset(DRD3_gui_UGUI, "gfx/R_DRD3.png") {													//GUI						
+spriteset(DRD3_gui_UGUI, "gfx/R_DRD3.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(DRD3_gui_opengfx, "gfx/R_DRD3.png") {
@@ -3012,7 +3010,7 @@ spriteset(DRD3_gui_opengfx, "gfx/R_DRD3.png") {
 spriteset(DRD3_gui_ttd, "gfx/R_DRD3.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_DRD3_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_DRD3_gui, param_gui) {									//GUI
     1: DRD3_gui_opengfx;
     2: DRD3_gui_UGUI;
 	DRD3_gui_ttd;
@@ -3075,7 +3073,7 @@ switch(FEAT_ROADTYPES, SELF, switch_DRD4_tunnels, terrain_type) {								//TUNNE
 	normal_DRD4_tunnels;
 }
 
-spriteset(DRD4_gui_UGUI, "gfx/R_DRD4.png") {													//GUI						
+spriteset(DRD4_gui_UGUI, "gfx/R_DRD4.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(DRD4_gui_opengfx, "gfx/R_DRD4.png") {
@@ -3084,7 +3082,7 @@ spriteset(DRD4_gui_opengfx, "gfx/R_DRD4.png") {
 spriteset(DRD4_gui_ttd, "gfx/R_DRD4.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_DRD4_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_DRD4_gui, param_gui) {									//GUI
     1: DRD4_gui_opengfx;
     2: DRD4_gui_UGUI;
 	DRD4_gui_ttd;
@@ -3147,7 +3145,7 @@ switch(FEAT_ROADTYPES, SELF, switch_DRD5_tunnels, terrain_type) {								//TUNNE
 	normal_DRD5_tunnels;
 }
 
-spriteset(DRD5_gui_UGUI, "gfx/R_DRD5.png") {													//GUI						
+spriteset(DRD5_gui_UGUI, "gfx/R_DRD5.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(DRD5_gui_opengfx, "gfx/R_DRD5.png") {
@@ -3156,7 +3154,7 @@ spriteset(DRD5_gui_opengfx, "gfx/R_DRD5.png") {
 spriteset(DRD5_gui_ttd, "gfx/R_DRD5.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_DRD5_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_DRD5_gui, param_gui) {									//GUI
     1: DRD5_gui_opengfx;
     2: DRD5_gui_UGUI;
 	DRD5_gui_ttd;
@@ -3178,7 +3176,7 @@ switch(FEAT_ROADTYPES, SELF, switch_ELRD_depots, terrain_type) {								//DEPOT
     ELRD_depots;
 }
 
-spriteset(ELRD_gui_UGUI, "gfx/R_ELRD.png") {													//GUI						
+spriteset(ELRD_gui_UGUI, "gfx/R_ELRD.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(ELRD_gui_opengfx, "gfx/R_ELRD.png") {
@@ -3187,7 +3185,7 @@ spriteset(ELRD_gui_opengfx, "gfx/R_ELRD.png") {
 spriteset(ELRD_gui_ttd, "gfx/R_ELRD.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_ELRD_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_ELRD_gui, param_gui) {									//GUI
     1: ELRD_gui_opengfx;
     2: ELRD_gui_UGUI;
 	ELRD_gui_ttd;
@@ -3206,7 +3204,7 @@ switch(FEAT_ROADTYPES, SELF, switch_AER0_depots, terrain_type) {								//DEPOT
     AER0_depots;
 }
 
-spriteset(AER0_gui_UGUI, "gfx/R_AER0.png") {													//GUI						
+spriteset(AER0_gui_UGUI, "gfx/R_AER0.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(AER0_gui_opengfx, "gfx/R_AER0.png") {
@@ -3215,7 +3213,7 @@ spriteset(AER0_gui_opengfx, "gfx/R_AER0.png") {
 spriteset(AER0_gui_ttd, "gfx/R_AER0.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_AER0_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_AER0_gui, param_gui) {									//GUI
     1: AER0_gui_opengfx;
     2: AER0_gui_UGUI;
 	AER0_gui_ttd;
@@ -3234,7 +3232,7 @@ switch(FEAT_ROADTYPES, SELF, switch_AER1_depots, terrain_type) {								//DEPOT
     AER1_depots;
 }
 
-spriteset(AER1_gui_UGUI, "gfx/R_AER1.png") {													//GUI						
+spriteset(AER1_gui_UGUI, "gfx/R_AER1.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(AER1_gui_opengfx, "gfx/R_AER1.png") {
@@ -3243,7 +3241,7 @@ spriteset(AER1_gui_opengfx, "gfx/R_AER1.png") {
 spriteset(AER1_gui_ttd, "gfx/R_AER1.png") {
     tmpl_gui_ttd()
 }
-spriteset(AER1_gui_UGUI_A, "gfx/R_AER1_A.png") {												//GUI						
+spriteset(AER1_gui_UGUI_A, "gfx/R_AER1_A.png") {										//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(AER1_gui_opengfx_A, "gfx/R_AER1_A.png") {
@@ -3264,7 +3262,7 @@ switch(FEAT_ROADTYPES, SELF, switch_AER1_gui_UGUI, param_style) {
 	1: AER1_gui_UGUI_A;
 	AER1_gui_UGUI;
 }
-switch (FEAT_ROADTYPES, SELF, switch_AER1_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_AER1_gui, param_gui) {									//GUI
     1: switch_AER1_gui_opengfx;
     2: switch_AER1_gui_UGUI;
 	switch_AER1_gui_ttd;
@@ -3283,7 +3281,7 @@ switch(FEAT_ROADTYPES, SELF, switch_AER3_depots, terrain_type) {								//DEPOT
     AER3_depots;
 }
 
-spriteset(AER3_gui_UGUI, "gfx/R_AER3.png") {													//GUI						
+spriteset(AER3_gui_UGUI, "gfx/R_AER3.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(AER3_gui_opengfx, "gfx/R_AER3.png") {
@@ -3292,7 +3290,7 @@ spriteset(AER3_gui_opengfx, "gfx/R_AER3.png") {
 spriteset(AER3_gui_ttd, "gfx/R_AER3.png") {
     tmpl_gui_ttd()
 }
-spriteset(AER3_gui_UGUI_A, "gfx/R_AER3_A.png") {												//GUI						
+spriteset(AER3_gui_UGUI_A, "gfx/R_AER3_A.png") {										//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(AER3_gui_opengfx_A, "gfx/R_AER3_A.png") {
@@ -3313,7 +3311,7 @@ switch(FEAT_ROADTYPES, SELF, switch_AER3_gui_UGUI, param_style) {
 	1: AER3_gui_UGUI_A;
 	AER3_gui_UGUI;
 }
-switch (FEAT_ROADTYPES, SELF, switch_AER3_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_AER3_gui, param_gui) {									//GUI
     1: switch_AER3_gui_opengfx;
     2: switch_AER3_gui_UGUI;
 	switch_AER3_gui_ttd;
@@ -3332,7 +3330,7 @@ switch(FEAT_ROADTYPES, SELF, switch_AER5_depots, terrain_type) {								//DEPOT
     AER5_depots;
 }
 
-spriteset(AER5_gui_UGUI, "gfx/R_AER5.png") {													//GUI						
+spriteset(AER5_gui_UGUI, "gfx/R_AER5.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(AER5_gui_opengfx, "gfx/R_AER5.png") {
@@ -3341,7 +3339,7 @@ spriteset(AER5_gui_opengfx, "gfx/R_AER5.png") {
 spriteset(AER5_gui_ttd, "gfx/R_AER5.png") {
     tmpl_gui_ttd()
 }
-spriteset(AER5_gui_UGUI_A, "gfx/R_AER5_A.png") {												//GUI						
+spriteset(AER5_gui_UGUI_A, "gfx/R_AER5_A.png") {										//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(AER5_gui_opengfx_A, "gfx/R_AER5_A.png") {
@@ -3362,7 +3360,7 @@ switch(FEAT_ROADTYPES, SELF, switch_AER5_gui_UGUI, param_style) {
 	1: AER5_gui_UGUI_A;
 	AER5_gui_UGUI;
 }
-switch (FEAT_ROADTYPES, SELF, switch_AER5_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_AER5_gui, param_gui) {									//GUI
     1: switch_AER5_gui_opengfx;
     2: switch_AER5_gui_UGUI;
 	switch_AER5_gui_ttd;
@@ -3381,7 +3379,7 @@ switch(FEAT_ROADTYPES, SELF, switch_UER0_depots, terrain_type) {								//DEPOT
     UER0_depots;
 }
 
-spriteset(UER0_gui_UGUI, "gfx/R_UER0.png") {													//GUI						
+spriteset(UER0_gui_UGUI, "gfx/R_UER0.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(UER0_gui_opengfx, "gfx/R_UER0.png") {
@@ -3390,7 +3388,7 @@ spriteset(UER0_gui_opengfx, "gfx/R_UER0.png") {
 spriteset(UER0_gui_ttd, "gfx/R_UER0.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_UER0_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_UER0_gui, param_gui) {									//GUI
     1: UER0_gui_opengfx;
     2: UER0_gui_UGUI;
 	UER0_gui_ttd;
@@ -3409,7 +3407,7 @@ switch(FEAT_ROADTYPES, SELF, switch_UER1_depots, terrain_type) {								//DEPOT
     UER1_depots;
 }
 
-spriteset(UER1_gui_UGUI, "gfx/R_UER1.png") {													//GUI						
+spriteset(UER1_gui_UGUI, "gfx/R_UER1.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(UER1_gui_opengfx, "gfx/R_UER1.png") {
@@ -3418,7 +3416,7 @@ spriteset(UER1_gui_opengfx, "gfx/R_UER1.png") {
 spriteset(UER1_gui_ttd, "gfx/R_UER1.png") {
     tmpl_gui_ttd()
 }
-spriteset(UER1_gui_UGUI_A, "gfx/R_UER1_A.png") {												//GUI						
+spriteset(UER1_gui_UGUI_A, "gfx/R_UER1_A.png") {										//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(UER1_gui_opengfx_A, "gfx/R_UER1_A.png") {
@@ -3439,7 +3437,7 @@ switch(FEAT_ROADTYPES, SELF, switch_UER1_gui_UGUI, param_style) {
 	1: UER1_gui_UGUI_A;
 	UER1_gui_UGUI;
 }
-switch (FEAT_ROADTYPES, SELF, switch_UER1_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_UER1_gui, param_gui) {									//GUI
     1: switch_UER1_gui_opengfx;
     2: switch_UER1_gui_UGUI;
 	switch_UER1_gui_ttd;
@@ -3459,7 +3457,7 @@ switch(FEAT_ROADTYPES, SELF, switch_DER1_depots, terrain_type) {								//DEPOT
     DER1_depots;
 }
 
-spriteset(DER1_gui_UGUI, "gfx/R_DER1.png") {													//GUI						
+spriteset(DER1_gui_UGUI, "gfx/R_DER1.png") {											//GUI						
     tmpl_gui_UGUI()
 }
 spriteset(DER1_gui_opengfx, "gfx/R_DER1.png") {
@@ -3468,7 +3466,7 @@ spriteset(DER1_gui_opengfx, "gfx/R_DER1.png") {
 spriteset(DER1_gui_ttd, "gfx/R_DER1.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_ROADTYPES, SELF, switch_DER1_gui, param_gui) {										//GUI
+switch (FEAT_ROADTYPES, SELF, switch_DER1_gui, param_gui) {									//GUI
     1: DER1_gui_opengfx;
     2: DER1_gui_UGUI;
 	DER1_gui_ttd;
@@ -3491,11 +3489,11 @@ spriteset(RAIL_underlay_1, "gfx/T_RAIL.png") {
 spriteset(RAIL_snow_underlay_1, "gfx/T_RAIL.png") {
     tmpl_underlay_overlay(241)
 }
-switch(FEAT_TRAMTYPES, SELF, switch_RAIL_underlay_0, terrain_type) {							//UNDERLAY
+switch(FEAT_TRAMTYPES, SELF, switch_RAIL_underlay_0, terrain_type) {								//UNDERLAY
     TILETYPE_SNOW: RAIL_snow_underlay_0;
     RAIL_underlay_0;
 }
-switch(FEAT_TRAMTYPES, SELF, switch_RAIL_underlay_1, terrain_type) {							//UNDERLAY
+switch(FEAT_TRAMTYPES, SELF, switch_RAIL_underlay_1, terrain_type) {								//UNDERLAY
     TILETYPE_SNOW: RAIL_snow_underlay_1;
     RAIL_underlay_1;
 }
@@ -3504,7 +3502,7 @@ switch(FEAT_TRAMTYPES, SELF, switch_RAIL_underlay, town_zone) {									//TOWN Z
 	switch_RAIL_underlay_1;
 }
 
-spriteset(switch_RAIL_overlay, "gfx/T_RAIL.png") {												//OVERLAY
+spriteset(switch_RAIL_overlay, "gfx/T_RAIL.png") {										//OVERLAY
     tmpl_underlay_overlay(321)
 }
 
@@ -3564,7 +3562,7 @@ spriteset(RAIL_gui_opengfx, "gfx/T_RAIL.png") {
 spriteset(RAIL_gui_ttd, "gfx/T_RAIL.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_TRAMTYPES, SELF, switch_RAIL_gui, param_gui) {										//GUI
+switch (FEAT_TRAMTYPES, SELF, switch_RAIL_gui, param_gui) {									//GUI
     1: RAIL_gui_opengfx;
     2: RAIL_gui_UGUI;
 	RAIL_gui_ttd;
@@ -3592,7 +3590,7 @@ spriteset(ELRL_gui_opengfx, "gfx/T_ELRL.png") {
 spriteset(ELRL_gui_ttd, "gfx/T_ELRL.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_TRAMTYPES, SELF, switch_ELRL_gui, param_gui) {										//GUI
+switch (FEAT_TRAMTYPES, SELF, switch_ELRL_gui, param_gui) {									//GUI
     1: ELRL_gui_opengfx;
     2: ELRL_gui_UGUI;
 	ELRL_gui_ttd;
@@ -3612,11 +3610,11 @@ spriteset(NBAN_underlay_1, "gfx/T_NBAN.png") {
 spriteset(NBAN_snow_underlay_1, "gfx/T_NBAN.png") {
     tmpl_underlay_overlay(241)
 }
-switch(FEAT_TRAMTYPES, SELF, switch_NBAN_underlay_0, terrain_type) {							//UNDERLAY
+switch(FEAT_TRAMTYPES, SELF, switch_NBAN_underlay_0, terrain_type) {								//UNDERLAY
     TILETYPE_SNOW: NBAN_snow_underlay_0;
     NBAN_underlay_0;
 }
-switch(FEAT_TRAMTYPES, SELF, switch_NBAN_underlay_1, terrain_type) {							//UNDERLAY
+switch(FEAT_TRAMTYPES, SELF, switch_NBAN_underlay_1, terrain_type) {								//UNDERLAY
     TILETYPE_SNOW: NBAN_snow_underlay_1;
     NBAN_underlay_1;
 }
@@ -3625,7 +3623,7 @@ switch(FEAT_TRAMTYPES, SELF, switch_NBAN_underlay, town_zone) {									//TOWN Z
 	switch_NBAN_underlay_1;
 }
 
-spriteset(switch_NBAN_overlay, "gfx/T_NBAN.png") {												//OVERLAY
+spriteset(switch_NBAN_overlay, "gfx/T_NBAN.png") {										//OVERLAY
     tmpl_underlay_overlay(321)
 }
 
@@ -3685,7 +3683,7 @@ spriteset(NBAN_gui_opengfx, "gfx/T_NBAN.png") {
 spriteset(NBAN_gui_ttd, "gfx/T_NBAN.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_TRAMTYPES, SELF, switch_NBAN_gui, param_gui) {										//GUI
+switch (FEAT_TRAMTYPES, SELF, switch_NBAN_gui, param_gui) {									//GUI
     1: NBAN_gui_opengfx;
     2: NBAN_gui_UGUI;
 	NBAN_gui_ttd;
@@ -3713,7 +3711,7 @@ spriteset(NBAE_gui_opengfx, "gfx/T_NBAE.png") {
 spriteset(NBAE_gui_ttd, "gfx/T_NBAE.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_TRAMTYPES, SELF, switch_NBAE_gui, param_gui) {										//GUI
+switch (FEAT_TRAMTYPES, SELF, switch_NBAE_gui, param_gui) {									//GUI
     1: NBAE_gui_opengfx;
     2: NBAE_gui_UGUI;
 	NBAE_gui_ttd;
@@ -3732,7 +3730,7 @@ switch(FEAT_TRAMTYPES, SELF, switch_NUAE_underlay, terrain_type) {								//UNDE
     NUAE_underlay;
 }
 
-spriteset(switch_NUAE_overlay, "gfx/T_NUAE.png") {												//OVERLAY
+spriteset(switch_NUAE_overlay, "gfx/T_NUAE.png") {										//OVERLAY
     tmpl_underlay_overlay(321)
 }
 
@@ -3778,7 +3776,7 @@ spriteset(NUAE_gui_opengfx, "gfx/T_NUAE.png") {
 spriteset(NUAE_gui_ttd, "gfx/T_NUAE.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_TRAMTYPES, SELF, switch_NUAE_gui, param_gui) {										//GUI
+switch (FEAT_TRAMTYPES, SELF, switch_NUAE_gui, param_gui) {									//GUI
     1: NUAE_gui_opengfx;
     2: NUAE_gui_UGUI;
 	NUAE_gui_ttd;
@@ -3798,11 +3796,11 @@ spriteset(NUBE_underlay_1, "gfx/T_NUBE.png") {
 spriteset(NUBE_snow_underlay_1, "gfx/T_NUBE.png") {
     tmpl_underlay_overlay(241)
 }
-switch(FEAT_TRAMTYPES, SELF, switch_NUBE_underlay_0, terrain_type) {							//UNDERLAY
+switch(FEAT_TRAMTYPES, SELF, switch_NUBE_underlay_0, terrain_type) {								//UNDERLAY
     TILETYPE_SNOW: NUBE_snow_underlay_0;
     NUBE_underlay_0;
 }
-switch(FEAT_TRAMTYPES, SELF, switch_NUBE_underlay_1, terrain_type) {							//UNDERLAY
+switch(FEAT_TRAMTYPES, SELF, switch_NUBE_underlay_1, terrain_type) {								//UNDERLAY
     TILETYPE_SNOW: NUBE_snow_underlay_1;
     NUBE_underlay_1;
 }
@@ -3811,7 +3809,7 @@ switch(FEAT_TRAMTYPES, SELF, switch_NUBE_underlay, town_zone) {									//TOWN Z
 	switch_NUBE_underlay_1;
 }
 
-spriteset(switch_NUBE_overlay, "gfx/T_NUBE.png") {												//OVERLAY
+spriteset(switch_NUBE_overlay, "gfx/T_NUBE.png") {										//OVERLAY
     tmpl_underlay_overlay(321)
 }
 
@@ -3871,7 +3869,7 @@ spriteset(NUBE_gui_opengfx, "gfx/T_NUBE.png") {
 spriteset(NUBE_gui_ttd, "gfx/T_NUBE.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_TRAMTYPES, SELF, switch_NUBE_gui, param_gui) {										//GUI
+switch (FEAT_TRAMTYPES, SELF, switch_NUBE_gui, param_gui) {									//GUI
     1: NUBE_gui_opengfx;
     2: NUBE_gui_UGUI;
 	NUBE_gui_ttd;
@@ -3890,7 +3888,7 @@ switch(FEAT_TRAMTYPES, SELF, switch_NUCE_underlay, terrain_type) {								//UNDE
     normal_NUCE_underlay;
 }
 
-spriteset(switch_NUCE_overlay, "gfx/T_NUCE.png") {												//OVERLAY
+spriteset(switch_NUCE_overlay, "gfx/T_NUCE.png") {										//OVERLAY
     tmpl_underlay_overlay(321)
 }
 
@@ -3936,7 +3934,7 @@ spriteset(NUCE_gui_opengfx, "gfx/T_NUCE.png") {
 spriteset(NUCE_gui_ttd, "gfx/T_NUCE.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_TRAMTYPES, SELF, switch_NUCE_gui, param_gui) {										//GUI
+switch (FEAT_TRAMTYPES, SELF, switch_NUCE_gui, param_gui) {									//GUI
     1: NUCE_gui_opengfx;
     2: NUCE_gui_UGUI;
 	NUCE_gui_ttd;
@@ -3944,11 +3942,11 @@ switch (FEAT_TRAMTYPES, SELF, switch_NUCE_gui, param_gui) {										//GUI
 //===========================================================
 //				ISR TRAM TRACK (NIAN)
 //===========================================================
-spriteset(switch_NIAN_underlay, "gfx/T_NIAN.png") {												//UNDERLAY
+spriteset(switch_NIAN_underlay, "gfx/T_NIAN.png") {										//UNDERLAY
     tmpl_underlay_overlay(1)
 }
 
-spriteset(switch_NIAN_overlay, "gfx/T_NIAN.png") {												//OVERLAY
+spriteset(switch_NIAN_overlay, "gfx/T_NIAN.png") {										//OVERLAY
     tmpl_underlay_overlay(321)
 }
 
@@ -3994,7 +3992,7 @@ spriteset(NIAN_gui_opengfx, "gfx/T_NIAN.png") {
 spriteset(NIAN_gui_ttd, "gfx/T_NIAN.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_TRAMTYPES, SELF, switch_NIAN_gui, param_gui) {										//GUI
+switch (FEAT_TRAMTYPES, SELF, switch_NIAN_gui, param_gui) {									//GUI
     1: NIAN_gui_opengfx;
     2: NIAN_gui_UGUI;
 	NIAN_gui_ttd;
@@ -4022,7 +4020,7 @@ spriteset(NIAE_gui_opengfx, "gfx/T_NIAE.png") {
 spriteset(NIAE_gui_ttd, "gfx/T_NIAE.png") {
     tmpl_gui_ttd()
 }
-switch (FEAT_TRAMTYPES, SELF, switch_NIAE_gui, param_gui) {										//GUI
+switch (FEAT_TRAMTYPES, SELF, switch_NIAE_gui, param_gui) {									//GUI
     1: NIAE_gui_opengfx;
     2: NIAE_gui_UGUI;
 	NIAE_gui_ttd;
@@ -4132,12 +4130,12 @@ switch(FEAT_ROADTYPES, SELF, switch_ROAD_TROPICAL_underlay_2, town_zone) {
 	TOWNZONE_EDGE: switch_ARD0_underlay;
 	switch_DRD2_underlay;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ROAD_TROPICAL_underlay_0, current_year) {					//UNDERLAY
+switch(FEAT_ROADTYPES, SELF, switch_ROAD_TROPICAL_underlay_0, current_year) {							//UNDERLAY
     0..1924:    switch_ROAD_TROPICAL_underlay_1;
 	1925..1959: switch_ROAD_TROPICAL_underlay_2;
 	switch_ROAD_underlay;
 }
-switch (FEAT_ROADTYPES, SELF, switch_ROAD_TROPICAL_underlay, param_road_available) {			//UNDERLAY PARAMETR
+switch (FEAT_ROADTYPES, SELF, switch_ROAD_TROPICAL_underlay, param_road_available) {						//UNDERLAY PARAMETR
 	1: switch_ROAD_TROPICAL_underlay_0;
 	switch_ROAD_TROPICAL_underlay_1;
 }
@@ -4152,12 +4150,12 @@ switch(FEAT_ROADTYPES, SELF, switch_ROAD_ARCTIC_underlay_2, town_zone) {
 	TOWNZONE_EDGE: switch_ARD0_underlay;
 	switch_SRD1_underlay_1;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ROAD_ARCTIC_underlay_0, current_year) {						//UNDERLAY
+switch(FEAT_ROADTYPES, SELF, switch_ROAD_ARCTIC_underlay_0, current_year) {							//UNDERLAY
     0..1924:    switch_ROAD_ARCTIC_underlay_1;
 	1925..1959: switch_ROAD_ARCTIC_underlay_2;
 	switch_ROAD_underlay;
 }
-switch (FEAT_ROADTYPES, SELF, switch_ROAD_ARCTIC_underlay, param_road_available) {				//UNDERLAY PARAMETR
+switch (FEAT_ROADTYPES, SELF, switch_ROAD_ARCTIC_underlay, param_road_available) {						//UNDERLAY PARAMETR
 	1: switch_ROAD_ARCTIC_underlay_0;
 	switch_ROAD_ARCTIC_underlay_1;
 }
@@ -4172,12 +4170,12 @@ switch(FEAT_ROADTYPES, SELF, switch_ROAD_NORMAL_underlay_2, town_zone) {
 	TOWNZONE_EDGE: switch_ARD0_underlay;
 	switch_SRD0_underlay_1;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ROAD_NORMAL_underlay_0, current_year) {						//UNDERLAY
+switch(FEAT_ROADTYPES, SELF, switch_ROAD_NORMAL_underlay_0, current_year) {							//UNDERLAY
     0..1924:    switch_ROAD_NORMAL_underlay_1;
 	1925..1959: switch_ROAD_NORMAL_underlay_2;
 	switch_ROAD_underlay;
 }
-switch (FEAT_ROADTYPES, SELF, switch_ROAD_NORMAL_underlay, param_road_available) {				//UNDERLAY PARAMETR
+switch (FEAT_ROADTYPES, SELF, switch_ROAD_NORMAL_underlay, param_road_available) {						//UNDERLAY PARAMETR
 	1: switch_ROAD_NORMAL_underlay_0;
 	switch_ROAD_NORMAL_underlay_1;
 }
@@ -4211,36 +4209,36 @@ switch(FEAT_ROADTYPES, SELF, switch_ROAD_bridge_3_style, param_style) {
 //===========================================================================
 //									CLIMATE TROPICAL
 //===========================================================================
-switch (FEAT_ROADTYPES, SELF, switch_TROPICAL_ROAD_bridge, current_year) {						//BRIDGE
+switch (FEAT_ROADTYPES, SELF, switch_TROPICAL_ROAD_bridge, current_year) {							//BRIDGE
     0..1924: switch_DRD2_bridge;
 	1925..1959: switch_ARD0_bridge;
 	switch_ROAD_bridge_3_style;
 }
-switch (FEAT_ROADTYPES, SELF, switch_ROAD_TROPICAL_bridge, param_road_available) {				//BRIDGE PARAMETR
+switch (FEAT_ROADTYPES, SELF, switch_ROAD_TROPICAL_bridge, param_road_available) {						//BRIDGE PARAMETR
 	1: switch_TROPICAL_ROAD_bridge;
 	switch_DRD2_bridge;
 }
 //===========================================================================
 //									CLIMATE ARCTIC
 //===========================================================================
-switch (FEAT_ROADTYPES, SELF, switch_ARCTIC_ROAD_bridge, current_year) {						//BRIDGE
+switch (FEAT_ROADTYPES, SELF, switch_ARCTIC_ROAD_bridge, current_year) {							//BRIDGE
     0..1924: switch_SRD1_bridge;
 	1925..1959: switch_ARD0_bridge;
 	switch_ROAD_bridge_3_style;
 }
-switch (FEAT_ROADTYPES, SELF, switch_ROAD_ARCTIC_bridge, param_road_available) {				//BRIDGE PARAMETR
+switch (FEAT_ROADTYPES, SELF, switch_ROAD_ARCTIC_bridge, param_road_available) {						//BRIDGE PARAMETR
 	1: switch_ARCTIC_ROAD_bridge;
 	switch_SRD1_bridge;
 }
 //===========================================================================
 //									CLIMATE TEMPERATE (TOYLAND)
 //===========================================================================
-switch (FEAT_ROADTYPES, SELF, switch_NORMAL_ROAD_bridge, current_year) {						//BRIDGE
+switch (FEAT_ROADTYPES, SELF, switch_NORMAL_ROAD_bridge, current_year) {							//BRIDGE
     0..1924: switch_SRD0_bridge;
 	1925..1959: switch_ARD0_bridge;
 	switch_ROAD_bridge_3_style;
 }
-switch (FEAT_ROADTYPES, SELF, switch_ROAD_NORMAL_bridge, param_road_available) {				//BRIDGE PARAMETR
+switch (FEAT_ROADTYPES, SELF, switch_ROAD_NORMAL_bridge, param_road_available) {						//BRIDGE PARAMETR
 	1: switch_NORMAL_ROAD_bridge;
 	2: switch_NORMAL_ROAD_bridge;
 	switch_SRD0_bridge;
@@ -4266,12 +4264,12 @@ switch(FEAT_ROADTYPES, SELF, switch_ROAD_TROPICAL_tunnels_2, town_zone) {
 	TOWNZONE_EDGE: switch_ARD0_tunnels;
 	switch_DRD2_tunnels;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ROAD_TROPICAL_tunnels_0, current_year) {					//TUNNELS
+switch(FEAT_ROADTYPES, SELF, switch_ROAD_TROPICAL_tunnels_0, current_year) {							//TUNNELS
     0..1919:    switch_ROAD_TROPICAL_tunnels_1;
 	1920..1959: switch_ROAD_TROPICAL_tunnels_2;
 	switch_ROAD_tunnels;
 }
-switch (FEAT_ROADTYPES, SELF, switch_ROAD_TROPICAL_tunnels, param_road_available) {				//TUNNELS PARAMETR
+switch (FEAT_ROADTYPES, SELF, switch_ROAD_TROPICAL_tunnels, param_road_available) {						//TUNNELS PARAMETR
 	1: switch_ROAD_TROPICAL_tunnels_0;
 	switch_ROAD_TROPICAL_tunnels_1;
 }
@@ -4286,12 +4284,12 @@ switch(FEAT_ROADTYPES, SELF, switch_ROAD_ARCTIC_tunnels_2, town_zone) {
 	TOWNZONE_EDGE: switch_ARD0_tunnels;
 	switch_SRD1_tunnels_1;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ROAD_ARCTIC_tunnels_0, current_year) {						//TUNNELS
+switch(FEAT_ROADTYPES, SELF, switch_ROAD_ARCTIC_tunnels_0, current_year) {							//TUNNELS
     0..1919:    switch_ROAD_ARCTIC_tunnels_1;
 	1920..1959: switch_ROAD_ARCTIC_tunnels_2;
 	switch_ROAD_tunnels;
 }
-switch (FEAT_ROADTYPES, SELF, switch_ROAD_ARCTIC_tunnels, param_road_available) {				//TUNNELS PARAMETR
+switch (FEAT_ROADTYPES, SELF, switch_ROAD_ARCTIC_tunnels, param_road_available) {						//TUNNELS PARAMETR
 	1: switch_ROAD_ARCTIC_tunnels_0;
 	switch_ROAD_ARCTIC_tunnels_1;
 }
@@ -4306,12 +4304,12 @@ switch(FEAT_ROADTYPES, SELF, switch_ROAD_NORMAL_tunnels_2, town_zone) {
 	TOWNZONE_EDGE: switch_ARD0_tunnels;
 	switch_SRD0_tunnels_1;
 }
-switch(FEAT_ROADTYPES, SELF, switch_ROAD_NORMAL_tunnels_0, current_year) {						//TUNNELS
+switch(FEAT_ROADTYPES, SELF, switch_ROAD_NORMAL_tunnels_0, current_year) {							//TUNNELS
     0..1919:    switch_ROAD_NORMAL_tunnels_1;
 	1920..1959: switch_ROAD_NORMAL_tunnels_2;
 	switch_ROAD_tunnels;
 }
-switch (FEAT_ROADTYPES, SELF, switch_ROAD_NORMAL_tunnels, param_road_available) {				//TUNNELS PARAMETR
+switch (FEAT_ROADTYPES, SELF, switch_ROAD_NORMAL_tunnels, param_road_available) {						//TUNNELS PARAMETR
 	1: switch_ROAD_NORMAL_tunnels_0;
 	switch_ROAD_NORMAL_tunnels_1;
 }
@@ -4323,20 +4321,20 @@ switch (FEAT_ROADTYPES, SELF, switch_ROAD_NORMAL_tunnels, param_road_available) 
 //===========================================================
 	item(FEAT_ROADTYPES, ROAD_road, 0) {
 		property {
-			label:							"ROAD";
-			name: 							string(STR_NAME_ROAD);
+			label:					"ROAD";
+			name: 					string(STR_NAME_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			introduces_roadtype_list:		["ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "DRD2"];
-			roadtype_flags:					bitmask(ROADTYPE_FLAG_HIDDEN);
-			speed_limit:					(speed_limit_ROAD) km/h;
-			sort_order:						0;
+			roadtype_flags:				bitmask(ROADTYPE_FLAG_HIDDEN);
+			speed_limit:				(speed_limit_ROAD) km/h;
+			sort_order:				0;
 			}
 	if (param_pedestrian_zone > 1) {
 		property {
@@ -4345,22 +4343,22 @@ switch (FEAT_ROADTYPES, SELF, switch_ROAD_NORMAL_tunnels, param_road_available) 
 		}
 	if (climate == CLIMATE_TROPICAL) {
 		graphics {
-			underlay: 						switch_ROAD_TROPICAL_underlay;
+			underlay: 					switch_ROAD_TROPICAL_underlay;
 			bridge_surfaces: 				switch_ROAD_TROPICAL_bridge;
-			tunnels:						switch_ROAD_TROPICAL_tunnels;
+			tunnels:					switch_ROAD_TROPICAL_tunnels;
 			}
 		} else
 	if (climate == CLIMATE_ARCTIC) {
 		graphics {
-			underlay: 						switch_ROAD_ARCTIC_underlay;
+			underlay: 					switch_ROAD_ARCTIC_underlay;
 			bridge_surfaces: 				switch_ROAD_ARCTIC_bridge;
-			tunnels:						switch_ROAD_ARCTIC_tunnels;
+			tunnels:					switch_ROAD_ARCTIC_tunnels;
 			}
 		} else {
 		graphics {
-			underlay: 						switch_ROAD_NORMAL_underlay;
+			underlay: 					switch_ROAD_NORMAL_underlay;
 			bridge_surfaces: 				switch_ROAD_NORMAL_bridge;
-			tunnels:						switch_ROAD_NORMAL_tunnels;
+			tunnels:					switch_ROAD_NORMAL_tunnels;
 			}
 		}
 	}
@@ -4370,43 +4368,43 @@ switch (FEAT_ROADTYPES, SELF, switch_ROAD_NORMAL_tunnels, param_road_available) 
 if (roadtype_available("ORD0") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ORD0_road, 1) {
 		property {
-			label:							"ORD0";
-			name: 							string(STR_NAME_ORD0);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			label:					"ORD0";
+			name: 					string(STR_NAME_ORD0);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			roadtype_flags:					bitmask(ROADTYPE_FLAG_NO_LEVEL_CROSSING, ROADTYPE_FLAG_NO_HOUSES);
-			construction_cost:				3;
-			maintenance_cost: 				3;
-			sort_order: 					1;
-			speed_limit:					(speed_limit_ORD0) km/h;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			roadtype_flags:				bitmask(ROADTYPE_FLAG_NO_LEVEL_CROSSING, ROADTYPE_FLAG_NO_HOUSES);
+			construction_cost:			3;
+			maintenance_cost: 			3;
+			sort_order: 				1;
+			speed_limit:				(speed_limit_ORD0) km/h;
 			}
 	if (param_menu_text == 1) {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_ORD0), string(STR_CONSTRUCTION), string(STR_BUS_TRAIN));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_ORD0), string(STR_CONSTRUCTION), string(STR_BUS_TRAIN));
 				}
 			} else {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_ORD0), string(STR_CONSTRUCTION), string(STR_WHITE));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_ORD0), string(STR_CONSTRUCTION), string(STR_WHITE));
 				}
 			}
 		graphics {
-			underlay: 						switch_ORD0_underlay;
-			depots: 						switch_ORD0_depots;
+			underlay: 					switch_ORD0_underlay;
+			depots: 					switch_ORD0_depots;
 			bridge_surfaces: 				switch_ORD0_bridge;
-			roadstops: 						switch_ORD0_roadstops;
-			tunnels:						switch_ORD0_tunnels;
-			oneway:							oneway_SIGN_2;
-			gui:							switch_ORD0_gui;
+			roadstops: 					switch_ORD0_roadstops;
+			tunnels:					switch_ORD0_tunnels;
+			oneway:						oneway_SIGN_2;
+			gui:						switch_ORD0_gui;
 			}
 		}
 	}
@@ -4416,43 +4414,43 @@ if (roadtype_available("ORD0") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("ORD1") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ORD1_road, 2) {
 		property {
-			label:							"ORD1";
-			name: 							string(STR_NAME_ORD1);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			label:					"ORD1";
+			name: 					string(STR_NAME_ORD1);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			roadtype_flags: 				bitmask(ROADTYPE_FLAG_NO_LEVEL_CROSSING, ROADTYPE_FLAG_NO_HOUSES);
-			construction_cost:				4;
-			maintenance_cost: 				4;
-			sort_order: 					2;
-			speed_limit:					(speed_limit_ORD1) km/h;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			roadtype_flags: 			bitmask(ROADTYPE_FLAG_NO_LEVEL_CROSSING, ROADTYPE_FLAG_NO_HOUSES);
+			construction_cost:			4;
+			maintenance_cost: 			4;
+			sort_order: 				2;
+			speed_limit:				(speed_limit_ORD1) km/h;
 			}
 	if (param_menu_text == 1) {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_ORD1), string(STR_CONSTRUCTION), string(STR_BUS_TRAIN));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_ORD1), string(STR_CONSTRUCTION), string(STR_BUS_TRAIN));
 				}
 			} else {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_ORD1), string(STR_CONSTRUCTION), string(STR_WHITE));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_ORD1), string(STR_CONSTRUCTION), string(STR_WHITE));
 				}
 			}
 		graphics {
-			underlay: 						switch_ORD1_underlay;
-			depots: 						switch_ORD1_depots;
+			underlay: 					switch_ORD1_underlay;
+			depots: 					switch_ORD1_depots;
 			bridge_surfaces: 				switch_ORD0_bridge;
-			roadstops: 						switch_ORD2_roadstops;
-			tunnels:						switch_ORD1_tunnels;
-			oneway:							oneway_SIGN_2;
-			gui:							switch_ORD1_gui;
+			roadstops: 					switch_ORD2_roadstops;
+			tunnels:					switch_ORD1_tunnels;
+			oneway:						oneway_SIGN_2;
+			gui:						switch_ORD1_gui;
 			}
 		}
 	}
@@ -4462,34 +4460,34 @@ if (roadtype_available("ORD1") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("ORD2") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ORD2_road, 3) {
 		property {
-			label:							"ORD2";
-			name: 							string(STR_NAME_ORD2);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_ORD2), string(STR_CONSTRUCTION), string(STR_WHITE));
+			label:					"ORD2";
+			name: 					string(STR_NAME_ORD2);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_ORD2), string(STR_CONSTRUCTION), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			construction_cost:				5;
-			maintenance_cost: 				5;
-			sort_order: 					3;
-			speed_limit:					(speed_limit_ORD2) km/h;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			construction_cost:			5;
+			maintenance_cost: 			5;
+			sort_order: 				3;
+			speed_limit:				(speed_limit_ORD2) km/h;
 			}
 		graphics {
-			underlay: 						switch_ORD2_underlay;
-			depots: 						switch_ORD2_depots;
+			underlay: 					switch_ORD2_underlay;
+			depots: 					switch_ORD2_depots;
 			bridge_surfaces: 				switch_ORD0_bridge;
-			roadstops: 						switch_ORD2_roadstops;
-			tunnels:						switch_ORD2_tunnels;
-			oneway:							oneway_SIGN_2;
-			gui:							switch_ORD2_gui;
+			roadstops: 					switch_ORD2_roadstops;
+			tunnels:					switch_ORD2_tunnels;
+			oneway:						oneway_SIGN_2;
+			gui:						switch_ORD2_gui;
 			}
 		}
 	}
@@ -4499,43 +4497,43 @@ if (roadtype_available("ORD2") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("ORD3") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ORD3_road, 4) {
 		property {
-			label:							"ORD3";
-			name: 							string(STR_NAME_ORD3);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			label:					"ORD3";
+			name: 					string(STR_NAME_ORD3);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
 			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
 			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			roadtype_flags: 				bitmask(ROADTYPE_FLAG_NO_HOUSES, ROADTYPE_FLAG_NO_LEVEL_CROSSING);
-			construction_cost:				6;
-			maintenance_cost: 				6;
-			sort_order: 					4;
-			speed_limit:					(speed_limit_ORD3) km/h;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			roadtype_flags: 			bitmask(ROADTYPE_FLAG_NO_HOUSES, ROADTYPE_FLAG_NO_LEVEL_CROSSING);
+			construction_cost:			6;
+			maintenance_cost: 			6;
+			sort_order: 				4;
+			speed_limit:				(speed_limit_ORD3) km/h;
 			}
 	if (param_menu_text == 1) {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_ORD3), string(STR_CONSTRUCTION), string(STR_BUS_TRAIN));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_ORD3), string(STR_CONSTRUCTION), string(STR_BUS_TRAIN));
 				}
 			} else {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_ORD3), string(STR_CONSTRUCTION), string(STR_WHITE));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_ORD3), string(STR_CONSTRUCTION), string(STR_WHITE));
 				}
 			}
 		graphics {
-			underlay: 						switch_ORD3_underlay;
-			depots: 						switch_ORD3_depots;
+			underlay: 					switch_ORD3_underlay;
+			depots: 					switch_ORD3_depots;
 			bridge_surfaces: 				switch_ORD3_bridge;
-			roadstops: 						switch_ORD3_roadstops;
-			tunnels:						switch_ORD3_tunnels;
-			oneway:							oneway_SIGN_2;
-			gui:							switch_ORD3_gui;
+			roadstops: 					switch_ORD3_roadstops;
+			tunnels:					switch_ORD3_tunnels;
+			oneway:						oneway_SIGN_2;
+			gui:						switch_ORD3_gui;
 			}
 		}
 	}
@@ -4545,43 +4543,43 @@ if (roadtype_available("ORD3") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("ORD4") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ORD4_road, 5) {
 		property {
-			label:							"ORD4";
-			name: 							string(STR_NAME_ORD4);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			label:					"ORD4";
+			name: 					string(STR_NAME_ORD4);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			roadtype_flags: 				bitmask(ROADTYPE_FLAG_NO_HOUSES);
-			construction_cost:				9;
-			maintenance_cost: 				9;
-			sort_order: 					5;
-			speed_limit:					(speed_limit_ORD4) km/h;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			roadtype_flags: 			bitmask(ROADTYPE_FLAG_NO_HOUSES);
+			construction_cost:			9;
+			maintenance_cost: 			9;
+			sort_order: 				5;
+			speed_limit:				(speed_limit_ORD4) km/h;
 			}
 	if (param_menu_text == 1) {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_ORD4), string(STR_CONSTRUCTION), string(STR_BUS));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_ORD4), string(STR_CONSTRUCTION), string(STR_BUS));
 				}
 			} else {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_ORD4), string(STR_CONSTRUCTION), string(STR_WHITE));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_ORD4), string(STR_CONSTRUCTION), string(STR_WHITE));
 				}
 			}
 		graphics {
-			underlay: 						switch_ORD4_underlay;
-			depots: 						switch_ORD4_depots;
+			underlay: 					switch_ORD4_underlay;
+			depots: 					switch_ORD4_depots;
 			bridge_surfaces: 				switch_ORD4_bridge;
-			roadstops: 						switch_ORD4_roadstops;
-			tunnels:						switch_ORD4_tunnels;
-			oneway:							oneway_SIGN_2;
-			gui:							switch_ORD4_gui;
+			roadstops: 					switch_ORD4_roadstops;
+			tunnels:					switch_ORD4_tunnels;
+			oneway:						oneway_SIGN_2;
+			gui:						switch_ORD4_gui;
 			}
 		}
 	}
@@ -4591,34 +4589,34 @@ if (roadtype_available("ORD4") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("SRD0") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, SRD0_road, 6) {
 		property {
-			label:							"SRD0";
-			name: 							string(STR_NAME_SRD0);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_SRD0), string(STR_CONSTRUCTION), string(STR_WHITE));
+			label:					"SRD0";
+			name: 					string(STR_NAME_SRD0);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_SRD0), string(STR_CONSTRUCTION), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			speed_limit: 					50 km/h;
-			construction_cost:				12;
-			maintenance_cost: 				12;
-			sort_order: 					6;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			speed_limit: 				50 km/h;
+			construction_cost:			12;
+			maintenance_cost: 			12;
+			sort_order: 				6;
 			}
 		graphics {
-			underlay: 						switch_SRD0_underlay;
-			depots: 						switch_SRD0_depots;
+			underlay: 					switch_SRD0_underlay;
+			depots: 					switch_SRD0_depots;
 			bridge_surfaces: 				switch_SRD0_bridge;
-			roadstops: 						switch_SRD0_roadstops;
-			tunnels:						switch_SRD0_tunnels;
-			oneway:							oneway_SIGN_1;
-			gui:							switch_SRD0_gui;
+			roadstops: 					switch_SRD0_roadstops;
+			tunnels:					switch_SRD0_tunnels;
+			oneway:						oneway_SIGN_1;
+			gui:						switch_SRD0_gui;
 			}
 		}
 	}
@@ -4628,35 +4626,35 @@ if (roadtype_available("SRD0") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("SRD1") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, SRD1_road, 8) {
 		property {
-			label:							"SRD1";
-			name: 							string(STR_NAME_SRD1);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text:						string(STR_STRING_3, string(STR_NAME_SRD1), string(STR_CONSTRUCTION), string(STR_WHITE));
+			label:					"SRD1";
+			name: 					string(STR_NAME_SRD1);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text:				string(STR_STRING_3, string(STR_NAME_SRD1), string(STR_CONSTRUCTION), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			speed_limit: 					64 km/h;
-			introduction_date: 				date(1900,01,01);
-			construction_cost:				16;
-			maintenance_cost: 				16;
-			sort_order: 					8;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			speed_limit: 				64 km/h;
+			introduction_date: 			date(1900,01,01);
+			construction_cost:			16;
+			maintenance_cost: 			16;
+			sort_order: 				8;
 			}
 		graphics {
-			underlay: 						switch_SRD1_underlay;
-			depots: 						switch_SRD1_depots;
+			underlay: 					switch_SRD1_underlay;
+			depots: 					switch_SRD1_depots;
 			bridge_surfaces: 				switch_SRD1_bridge;
-			roadstops: 						switch_SRD1_roadstops;
-			tunnels:						switch_SRD1_tunnels;
-			oneway:							oneway_SIGN_0;
-			gui:							switch_SRD1_gui;
+			roadstops: 					switch_SRD1_roadstops;
+			tunnels:					switch_SRD1_tunnels;
+			oneway:						oneway_SIGN_0;
+			gui:						switch_SRD1_gui;
 			}
 		}
 	}
@@ -4666,44 +4664,44 @@ if (roadtype_available("SRD1") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("SRD2") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, SRD2_road, 9) {
 		property {
-			label:							"SRD2";
-			name: 							string(STR_NAME_SRD2);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			label:					"SRD2";
+			name: 					string(STR_NAME_SRD2);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			roadtype_flags:					bitmask(ROADTYPE_FLAG_NO_HOUSES);
-			speed_limit: 					88 km/h;
-			introduction_date: 				date(1955,01,01);
-			construction_cost:				20;
-			maintenance_cost: 				20;
-			sort_order: 					9;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			roadtype_flags:				bitmask(ROADTYPE_FLAG_NO_HOUSES);
+			speed_limit: 				88 km/h;
+			introduction_date: 			date(1955,01,01);
+			construction_cost:			20;
+			maintenance_cost: 			20;
+			sort_order: 				9;
 			}
 	if (param_menu_text == 1) {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_SRD2), string(STR_CONSTRUCTION), string(STR_BUS));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_SRD2), string(STR_CONSTRUCTION), string(STR_BUS));
 				}
 			} else {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_SRD2), string(STR_CONSTRUCTION), string(STR_WHITE));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_SRD2), string(STR_CONSTRUCTION), string(STR_WHITE));
 				}	
 			}
 		graphics {
-			underlay: 						switch_SRD2_underlay;
-			depots: 						switch_SRD2_depots;
+			underlay: 					switch_SRD2_underlay;
+			depots: 					switch_SRD2_depots;
 			bridge_surfaces: 				switch_SRD2_bridge;
-			roadstops: 						switch_SRD2_roadstops;
-			tunnels:						switch_SRD2_tunnels;
-			oneway:							oneway_SIGN_0;
-			gui:							switch_SRD2_gui;
+			roadstops: 					switch_SRD2_roadstops;
+			tunnels:					switch_SRD2_tunnels;
+			oneway:						oneway_SIGN_0;
+			gui:						switch_SRD2_gui;
 			}
 		}
 	}
@@ -4713,41 +4711,41 @@ if (roadtype_available("SRD2") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("ARD0") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ARD0_road, 10) {
 		property {
-			label:							"ARD0";
-			name: 							string(STR_STRING_2, string(STR_NAME_ARD0), string(STR_CLASS_C));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_4, string(STR_NAME_ARD0), string(STR_CONSTRUCTION), string(STR_CLASS_C), string(STR_WHITE));
+			label:					"ARD0";
+			name: 					string(STR_STRING_2, string(STR_NAME_ARD0), string(STR_CLASS_C));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_4, string(STR_NAME_ARD0), string(STR_CONSTRUCTION), string(STR_CLASS_C), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			introduces_roadtype_list:		["URD0"];
-			introduction_date: 				date(1925,01,01);
-			construction_cost:				15;
-			maintenance_cost: 				15;
-			sort_order: 					10;
-			speed_limit:					(speed_limit_ARD0) km/h;
+			introduction_date: 			date(1925,01,01);
+			construction_cost:			15;
+			maintenance_cost: 			15;
+			sort_order: 				10;
+			speed_limit:				(speed_limit_ARD0) km/h;
 			}
 	if (param_road_available == 0) {
 		property {
-			roadtype_flags:					bitmask(ROADTYPE_FLAG_TOWN_BUILD);
+			roadtype_flags:				bitmask(ROADTYPE_FLAG_TOWN_BUILD);
 				}
 			}
 		graphics {
-			underlay: 						switch_ARD0_underlay;
-			depots: 						switch_ARD0_depots;
+			underlay: 					switch_ARD0_underlay;
+			depots: 					switch_ARD0_depots;
 			bridge_surfaces: 				switch_ARD0_bridge;
-			roadstops: 						switch_ARD0_roadstops;
-			tunnels:						switch_ARD0_tunnels;
-			oneway:							oneway_ARROWS_2;
-			gui:							switch_ARD0_gui;
+			roadstops: 					switch_ARD0_roadstops;
+			tunnels:					switch_ARD0_tunnels;
+			oneway:						oneway_ARROWS_2;
+			gui:						switch_ARD0_gui;
 			}
 		}
 	}
@@ -4757,35 +4755,35 @@ if (roadtype_available("ARD0") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("ARD1") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ARD1_road, 12) {
 		property {
-			label:							"ARD1";
-			name: 							string(STR_STRING_2, string(STR_NAME_ARD1), string(STR_CLASS_C));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_4, string(STR_NAME_ARD1), string(STR_CONSTRUCTION), string(STR_CLASS_C), string(STR_WHITE));
+			label:					"ARD1";
+			name: 					string(STR_STRING_2, string(STR_NAME_ARD1), string(STR_CLASS_C));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_4, string(STR_NAME_ARD1), string(STR_CONSTRUCTION), string(STR_CLASS_C), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			introduction_date: 				date(1945,01,01);
-			construction_cost:				17;
-			maintenance_cost: 				17;
-			sort_order: 					12;
-			speed_limit:					(speed_limit_ARD1) km/h;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			introduction_date: 			date(1945,01,01);
+			construction_cost:			17;
+			maintenance_cost: 			17;
+			sort_order: 				12;
+			speed_limit:				(speed_limit_ARD1) km/h;
 			}
 		graphics {
-			underlay: 						switch_ARD1_underlay_style;
-			depots: 						switch_ARD1_depots;
+			underlay: 					switch_ARD1_underlay_style;
+			depots: 					switch_ARD1_depots;
 			bridge_surfaces: 				switch_ARD1_bridge_style;
-			roadstops: 						switch_ARD1_roadstops;
-			tunnels:						switch_ARD1_tunnels;
-			oneway:							oneway_ARROWS_2;
-			gui:							switch_ARD1_gui;
+			roadstops: 					switch_ARD1_roadstops;
+			tunnels:					switch_ARD1_tunnels;
+			oneway:						oneway_ARROWS_2;
+			gui:						switch_ARD1_gui;
 			}
 		}
 	}
@@ -4795,35 +4793,35 @@ if (roadtype_available("ARD1") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("ARD2") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ARD2_road, 14) {
 		property {
-			label:							"ARD2";
-			name: 							string(STR_STRING_2, string(STR_NAME_ARD0), string(STR_CLASS_B));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_4, string(STR_NAME_ARD0), string(STR_CONSTRUCTION), string(STR_CLASS_B), string(STR_WHITE));
+			label:					"ARD2";
+			name: 					string(STR_STRING_2, string(STR_NAME_ARD0), string(STR_CLASS_B));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_4, string(STR_NAME_ARD0), string(STR_CONSTRUCTION), string(STR_CLASS_B), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			introduction_date: 				date(1960,01,01);
-			construction_cost:				19;
-			maintenance_cost: 				19;
-			sort_order: 					14;
-			speed_limit:					(speed_limit_ARD2) km/h;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			introduction_date: 			date(1960,01,01);
+			construction_cost:			19;
+			maintenance_cost: 			19;
+			sort_order: 				14;
+			speed_limit:				(speed_limit_ARD2) km/h;
 			}
 		graphics {
-			underlay: 						switch_ARD2_underlay;
-			depots: 						switch_ARD2_depots;
+			underlay: 					switch_ARD2_underlay;
+			depots: 					switch_ARD2_depots;
 			bridge_surfaces: 				switch_ARD2_bridge;
-			roadstops: 						switch_ARD2_roadstops;
-			tunnels:						switch_ARD2_tunnels;
-			oneway:							oneway_ARROWS_1;
-			gui:							switch_ARD2_gui;
+			roadstops: 					switch_ARD2_roadstops;
+			tunnels:					switch_ARD2_tunnels;
+			oneway:						oneway_ARROWS_1;
+			gui:						switch_ARD2_gui;
 			}
 		}
 	}
@@ -4833,41 +4831,41 @@ if (roadtype_available("ARD2") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("ARD3") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ARD3_road, 15) {
 		property {
-			label:							"ARD3";
-			name: 							string(STR_STRING_2, string(STR_NAME_ARD1), string(STR_CLASS_B));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_4, string(STR_NAME_ARD1), string(STR_CONSTRUCTION), string(STR_CLASS_B), string(STR_WHITE));
+			label:					"ARD3";
+			name: 					string(STR_STRING_2, string(STR_NAME_ARD1), string(STR_CLASS_B));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_4, string(STR_NAME_ARD1), string(STR_CONSTRUCTION), string(STR_CLASS_B), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			introduces_roadtype_list:		["URD1"];
-			introduction_date: 				date(1960,01,01);
-			construction_cost:				21;
-			maintenance_cost: 				21;
-			sort_order: 					15;
-			speed_limit:					(speed_limit_ARD3) km/h;
+			introduction_date: 			date(1960,01,01);
+			construction_cost:			21;
+			maintenance_cost: 			21;
+			sort_order: 				15;
+			speed_limit:				(speed_limit_ARD3) km/h;
 			}
 	if (param_road_available == 0) {
 		property {
-			roadtype_flags:					bitmask(ROADTYPE_FLAG_TOWN_BUILD);
+			roadtype_flags:				bitmask(ROADTYPE_FLAG_TOWN_BUILD);
 				}
 			}
 		graphics {
-			underlay: 						switch_ARD3_underlay;
-			depots: 						switch_ARD3_depots;
+			underlay: 					switch_ARD3_underlay;
+			depots: 					switch_ARD3_depots;
 			bridge_surfaces: 				switch_ARD3_bridge_style;
-			roadstops: 						switch_ARD3_roadstops;
-			tunnels:						switch_ARD3_tunnels;
-			oneway:							oneway_ARROWS_1;
-			gui:							switch_ARD3_gui;
+			roadstops: 					switch_ARD3_roadstops;
+			tunnels:					switch_ARD3_tunnels;
+			oneway:						oneway_ARROWS_1;
+			gui:						switch_ARD3_gui;
 			}
 		}
 	}
@@ -4877,35 +4875,35 @@ if (roadtype_available("ARD3") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("ARD4") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ARD4_road, 17) {
 		property {
-			label:							"ARD4";
-			name: 							string(STR_STRING_2, string(STR_NAME_ARD0), string(STR_CLASS_A));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_4, string(STR_NAME_ARD0), string(STR_CONSTRUCTION), string(STR_CLASS_A), string(STR_WHITE));
+			label:					"ARD4";
+			name: 					string(STR_STRING_2, string(STR_NAME_ARD0), string(STR_CLASS_A));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_4, string(STR_NAME_ARD0), string(STR_CONSTRUCTION), string(STR_CLASS_A), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			introduction_date: 				date(1975,01,01);
-			construction_cost:				27;
-			maintenance_cost: 				27;
-			sort_order: 					17;
-			speed_limit:					(speed_limit_ARD4) km/h;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			introduction_date: 			date(1975,01,01);
+			construction_cost:			27;
+			maintenance_cost: 			27;
+			sort_order: 				17;
+			speed_limit:				(speed_limit_ARD4) km/h;
 			}
 		graphics {
-			underlay: 						switch_ARD4_underlay;
-			depots: 						switch_ARD4_depots;
+			underlay: 					switch_ARD4_underlay;
+			depots: 					switch_ARD4_depots;
 			bridge_surfaces: 				switch_ARD4_bridge;
-			roadstops: 						switch_ARD4_roadstops;
-			tunnels:						switch_ARD4_tunnels;
-			oneway:							oneway_ARROWS_0;
-			gui:							switch_ARD4_gui;
+			roadstops: 					switch_ARD4_roadstops;
+			tunnels:					switch_ARD4_tunnels;
+			oneway:						oneway_ARROWS_0;
+			gui:						switch_ARD4_gui;
 			}
 		}
 	}
@@ -4915,36 +4913,36 @@ if (roadtype_available("ARD4") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("ARD5") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ARD5_road, 18) {
 		property {
-			label:							"ARD5";
-			name: 							string(STR_STRING_2, string(STR_NAME_ARD1), string(STR_CLASS_A));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_4, string(STR_NAME_ARD1), string(STR_CONSTRUCTION), string(STR_CLASS_A), string(STR_WHITE));
+			label:					"ARD5";
+			name: 					string(STR_STRING_2, string(STR_NAME_ARD1), string(STR_CLASS_A));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_4, string(STR_NAME_ARD1), string(STR_CONSTRUCTION), string(STR_CLASS_A), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			introduces_roadtype_list:		["URD2"];
-			introduction_date: 				date(1975,01,01);
-			construction_cost:				29;
-			maintenance_cost: 				29;
-			sort_order: 					18;
-			speed_limit:					(speed_limit_ARD5) km/h;
+			introduction_date: 			date(1975,01,01);
+			construction_cost:			29;
+			maintenance_cost: 			29;
+			sort_order: 				18;
+			speed_limit:				(speed_limit_ARD5) km/h;
 			}
 		graphics {
-			underlay: 						switch_ARD5_underlay;
-			depots: 						switch_ARD5_depots;
+			underlay: 					switch_ARD5_underlay;
+			depots: 					switch_ARD5_depots;
 			bridge_surfaces: 				switch_ARD5_bridge;
-			roadstops: 						switch_ARD5_roadstops;
-			tunnels:						switch_ARD5_tunnels;
-			oneway:							oneway_ARROWS_0;
-			gui:							switch_ARD5_gui;
+			roadstops: 					switch_ARD5_roadstops;
+			tunnels:					switch_ARD5_tunnels;
+			oneway:						oneway_ARROWS_0;
+			gui:						switch_ARD5_gui;
 			}
 		}
 	}
@@ -4954,44 +4952,44 @@ if (roadtype_available("ARD5") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("WRD0") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, WRD0_road, 20) {
 		property {
-			label:							"WRD0";
-			name: 							string(STR_NAME_WRD0);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			label:					"WRD0";
+			name: 					string(STR_NAME_WRD0);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			roadtype_flags: 				bitmask(ROADTYPE_FLAG_NO_HOUSES, ROADTYPE_FLAG_NO_LEVEL_CROSSING);
-			introduction_date: 				date(1960,01,01);
-			speed_limit:					(param_WRD0_speed == 29) ? 0 : (param_WRD0_speed) km/h;
-			construction_cost:				45;
-			maintenance_cost: 				45;
-			sort_order: 					20;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			roadtype_flags: 			bitmask(ROADTYPE_FLAG_NO_HOUSES, ROADTYPE_FLAG_NO_LEVEL_CROSSING);
+			introduction_date: 			date(1960,01,01);
+			speed_limit:				(param_WRD0_speed == 29) ? 0 : (param_WRD0_speed) km/h;
+			construction_cost:			45;
+			maintenance_cost: 			45;
+			sort_order: 				20;
 			}
 	if (param_menu_text == 1) {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_WRD0), string(STR_CONSTRUCTION), string(STR_BUS_TRAIN));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_WRD0), string(STR_CONSTRUCTION), string(STR_BUS_TRAIN));
 				}
 			} else {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_WRD0), string(STR_CONSTRUCTION), string(STR_WHITE));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_WRD0), string(STR_CONSTRUCTION), string(STR_WHITE));
 				}
 			}
 		graphics {
-			underlay: 						switch_WRD0_underlay;
-			depots: 						switch_WRD0_depots;
+			underlay: 					switch_WRD0_underlay;
+			depots: 					switch_WRD0_depots;
 			bridge_surfaces: 				switch_WRD0_bridge;
-			roadstops: 						switch_WRD0_roadstops;
-			tunnels:						switch_WRD0_tunnels;
-			oneway:							oneway_ARROWS_1;
-			gui: 							switch_WRD0_gui;
+			roadstops: 					switch_WRD0_roadstops;
+			tunnels:					switch_WRD0_tunnels;
+			oneway:						oneway_ARROWS_1;
+			gui: 						switch_WRD0_gui;
 			}
 		}
 	}
@@ -5001,43 +4999,43 @@ if (roadtype_available("WRD0") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("WRD1") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, WRD1_road, 21) {
 		property {
-			label:							"WRD1";
-			name: 							string(STR_NAME_WRD1);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			label:					"WRD1";
+			name: 					string(STR_NAME_WRD1);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			roadtype_flags: 				bitmask(ROADTYPE_FLAG_NO_LEVEL_CROSSING, ROADTYPE_FLAG_NO_HOUSES);
-			introduction_date: 				date(1980,01,01);
-			construction_cost:				54;
-			maintenance_cost: 				54;
-			sort_order: 					21;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			roadtype_flags: 			bitmask(ROADTYPE_FLAG_NO_LEVEL_CROSSING, ROADTYPE_FLAG_NO_HOUSES);
+			introduction_date: 			date(1980,01,01);
+			construction_cost:			54;
+			maintenance_cost: 			54;
+			sort_order: 				21;
 			}
 	if (param_menu_text == 1) {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_WRD1), string(STR_CONSTRUCTION), string(STR_BUS_TRAIN));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_WRD1), string(STR_CONSTRUCTION), string(STR_BUS_TRAIN));
 				}
 			} else {
 		property {
-			menu_text: 						string(STR_STRING_2, string(STR_NAME_WRD1), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_2, string(STR_NAME_WRD1), string(STR_CONSTRUCTION));
 				}
 			}
 		graphics {
-			underlay: 						switch_WRD1_underlay;
-			depots: 						switch_WRD1_depots;
+			underlay: 					switch_WRD1_underlay;
+			depots: 					switch_WRD1_depots;
 			bridge_surfaces: 				switch_WRD1_bridge;
-			roadstops: 						switch_WRD1_roadstops;
-			tunnels:						switch_WRD1_tunnels;
-			oneway:							oneway_ARROWS_0;
-			gui:							switch_WRD1_gui;
+			roadstops: 					switch_WRD1_roadstops;
+			tunnels:					switch_WRD1_tunnels;
+			oneway:						oneway_ARROWS_0;
+			gui:						switch_WRD1_gui;
 			}
 		}
 	}
@@ -5047,34 +5045,34 @@ if (roadtype_available("WRD1") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("URD0") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, URD0_road, 22) {
 		property {
-			label:							"URD0";
-			name: 							string(STR_NAME_URD0);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_URD0), string(STR_CONSTRUCTION), string(STR_WHITE));
+			label:					"URD0";
+			name: 					string(STR_NAME_URD0);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_URD0), string(STR_CONSTRUCTION), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			construction_cost:				24;
-			maintenance_cost: 				24;
-			sort_order: 					22;
-			speed_limit:					(speed_limit_URD0) km/h;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			construction_cost:			24;
+			maintenance_cost: 			24;
+			sort_order: 				22;
+			speed_limit:				(speed_limit_URD0) km/h;
 			}
 		graphics {
-			underlay: 						switch_URD0_underlay;
-			depots: 						switch_URD0_depots;
+			underlay: 					switch_URD0_underlay;
+			depots: 					switch_URD0_depots;
 			bridge_surfaces: 				switch_ARD0_bridge;
-			roadstops: 						switch_URD0_roadstops;
-			tunnels:						switch_ARD0_tunnels_1;
-			oneway:							oneway_ARROWS_2;
-			gui:							switch_URD0_gui;
+			roadstops: 					switch_URD0_roadstops;
+			tunnels:					switch_ARD0_tunnels_1;
+			oneway:						oneway_ARROWS_2;
+			gui:						switch_URD0_gui;
 			}
 		}
 	}
@@ -5084,34 +5082,34 @@ if (roadtype_available("URD0") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("URD1") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, URD1_road, 24) {
 		property {
-			label:							"URD1";
-			name: 							string(STR_NAME_URD1);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_URD1), string(STR_CONSTRUCTION), string(STR_WHITE));
+			label:					"URD1";
+			name: 					string(STR_NAME_URD1);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_URD1), string(STR_CONSTRUCTION), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			construction_cost:				30;
-			maintenance_cost: 				30;
-			sort_order: 					24;
-			speed_limit:					(speed_limit_URD1) km/h;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			construction_cost:			30;
+			maintenance_cost: 			30;
+			sort_order: 				24;
+			speed_limit:				(speed_limit_URD1) km/h;
 			}
 		graphics {
-			underlay: 						switch_URD1_underlay;
-			depots: 						switch_URD1_depots;
+			underlay: 					switch_URD1_underlay;
+			depots: 					switch_URD1_depots;
 			bridge_surfaces: 				switch_URD1_bridge_style;
-			roadstops: 						switch_URD1_roadstops;
-			tunnels:						switch_URD1_tunnels;
-			oneway:							oneway_ARROWS_1;
-			gui:							switch_URD1_gui;
+			roadstops: 					switch_URD1_roadstops;
+			tunnels:					switch_URD1_tunnels;
+			oneway:						oneway_ARROWS_1;
+			gui:						switch_URD1_gui;
 			}
 		}
 	}
@@ -5121,34 +5119,34 @@ if (roadtype_available("URD1") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("URD2") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, URD2_road, 26) {
 		property {
-			label:							"URD2";
-			name: 							string(STR_NAME_URD2);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_URD2), string(STR_CONSTRUCTION), string(STR_WHITE));
+			label:					"URD2";
+			name: 					string(STR_NAME_URD2);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_URD2), string(STR_CONSTRUCTION), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			construction_cost:				36;
-			maintenance_cost: 				36;
-			sort_order: 					26;
-			speed_limit:					(speed_limit_URD2) km/h;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			construction_cost:			36;
+			maintenance_cost: 			36;
+			sort_order: 				26;
+			speed_limit:				(speed_limit_URD2) km/h;
 			}
 		graphics {
-			underlay: 						switch_URD2_underlay;
-			depots: 						switch_URD2_depots;
+			underlay: 					switch_URD2_underlay;
+			depots: 					switch_URD2_depots;
 			bridge_surfaces: 				switch_URD2_bridge;
-			roadstops: 						switch_URD2_roadstops;
-			tunnels:						switch_URD2_tunnels_style;
-			oneway:							oneway_ARROWS_0;
-			gui:							switch_URD2_gui;
+			roadstops: 					switch_URD2_roadstops;
+			tunnels:					switch_URD2_tunnels_style;
+			oneway:						oneway_ARROWS_0;
+			gui:						switch_URD2_gui;
 			}
 		}
 	}
@@ -5158,44 +5156,44 @@ if (roadtype_available("URD2") || loading_stage == LOADING_STAGE_RESERVE) {
 if (param_pedestrian_zone != 0) {
 	item(FEAT_ROADTYPES, DRD0_road, 27) {
 		property {
-			label:							"DRD0";
-			name: 							string(STR_NAME_DRD0);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			label:					"DRD0";
+			name: 					string(STR_NAME_DRD0);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
     		autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text:				string(STR_NEW_ENGINE_ROAD);
+			new_engine_text:			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			roadtype_flags: 				bitmask(ROADTYPE_FLAG_NO_LEVEL_CROSSING);
-			introduction_date:				date(1960,01,01);
-			speed_limit:					(speed_limit_DRD0) km/h;
-			construction_cost:				10;
-			maintenance_cost: 				10;
-			sort_order: 					27;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			roadtype_flags: 			bitmask(ROADTYPE_FLAG_NO_LEVEL_CROSSING);
+			introduction_date:			date(1960,01,01);
+			speed_limit:				(speed_limit_DRD0) km/h;
+			construction_cost:			10;
+			maintenance_cost: 			10;
+			sort_order: 				27;
 			}
 	if (param_menu_text == 1) {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_DRD0), string(STR_CONSTRUCTION), string(STR_TRAIN));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_DRD0), string(STR_CONSTRUCTION), string(STR_TRAIN));
 				}
 			} else {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_DRD0), string(STR_CONSTRUCTION), string(STR_WHITE));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_DRD0), string(STR_CONSTRUCTION), string(STR_WHITE));
 				}
 			}
 		graphics {
-			underlay: 						switch_DRD0_underlay;
-			depots: 						switch_DRD0_depots;
+			underlay: 					switch_DRD0_underlay;
+			depots: 					switch_DRD0_depots;
 			bridge_surfaces: 				switch_DRD0_bridge;
-			roadstops: 						switch_DRD0_roadstops;
-			tunnels:						switch_DRD0_tunnels;
-			oneway:							oneway_ARROWS_SIGN_0;
-			gui:							switch_DRD0_gui;
+			roadstops: 					switch_DRD0_roadstops;
+			tunnels:					switch_DRD0_tunnels;
+			oneway:						oneway_ARROWS_SIGN_0;
+			gui:						switch_DRD0_gui;
 			}
 		}
 	}
@@ -5205,35 +5203,35 @@ if (param_pedestrian_zone != 0) {
 if (roadtype_available("DRD1") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, DRD1_road, 28) {
 		property {
-			label:							"DRD1";
-			name: 							string(STR_NAME_DRD1);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_DRD1), string(STR_CONSTRUCTION), string(STR_WHITE));
+			label:					"DRD1";
+			name: 					string(STR_NAME_DRD1);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_DRD1), string(STR_CONSTRUCTION), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-            introduction_date:				date(1935,01,01);
-			construction_cost:				18;
-			maintenance_cost: 				18;
-			sort_order: 					28;
-			speed_limit:					(speed_limit_DRD1) km/h;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+            		introduction_date:			date(1935,01,01);
+			construction_cost:			18;
+			maintenance_cost: 			18;
+			sort_order: 				28;
+			speed_limit:				(speed_limit_DRD1) km/h;
 			}
 		graphics {
-			underlay: 						switch_DRD1_underlay;
-			depots: 						switch_DRD1_depots;
+			underlay: 					switch_DRD1_underlay;
+			depots: 					switch_DRD1_depots;
 			bridge_surfaces: 				switch_DRD1_bridge;
-			roadstops: 						switch_DRD1_roadstops;
-			tunnels:						switch_DRD1_tunnels;
-			oneway:							oneway_SIGN_1;
-			gui:							switch_DRD1_gui;
+			roadstops: 					switch_DRD1_roadstops;
+			tunnels:					switch_DRD1_tunnels;
+			oneway:						oneway_SIGN_1;
+			gui:						switch_DRD1_gui;
 			}
 		}
 	}
@@ -5243,34 +5241,34 @@ if (roadtype_available("DRD1") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("DRD2") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, DRD2_road, 30) {
 		property {
-			label:							"DRD2";
-			name: 							string(STR_NAME_DRD2);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_DRD2), string(STR_CONSTRUCTION), string(STR_WHITE));
+			label:					"DRD2";
+			name: 					string(STR_NAME_DRD2);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_DRD2), string(STR_CONSTRUCTION), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			construction_cost:				18;
-			maintenance_cost: 				18;
-			sort_order: 					30;
-			speed_limit:					(speed_limit_DRD2) km/h;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			construction_cost:			18;
+			maintenance_cost: 			18;
+			sort_order: 				30;
+			speed_limit:				(speed_limit_DRD2) km/h;
 			}
 		graphics {
-			underlay: 						switch_DRD2_underlay;
-			depots: 						switch_DRD2_depots;
+			underlay: 					switch_DRD2_underlay;
+			depots: 					switch_DRD2_depots;
 			bridge_surfaces: 				switch_DRD2_bridge;
-			roadstops: 						switch_DRD2_roadstops;
-			tunnels:						switch_DRD2_tunnels;
-			oneway:							oneway_SIGN_0;
-			gui:							switch_DRD2_gui;
+			roadstops: 					switch_DRD2_roadstops;
+			tunnels:					switch_DRD2_tunnels;
+			oneway:						oneway_SIGN_0;
+			gui:						switch_DRD2_gui;
 			}
 		}
 	}
@@ -5280,44 +5278,44 @@ if (roadtype_available("DRD2") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("DRD3") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, DRD3_road, 31) {
 		property {
-			label:							"DRD3";
-			name: 							string(STR_NAME_DRD3);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			label:					"DRD3";
+			name: 					string(STR_NAME_DRD3);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			roadtype_flags: 				bitmask(ROADTYPE_FLAG_NO_HOUSES);
-			introduction_date: 				date(1900,01,01);
-			construction_cost:				24;
-			maintenance_cost: 				24;
-			sort_order: 					31;
-			speed_limit:					(speed_limit_DRD3) km/h;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			roadtype_flags: 			bitmask(ROADTYPE_FLAG_NO_HOUSES);
+			introduction_date: 			date(1900,01,01);
+			construction_cost:			24;
+			maintenance_cost: 			24;
+			sort_order: 				31;
+			speed_limit:				(speed_limit_DRD3) km/h;
 			}
 	if (param_menu_text == 1) {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_DRD3), string(STR_CONSTRUCTION), string(STR_BUS));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_DRD3), string(STR_CONSTRUCTION), string(STR_BUS));
 				}
 			} else {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_DRD3), string(STR_CONSTRUCTION), string(STR_WHITE));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_DRD3), string(STR_CONSTRUCTION), string(STR_WHITE));
 				}
 			}
 		graphics {
-			underlay: 						switch_DRD3_underlay;
-			depots: 						switch_DRD3_depots;
+			underlay: 					switch_DRD3_underlay;
+			depots: 					switch_DRD3_depots;
 			bridge_surfaces: 				switch_DRD3_bridge;
-			roadstops: 						switch_DRD3_roadstops;
-			tunnels:						switch_DRD3_tunnels;
-			oneway:							oneway_ARROWS_SIGN_1;
-			gui:							switch_DRD3_gui;
+			roadstops: 					switch_DRD3_roadstops;
+			tunnels:					switch_DRD3_tunnels;
+			oneway:						oneway_ARROWS_SIGN_1;
+			gui:						switch_DRD3_gui;
 			}
 		}
 	}
@@ -5327,44 +5325,44 @@ if (roadtype_available("DRD3") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("DRD4") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, DRD4_road, 32) {
 		property {
-			label:							"DRD4";
-			name: 							string(STR_NAME_DRD4);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			label:					"DRD4";
+			name: 					string(STR_NAME_DRD4);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			roadtype_flags: 				bitmask(ROADTYPE_FLAG_NO_HOUSES);
-			introduction_date: 				date(1930,01,01);
-			construction_cost:				30;
-			maintenance_cost: 				30;
-			sort_order: 					32;
-			speed_limit:					(speed_limit_DRD4) km/h;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			roadtype_flags: 			bitmask(ROADTYPE_FLAG_NO_HOUSES);
+			introduction_date: 			date(1930,01,01);
+			construction_cost:			30;
+			maintenance_cost: 			30;
+			sort_order: 				32;
+			speed_limit:				(speed_limit_DRD4) km/h;
 			}
 	if (param_menu_text == 1) {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_DRD4), string(STR_CONSTRUCTION), string(STR_BUS));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_DRD4), string(STR_CONSTRUCTION), string(STR_BUS));
 				}
 			} else {
 		property {
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_DRD4), string(STR_CONSTRUCTION), string(STR_WHITE));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_DRD4), string(STR_CONSTRUCTION), string(STR_WHITE));
 				}
 			}
 		graphics {
-			underlay: 						switch_DRD4_underlay;
-			depots: 						switch_DRD4_depots;
+			underlay: 					switch_DRD4_underlay;
+			depots: 					switch_DRD4_depots;
 			bridge_surfaces: 				switch_DRD4_bridge;
-			roadstops: 						switch_DRD4_roadstops;
-			tunnels:						switch_DRD4_tunnels;
-			oneway:							oneway_SIGN_0;
-			gui:							switch_DRD4_gui;
+			roadstops: 					switch_DRD4_roadstops;
+			tunnels:					switch_DRD4_tunnels;
+			oneway:						oneway_SIGN_0;
+			gui:						switch_DRD4_gui;
 			}
 		}
 	}
@@ -5374,35 +5372,35 @@ if (roadtype_available("DRD4") || loading_stage == LOADING_STAGE_RESERVE) {
 if (roadtype_available("DRD5") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, DRD5_road, 33) {
 		property {
-			label:							"DRD5";
-			name: 							string(STR_NAME_DRD5);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_DRD5), string(STR_CONSTRUCTION), string(STR_WHITE));
+			label:					"DRD5";
+			name: 					string(STR_NAME_DRD5);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_DRD5), string(STR_CONSTRUCTION), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ROAD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ROAD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
 			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-											 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-											 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-											 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			introduction_date: 				date(1960,01,01);
-			construction_cost:				36;
-			maintenance_cost: 				36;
-			sort_order: 					33;
-			speed_limit:					(speed_limit_DRD5) km/h;
+								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+			introduction_date: 			date(1960,01,01);
+			construction_cost:			36;
+			maintenance_cost: 			36;
+			sort_order: 				33;
+			speed_limit:				(speed_limit_DRD5) km/h;
 			}
 		graphics {
-			underlay: 						switch_DRD5_underlay;
-			depots: 						switch_DRD5_depots;
+			underlay: 					switch_DRD5_underlay;
+			depots: 					switch_DRD5_depots;
 			bridge_surfaces: 				switch_DRD5_bridge;
-			roadstops: 						switch_DRD5_roadstops;
-			tunnels:						switch_DRD5_tunnels;
-			oneway:							oneway_ARROWS_SIGN_2;
-			gui:							switch_DRD5_gui;
+			roadstops: 					switch_DRD5_roadstops;
+			tunnels:					switch_DRD5_tunnels;
+			oneway:						oneway_ARROWS_SIGN_2;
+			gui:						switch_DRD5_gui;
 			}
 		}
 	}
@@ -5415,32 +5413,32 @@ if (roadtype_available("DRD5") || loading_stage == LOADING_STAGE_RESERVE) {
 if (param_disable != 1 ) {
 	item(FEAT_ROADTYPES, ELRD_road, 7) {
 		property {
-			label:							"ELRD";
-			name: 							string(STR_STRING_2, string(STR_NAME_SRD0), string(STR_ELECTRIFIELD));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_4, string(STR_NAME_SRD0), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD), string(STR_WHITE));
+			label:					"ELRD";
+			name: 					string(STR_STRING_2, string(STR_NAME_SRD0), string(STR_ELECTRIFIELD));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_4, string(STR_NAME_SRD0), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ELRD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ELRD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ELRD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ELRD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ELRD);
 			powered_roadtype_list: 			["ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			introduces_roadtype_list:		["UER0"];
-			roadtype_flags: 				bitmask(ROADTYPE_FLAG_CATENARY);
-			speed_limit:					50 km/h;
-			construction_cost:				20;
-			maintenance_cost: 				20;
-			sort_order: 					7;
+			roadtype_flags: 			bitmask(ROADTYPE_FLAG_CATENARY);
+			speed_limit:				50 km/h;
+			construction_cost:			20;
+			maintenance_cost: 			20;
+			sort_order: 				7;
 			}
 		graphics {
-			underlay: 						switch_SRD0_underlay;
-			depots: 						switch_ELRD_depots;
+			underlay: 					switch_SRD0_underlay;
+			depots: 					switch_ELRD_depots;
 			bridge_surfaces: 				switch_SRD0_bridge;
-			roadstops: 						switch_SRD0_roadstops;
-			tunnels:						switch_SRD0_tunnels;
-			oneway:							oneway_SIGN_1;
+			roadstops: 					switch_SRD0_roadstops;
+			tunnels:					switch_SRD0_tunnels;
+			oneway:						oneway_SIGN_1;
 			catenary_back: 					catenary_back_wood;
 			catenary_front: 				catenary_ELRD_front_wood;
-			gui:							switch_ELRD_gui;
+			gui:						switch_ELRD_gui;
 			}
 		}
 	}
@@ -5451,34 +5449,34 @@ if (param_disable != 1 ) {
 if (roadtype_available("AER0") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, AER0_road, 11) {
 		property {
-			label:							"AER0";
-			name: 							string(STR_STRING_3, string(STR_NAME_ARD0), string(STR_CLASS_C), string(STR_ELECTRIFIELD));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_5, string(STR_NAME_ARD0), string(STR_CONSTRUCTION), string(STR_CLASS_C), string(STR_ELECTRIFIELD), string(STR_WHITE));
+			label:					"AER0";
+			name: 					string(STR_STRING_3, string(STR_NAME_ARD0), string(STR_CLASS_C), string(STR_ELECTRIFIELD));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_5, string(STR_NAME_ARD0), string(STR_CONSTRUCTION), string(STR_CLASS_C), string(STR_ELECTRIFIELD), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ELRD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ELRD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ELRD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ELRD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ELRD);
 			powered_roadtype_list: 			["ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			roadtype_flags: 				bitmask(ROADTYPE_FLAG_CATENARY);
-			introduction_date: 				date(1925,01,01);
+			roadtype_flags: 			bitmask(ROADTYPE_FLAG_CATENARY);
+			introduction_date: 			date(1925,01,01);
 			introduces_roadtype_list:		["UER0"];
 			requires_roadtype_list:			["ELRD"];
-			construction_cost:				23;
-			maintenance_cost: 				23;
-			sort_order: 					11;
-			speed_limit:					(speed_limit_ARD0) km/h;
+			construction_cost:			23;
+			maintenance_cost: 			23;
+			sort_order: 				11;
+			speed_limit:				(speed_limit_ARD0) km/h;
 			}
 		graphics {
-			underlay: 						switch_ARD0_underlay;
-			depots: 						switch_AER0_depots;
+			underlay: 					switch_ARD0_underlay;
+			depots: 					switch_AER0_depots;
 			bridge_surfaces: 				switch_ARD0_bridge;
-			roadstops: 						switch_ARD0_roadstops;
-			tunnels:						switch_ARD0_tunnels;
-			oneway:							oneway_ARROWS_2;
+			roadstops: 					switch_ARD0_roadstops;
+			tunnels:					switch_ARD0_tunnels;
+			oneway:						oneway_ARROWS_2;
 			catenary_back: 					catenary_back_wood;
 			catenary_front: 				catenary_ELRD_front_wood;
-			gui:							switch_AER0_gui;
+			gui:						switch_AER0_gui;
 			}
 		}
 	}
@@ -5490,33 +5488,33 @@ if (param_disable != 1 ) {
 if (roadtype_available("AER1") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, AER1_road, 13) {
 		property {
-			label:							"AER1";
-			name: 							string(STR_STRING_3, string(STR_NAME_ARD1), string(STR_CLASS_C), string(STR_ELECTRIFIELD));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_5, string(STR_NAME_ARD1), string(STR_CONSTRUCTION), string(STR_CLASS_C), string(STR_ELECTRIFIELD), string(STR_WHITE));
+			label:					"AER1";
+			name: 					string(STR_STRING_3, string(STR_NAME_ARD1), string(STR_CLASS_C), string(STR_ELECTRIFIELD));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_5, string(STR_NAME_ARD1), string(STR_CONSTRUCTION), string(STR_CLASS_C), string(STR_ELECTRIFIELD), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ELRD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ELRD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ELRD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ELRD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ELRD);
 			powered_roadtype_list: 			["ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			roadtype_flags: 				bitmask(ROADTYPE_FLAG_CATENARY);
-			introduction_date: 				date(1945,01,01);
+			roadtype_flags: 			bitmask(ROADTYPE_FLAG_CATENARY);
+			introduction_date: 			date(1945,01,01);
 			requires_roadtype_list:			["ELRD"];
-			construction_cost:				25;
-			maintenance_cost: 				25;
-			sort_order: 					13;
-			speed_limit:					(speed_limit_ARD1) km/h;
+			construction_cost:			25;
+			maintenance_cost: 			25;
+			sort_order: 				13;
+			speed_limit:				(speed_limit_ARD1) km/h;
 			}
 		graphics {
-			underlay: 						switch_ARD1_underlay_style;
-			depots: 						switch_AER1_depots;
+			underlay: 					switch_ARD1_underlay_style;
+			depots: 					switch_AER1_depots;
 			bridge_surfaces: 				switch_ARD1_bridge_style;
-			roadstops: 						switch_ARD1_roadstops;
-			tunnels:						switch_ARD1_tunnels;
-			oneway:							oneway_ARROWS_2;
+			roadstops: 					switch_ARD1_roadstops;
+			tunnels:					switch_ARD1_tunnels;
+			oneway:						oneway_ARROWS_2;
 			catenary_back: 					catenary_back_steel;
 			catenary_front: 				catenary_ELRD_front_steel;
-			gui:							switch_AER1_gui;
+			gui:						switch_AER1_gui;
 			}
 		}
 	}
@@ -5528,34 +5526,34 @@ if (param_disable != 1 ) {
 if (roadtype_available("AER3") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, AER3_road, 16) {
 		property {
-			label:							"AER3";
-			name: 							string(STR_STRING_3, string(STR_NAME_ARD1), string(STR_CLASS_B), string(STR_ELECTRIFIELD));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_5, string(STR_NAME_ARD1), string(STR_CONSTRUCTION), string(STR_CLASS_B), string(STR_ELECTRIFIELD), string(STR_WHITE));
+			label:					"AER3";
+			name: 					string(STR_STRING_3, string(STR_NAME_ARD1), string(STR_CLASS_B), string(STR_ELECTRIFIELD));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_5, string(STR_NAME_ARD1), string(STR_CONSTRUCTION), string(STR_CLASS_B), string(STR_ELECTRIFIELD), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ELRD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ELRD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ELRD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ELRD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ELRD);
 			powered_roadtype_list: 			["ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			roadtype_flags: 				bitmask(ROADTYPE_FLAG_CATENARY);
-			introduction_date: 				date(1960,01,01);
+			roadtype_flags: 			bitmask(ROADTYPE_FLAG_CATENARY);
+			introduction_date: 			date(1960,01,01);
 			introduces_roadtype_list:		["UER1"];
 			requires_roadtype_list:			["ELRD"];
-			construction_cost:				29;
-			maintenance_cost: 				29;
-			sort_order: 					16;
-			speed_limit:					(speed_limit_ARD3) km/h;
+			construction_cost:			29;
+			maintenance_cost: 			29;
+			sort_order: 				16;
+			speed_limit:				(speed_limit_ARD3) km/h;
 			}
 		graphics {
-			underlay: 						switch_ARD3_underlay;
-			depots: 						switch_AER3_depots;
+			underlay: 					switch_ARD3_underlay;
+			depots: 					switch_AER3_depots;
 			bridge_surfaces: 				switch_ARD3_bridge_style;
-			roadstops: 						switch_ARD3_roadstops;
-			tunnels:						switch_ARD3_tunnels;
-			oneway:							oneway_ARROWS_1;
+			roadstops: 					switch_ARD3_roadstops;
+			tunnels:					switch_ARD3_tunnels;
+			oneway:						oneway_ARROWS_1;
 			catenary_back: 					catenary_back_steel;
 			catenary_front: 				catenary_ELRD_front_steel;
-			gui:							switch_AER3_gui;
+			gui:						switch_AER3_gui;
 			}
 		}
 	}
@@ -5567,33 +5565,33 @@ if (param_disable != 1 ) {
 if (roadtype_available("AER5") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, AER5_road, 19) {
 		property {
-			label:							"AER5";
-			name: 							string(STR_STRING_3, string(STR_NAME_ARD1), string(STR_CLASS_A), string(STR_ELECTRIFIELD));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_5, string(STR_NAME_ARD1), string(STR_CONSTRUCTION), string(STR_CLASS_A), string(STR_ELECTRIFIELD), string(STR_WHITE));
+			label:					"AER5";
+			name: 					string(STR_STRING_3, string(STR_NAME_ARD1), string(STR_CLASS_A), string(STR_ELECTRIFIELD));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_5, string(STR_NAME_ARD1), string(STR_CONSTRUCTION), string(STR_CLASS_A), string(STR_ELECTRIFIELD), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ELRD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ELRD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ELRD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ELRD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ELRD);
 			powered_roadtype_list: 			["ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			roadtype_flags: 				bitmask(ROADTYPE_FLAG_CATENARY);
+			roadtype_flags: 			bitmask(ROADTYPE_FLAG_CATENARY);
 			requires_roadtype_list:			["ELRD"];
-			introduction_date: 				date(1975,01,01);
-			construction_cost:				37;
-			maintenance_cost: 				37;
-			sort_order: 					19;
-			speed_limit:					(speed_limit_ARD5) km/h;
+			introduction_date: 			date(1975,01,01);
+			construction_cost:			37;
+			maintenance_cost: 			37;
+			sort_order: 				19;
+			speed_limit:				(speed_limit_ARD5) km/h;
 			}
 		graphics {
-			underlay: 						switch_ARD5_underlay;
-			depots: 						switch_AER5_depots;
+			underlay: 					switch_ARD5_underlay;
+			depots: 					switch_AER5_depots;
 			bridge_surfaces: 				switch_ARD5_bridge;
-			roadstops: 						switch_ARD5_roadstops;
-			tunnels:						switch_ARD5_tunnels;
-			oneway:							oneway_ARROWS_0;
+			roadstops: 					switch_ARD5_roadstops;
+			tunnels:					switch_ARD5_tunnels;
+			oneway:						oneway_ARROWS_0;
 			catenary_back: 					catenary_back_white;
 			catenary_front: 				catenary_ELRD_front_white;
-			gui:							switch_AER5_gui;
+			gui:						switch_AER5_gui;
 			}
 		}
 	}
@@ -5605,31 +5603,31 @@ if (param_disable != 1 ) {
 if (roadtype_available("UER0") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, UER0_road, 23) {
 		property {
-			label:							"UER0";
-			name: 							string(STR_STRING_2, string(STR_NAME_URD0), string(STR_ELECTRIFIELD));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_4, string(STR_NAME_URD0), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD), string(STR_WHITE));
+			label:					"UER0";
+			name: 					string(STR_STRING_2, string(STR_NAME_URD0), string(STR_ELECTRIFIELD));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_4, string(STR_NAME_URD0), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ELRD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ELRD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ELRD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ELRD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ELRD);
 			powered_roadtype_list: 			["ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			roadtype_flags: 				bitmask(ROADTYPE_FLAG_CATENARY);
-			construction_cost:				32;
-			maintenance_cost: 				32;
-			sort_order: 					23;
-			speed_limit:					(speed_limit_URD0) km/h;
+			roadtype_flags: 			bitmask(ROADTYPE_FLAG_CATENARY);
+			construction_cost:			32;
+			maintenance_cost: 			32;
+			sort_order: 				23;
+			speed_limit:				(speed_limit_URD0) km/h;
 			}
 		graphics {
-			underlay: 						switch_URD0_underlay;
-			depots: 						switch_UER0_depots;
+			underlay: 					switch_URD0_underlay;
+			depots: 					switch_UER0_depots;
 			bridge_surfaces: 				switch_ARD0_bridge;
-			roadstops: 						switch_URD0_roadstops;
-			tunnels:						switch_ARD0_tunnels_1;
-			oneway:							oneway_ARROWS_2;
+			roadstops: 					switch_URD0_roadstops;
+			tunnels:					switch_ARD0_tunnels_1;
+			oneway:						oneway_ARROWS_2;
 			catenary_back: 					catenary_back_steel;
 			catenary_front: 				catenary_ELRD_front_steel;
-			gui:							switch_UER0_gui;
+			gui:						switch_UER0_gui;
 			}
 		}
 	}
@@ -5641,31 +5639,31 @@ if (param_disable != 1 ) {
 if (roadtype_available("UER1") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, UER1_road, 25) {
 		property {
-			label:							"UER1";
-			name: 							string(STR_STRING_2, string(STR_NAME_URD1), string(STR_ELECTRIFIELD));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_4, string(STR_NAME_URD1), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD), string(STR_WHITE));
+			label:					"UER1";
+			name: 					string(STR_STRING_2, string(STR_NAME_URD1), string(STR_ELECTRIFIELD));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_4, string(STR_NAME_URD1), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ELRD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ELRD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ELRD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ELRD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ELRD);
 			powered_roadtype_list: 			["ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			roadtype_flags: 				bitmask(ROADTYPE_FLAG_CATENARY);
-			construction_cost:				38;
-			maintenance_cost: 				38;
-			sort_order: 					25;
-			speed_limit:					(speed_limit_URD1) km/h;
+			roadtype_flags: 			bitmask(ROADTYPE_FLAG_CATENARY);
+			construction_cost:			38;
+			maintenance_cost: 			38;
+			sort_order: 				25;
+			speed_limit:				(speed_limit_URD1) km/h;
 			}
 		graphics {
-			underlay: 						switch_URD1_underlay;
-			depots: 						switch_UER1_depots;
+			underlay: 					switch_URD1_underlay;
+			depots: 					switch_UER1_depots;
 			bridge_surfaces: 				switch_URD1_bridge_style;
-			roadstops: 						switch_URD1_roadstops;
-			tunnels:						switch_URD1_tunnels;
-			oneway:							oneway_ARROWS_1;
+			roadstops: 					switch_URD1_roadstops;
+			tunnels:					switch_URD1_tunnels;
+			oneway:						oneway_ARROWS_1;
 			catenary_back: 					catenary_back_white;
 			catenary_front: 				catenary_ELRD_front_white;
-			gui:							switch_UER1_gui;
+			gui:						switch_UER1_gui;
 			}
 		}
 	}
@@ -5677,33 +5675,33 @@ if (param_disable != 1 ) {
 if (roadtype_available("DER1") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, DER1_road, 29) {
 		property {
-			label:							"DER1";
-			name: 							string(STR_STRING_2, string(STR_NAME_DRD1), string(STR_ELECTRIFIELD));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_4, string(STR_NAME_DRD1), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD), string(STR_WHITE));
+			label:					"DER1";
+			name: 					string(STR_STRING_2, string(STR_NAME_DRD1), string(STR_ELECTRIFIELD));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_ROAD), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_4, string(STR_NAME_DRD1), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ELRD);
-			autoreplace_text: 				string(STR_AUTOREPLACE_ELRD);
-			new_engine_text: 				string(STR_NEW_ENGINE_ELRD);
+			autoreplace_text: 			string(STR_AUTOREPLACE_ELRD);
+			new_engine_text: 			string(STR_NEW_ENGINE_ELRD);
 			powered_roadtype_list: 			["ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			roadtype_flags: 				bitmask(ROADTYPE_FLAG_CATENARY);
+			roadtype_flags: 			bitmask(ROADTYPE_FLAG_CATENARY);
 			requires_roadtype_list:			["ELRD"];
-			introduction_date:				date(1935,01,01);
-			construction_cost:				26;
-			maintenance_cost: 				26;
-			sort_order: 					29;
-			speed_limit:					(speed_limit_DRD1) km/h;
+			introduction_date:			date(1935,01,01);
+			construction_cost:			26;
+			maintenance_cost: 			26;
+			sort_order: 				29;
+			speed_limit:				(speed_limit_DRD1) km/h;
 			}
 		graphics {
-			underlay: 						switch_DRD1_underlay;
-			depots: 						switch_DER1_depots;
+			underlay: 					switch_DRD1_underlay;
+			depots: 					switch_DER1_depots;
 			bridge_surfaces: 				switch_DRD1_bridge;
-			roadstops: 						switch_DRD1_roadstops;
-			tunnels:						switch_DRD1_tunnels;
-			oneway:							oneway_SIGN_0;
+			roadstops: 					switch_DRD1_roadstops;
+			tunnels:					switch_DRD1_tunnels;
+			oneway:						oneway_SIGN_0;
 			catenary_back: 					catenary_back_steel;
 			catenary_front: 				catenary_ELRD_front_steel;
-			gui:							switch_DER1_gui;
+			gui:						switch_DER1_gui;
 			}
 		}
 	}
@@ -5717,27 +5715,27 @@ if (roadtype_available("DER1") || loading_stage == LOADING_STAGE_RESERVE) {
 if (param_disable != 1 ) {
 	item(FEAT_TRAMTYPES, RAIL_tram, 34) {
 		property {
-			label:							"RAIL";
-			name: 							string(STR_NAME_RAIL);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_TRAM), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_RAIL), string(STR_CONSTRUCTION), string(STR_WHITE));
+			label:					"RAIL";
+			name: 					string(STR_NAME_RAIL);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_TRAM), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_RAIL), string(STR_CONSTRUCTION), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_TRAM);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM);
-			new_engine_text: 				string(STR_NEW_ENGINE_TRAM);
+			autoreplace_text: 			string(STR_AUTOREPLACE_TRAM);
+			new_engine_text: 			string(STR_NEW_ENGINE_TRAM);
 			powered_tramtype_list: 			["RAIL", "NBAN", "NIAN", "ELRL", "NBAE", "NUAE", "NUBE", "NUCE", "NIAE"];
 			alternative_tramtype_list:		["RAIL", "NBAN", "NIAN"];
-			speed_limit:					80 km/h;
-			construction_cost: 				14;
-			maintenance_cost:				14;
-			sort_order: 					1;
+			speed_limit:				80 km/h;
+			construction_cost: 			14;
+			maintenance_cost:			14;
+			sort_order: 				1;
 			}
 		graphics {
 			track_overlay: 					switch_RAIL_overlay;
-			underlay: 						switch_RAIL_underlay;
-			depots: 						switch_RAIL_depots;
+			underlay: 					switch_RAIL_underlay;
+			depots: 					switch_RAIL_depots;
 			bridge_surfaces: 				switch_RAIL_bridge;
-			tunnels:						switch_RAIL_tunnels;
-			gui: 							switch_RAIL_gui;
+			tunnels:					switch_RAIL_tunnels;
+			gui: 						switch_RAIL_gui;
 			}
 		}
 	}
@@ -5746,30 +5744,30 @@ if (param_disable != 1 ) {
 //===========================================================
 	item(FEAT_TRAMTYPES, ELRL_tram, 35) {
 		property {
-			label:							"ELRL";
-			name: 							string(STR_STRING_2, string(STR_NAME_RAIL), string(STR_ELECTRIFIELD));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_TRAM), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_4, string(STR_NAME_RAIL), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD), string(STR_WHITE));
+			label:					"ELRL";
+			name: 					string(STR_STRING_2, string(STR_NAME_RAIL), string(STR_ELECTRIFIELD));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_TRAM), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_4, string(STR_NAME_RAIL), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_TRAM_EL);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM_EL);
-			new_engine_text: 				string(STR_NEW_ENGINE_TRAM_EL);
+			autoreplace_text: 			string(STR_AUTOREPLACE_TRAM_EL);
+			new_engine_text: 			string(STR_NEW_ENGINE_TRAM_EL);
 			powered_tramtype_list: 			["ELRL", "NBAE", "NUAE", "NUBE", "NUCE", "NIAE"];
 			alternative_tramtype_list:		["ELRL", "NBAE", "NUAE", "NUBE", "NUCE", "NIAE"];
-			tramtype_flags: 				bitmask(TRAMTYPE_FLAG_CATENARY);
-			speed_limit:					80 km/h;
-			construction_cost: 				20;
-			maintenance_cost:				20;
-			sort_order: 					2;
+			tramtype_flags: 			bitmask(TRAMTYPE_FLAG_CATENARY);
+			speed_limit:				80 km/h;
+			construction_cost: 			20;
+			maintenance_cost:			20;
+			sort_order: 				2;
 			}
 		graphics {
 			track_overlay: 					switch_RAIL_overlay;
-			underlay: 						switch_RAIL_underlay;
-			depots: 						switch_ELRL_depots;
+			underlay: 					switch_RAIL_underlay;
+			depots: 					switch_ELRL_depots;
 			bridge_surfaces: 				switch_RAIL_bridge;
-			tunnels:						switch_RAIL_tunnels;
+			tunnels:					switch_RAIL_tunnels;
 			catenary_back: 					catenary_back_wood;
 			catenary_front: 				catenary_ELRL_front_wood;
-			gui: 							switch_ELRL_gui;
+			gui: 						switch_ELRL_gui;
 			}
 		}
 //===========================================================
@@ -5779,28 +5777,28 @@ if (param_disable != 1 ) {
 if (tramtype_available("NBAN") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_TRAMTYPES, NBAN_tram, 36) {
 		property {
-			label:							"NBAN";
-			name: 							string(STR_NAME_NBAN);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_TRAM), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_2, string(STR_NAME_NBAN), string(STR_CONSTRUCTION));
+			label:					"NBAN";
+			name: 					string(STR_NAME_NBAN);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_TRAM), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_2, string(STR_NAME_NBAN), string(STR_CONSTRUCTION));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_TRAM);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM);
-			new_engine_text: 				string(STR_NEW_ENGINE_TRAM);
+			autoreplace_text: 			string(STR_AUTOREPLACE_TRAM);
+			new_engine_text: 			string(STR_NEW_ENGINE_TRAM);
 			powered_tramtype_list: 			["RAIL", "NBAN", "NIAN", "ELRL", "NBAE", "NUAE", "NUBE", "NUCE", "NIAE"];
 			alternative_tramtype_list:		["RAIL", "NBAN", "NIAN"];
 			requires_tramtype_list:			["RAIL"];
-			introduction_date:				date(1960,01,01);
-			construction_cost: 				30;
-			maintenance_cost:				30;
-			sort_order: 					3;
+			introduction_date:			date(1960,01,01);
+			construction_cost: 			30;
+			maintenance_cost:			30;
+			sort_order: 				3;
 			}
 		graphics {
 			track_overlay: 					switch_RAIL_overlay;
-			underlay: 						switch_NBAN_underlay;
-			depots: 						switch_NBAN_depots;
+			underlay: 					switch_NBAN_underlay;
+			depots: 					switch_NBAN_depots;
 			bridge_surfaces: 				switch_NBAN_bridge;
-			tunnels:						switch_NBAN_tunnels;
-			gui: 							switch_NBAN_gui;
+			tunnels:					switch_NBAN_tunnels;
+			gui: 						switch_NBAN_gui;
 			}
 		}
 	}
@@ -5811,31 +5809,31 @@ if (tramtype_available("NBAN") || loading_stage == LOADING_STAGE_RESERVE) {
 if (tramtype_available("NBAE") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_TRAMTYPES, NBAE_tram, 37) {
 		property {
-			label:							"NBAE";
-			name: 							string(STR_STRING_2, string(STR_NAME_NBAN), string(STR_ELECTRIFIELD));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_TRAM), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_NBAN), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD));
+			label:					"NBAE";
+			name: 					string(STR_STRING_2, string(STR_NAME_NBAN), string(STR_ELECTRIFIELD));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_TRAM), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_NBAN), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_TRAM_EL);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM_EL);
-			new_engine_text: 				string(STR_NEW_ENGINE_TRAM_EL);
+			autoreplace_text: 			string(STR_AUTOREPLACE_TRAM_EL);
+			new_engine_text: 			string(STR_NEW_ENGINE_TRAM_EL);
 			powered_tramtype_list: 			["ELRL", "NBAE", "NUAE", "NUBE", "NUCE", "NIAE"];
 			alternative_tramtype_list:		["ELRL", "NBAE", "NUAE", "NUBE", "NUCE", "NIAE"];
-			tramtype_flags: 				bitmask(TRAMTYPE_FLAG_CATENARY);
+			tramtype_flags: 			bitmask(TRAMTYPE_FLAG_CATENARY);
 			requires_tramtype_list:			["ELRL"];
-			introduction_date:				date(1960,01,01);
-			construction_cost: 				36;
-			maintenance_cost:				36;
-			sort_order: 					4;
+			introduction_date:			date(1960,01,01);
+			construction_cost: 			36;
+			maintenance_cost:			36;
+			sort_order: 				4;
 			}
 		graphics {
 			track_overlay: 					switch_RAIL_overlay;
-			underlay: 						switch_NBAN_underlay;
-			depots: 						switch_NBAE_depots;
+			underlay: 					switch_NBAN_underlay;
+			depots: 					switch_NBAE_depots;
 			bridge_surfaces: 				switch_NBAN_bridge;
-			tunnels:						switch_NBAN_tunnels;
+			tunnels:					switch_NBAN_tunnels;
 			catenary_back: 					catenary_back_steel;
 			catenary_front: 				catenary_ELRL_front_steel;
-			gui: 							switch_NBAE_gui;
+			gui: 						switch_NBAE_gui;
 			}
 		}
 	}
@@ -5845,32 +5843,32 @@ if (tramtype_available("NBAE") || loading_stage == LOADING_STAGE_RESERVE) {
 if (tramtype_available("NUAE") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_TRAMTYPES, NUAE_tram, 38) {
 		property {
-			label:							"NUAE";
-			name: 							string(STR_STRING_2, string(STR_NAME_NUAN), string(STR_ELECTRIFIELD));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_TRAM), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_4, string(STR_NAME_NUAN), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD), string(STR_WHITE));
+			label:					"NUAE";
+			name: 					string(STR_STRING_2, string(STR_NAME_NUAN), string(STR_ELECTRIFIELD));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_TRAM), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_4, string(STR_NAME_NUAN), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_TRAM_EL);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM_EL);
-			new_engine_text: 				string(STR_NEW_ENGINE_TRAM_EL);
+			autoreplace_text: 			string(STR_AUTOREPLACE_TRAM_EL);
+			new_engine_text: 			string(STR_NEW_ENGINE_TRAM_EL);
 			powered_tramtype_list: 			["ELRL", "NBAE", "NUAE", "NUBE", "NUCE", "NIAE"];
 			alternative_tramtype_list:		["ELRL", "NBAE", "NUAE", "NUBE", "NUCE", "NIAE"];
-			tramtype_flags: 				bitmask(TRAMTYPE_FLAG_CATENARY);
+			tramtype_flags: 			bitmask(TRAMTYPE_FLAG_CATENARY);
 			requires_tramtype_list:			["ELRL"];
-			introduction_date:				date(1900,01,01);
-			speed_limit: 					80 km/h;
-			construction_cost: 				27;
-			maintenance_cost:				27;
-			sort_order: 					5;
+			introduction_date:			date(1900,01,01);
+			speed_limit: 				80 km/h;
+			construction_cost: 			27;
+			maintenance_cost:			27;
+			sort_order: 				5;
 			}
 		graphics {
 			track_overlay: 					switch_NUAE_overlay;
-			underlay: 						switch_NUAE_underlay;
-			depots: 						switch_NUAE_depots;
+			underlay: 					switch_NUAE_underlay;
+			depots: 					switch_NUAE_depots;
 			bridge_surfaces: 				switch_NUAE_bridge;
-			tunnels:						switch_NUAE_tunnels;
+			tunnels:					switch_NUAE_tunnels;
 			catenary_back: 					catenary_back_steel;
 			catenary_front: 				catenary_ELRL_front_steel;
-			gui: 							switch_NUAE_gui;
+			gui: 						switch_NUAE_gui;
 			}
 		}
 	}
@@ -5880,31 +5878,31 @@ if (tramtype_available("NUAE") || loading_stage == LOADING_STAGE_RESERVE) {
 if (tramtype_available("NUBE") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_TRAMTYPES, NUBE_tram, 39) {
 		property {
-			label:  						"NUBE";
-			name: 							string(STR_STRING_2, string(STR_NAME_NUBN), string(STR_ELECTRIFIELD));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_TRAM), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_4, string(STR_NAME_NUBN), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD), string(STR_WHITE));
+			label:  				"NUBE";
+			name: 					string(STR_STRING_2, string(STR_NAME_NUBN), string(STR_ELECTRIFIELD));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_TRAM), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_4, string(STR_NAME_NUBN), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_TRAM_EL);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM_EL);
-			new_engine_text: 				string(STR_NEW_ENGINE_TRAM_EL);
+			autoreplace_text: 			string(STR_AUTOREPLACE_TRAM_EL);
+			new_engine_text: 			string(STR_NEW_ENGINE_TRAM_EL);
 			powered_tramtype_list: 			["ELRL", "NBAE", "NUAE", "NUBE", "NUCE", "NIAE"];
 			alternative_tramtype_list:		["ELRL", "NBAE", "NUAE", "NUBE", "NUCE", "NIAE"];
-			tramtype_flags: 				bitmask(TRAMTYPE_FLAG_CATENARY);
+			tramtype_flags: 			bitmask(TRAMTYPE_FLAG_CATENARY);
 			requires_tramtype_list:			["ELRL"];
-			introduction_date:				date(1980,01,01);
-			construction_cost: 				44;
-			maintenance_cost:				44;
-			sort_order: 					6;
+			introduction_date:			date(1980,01,01);
+			construction_cost: 			44;
+			maintenance_cost:			44;
+			sort_order: 				6;
 			}
 		graphics {
 			track_overlay: 					switch_NUBE_overlay;
-			underlay: 						switch_NUBE_underlay;
-			depots: 						switch_NUBE_depots;
+			underlay: 					switch_NUBE_underlay;
+			depots: 					switch_NUBE_depots;
 			bridge_surfaces: 				switch_NUBE_bridge;
-			tunnels:						switch_NUBE_tunnels;
+			tunnels:					switch_NUBE_tunnels;
 			catenary_back: 					catenary_back_white;
 			catenary_front: 				catenary_ELRL_front_white;
-			gui: 							switch_NUBE_gui;
+			gui: 						switch_NUBE_gui;
 			}
 		}
 	}
@@ -5914,31 +5912,31 @@ if (tramtype_available("NUBE") || loading_stage == LOADING_STAGE_RESERVE) {
 if (tramtype_available("NUCE") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_TRAMTYPES, NUCE_tram, 40) {
 		property {
-			label:  						"NUCE";
-			name: 							string(STR_STRING_2, string(STR_NAME_NUCN), string(STR_ELECTRIFIELD));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_TRAM), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_4, string(STR_NAME_NUCN), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD), string(STR_WHITE));
+			label:  				"NUCE";
+			name: 					string(STR_STRING_2, string(STR_NAME_NUCN), string(STR_ELECTRIFIELD));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_TRAM), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_4, string(STR_NAME_NUCN), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_TRAM_EL);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM_EL);
-			new_engine_text: 				string(STR_NEW_ENGINE_TRAM_EL);
+			autoreplace_text: 			string(STR_AUTOREPLACE_TRAM_EL);
+			new_engine_text: 			string(STR_NEW_ENGINE_TRAM_EL);
 			powered_tramtype_list: 			["ELRL", "NBAE", "NUAE", "NUBE", "NUCE", "NIAE"];
 			alternative_tramtype_list:		["ELRL", "NBAE", "NUAE", "NUBE", "NUCE", "NIAE"];
-			tramtype_flags: 				bitmask(TRAMTYPE_FLAG_CATENARY);
+			tramtype_flags: 			bitmask(TRAMTYPE_FLAG_CATENARY);
 			requires_tramtype_list:			["ELRL"];
-			introduction_date:				date(1980,01,01);
-			construction_cost: 				60;
-			maintenance_cost:				60;
-			sort_order: 					7;
+			introduction_date:			date(1980,01,01);
+			construction_cost: 			60;
+			maintenance_cost:			60;
+			sort_order: 				7;
 			}
 		graphics {
 			track_overlay: 					switch_NUCE_overlay;
-			underlay: 						switch_NUCE_underlay;
-			depots: 						switch_NUCE_depots;
+			underlay: 					switch_NUCE_underlay;
+			depots: 					switch_NUCE_depots;
 			bridge_surfaces: 				switch_NUCE_bridge;
-			tunnels:						switch_NUCE_tunnels;
+			tunnels:					switch_NUCE_tunnels;
 			catenary_back: 					catenary_back_white;
 			catenary_front: 				catenary_ELRL_front_white;
-			gui: 							switch_NUCE_gui;
+			gui: 						switch_NUCE_gui;
 			}
 		}
 	}
@@ -5949,29 +5947,29 @@ if (param_disable != 1 ) {
 if (tramtype_available("NIAN") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_TRAMTYPES, NIAN_tram, 41) {
 		property {
-			label: 							"NIAN";
-			name: 							string(STR_NAME_NIAN);
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_TRAM), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_3, string(STR_NAME_NIAN), string(STR_CONSTRUCTION), string(STR_WHITE));
+			label: 					"NIAN";
+			name: 					string(STR_NAME_NIAN);
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_TRAM), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_3, string(STR_NAME_NIAN), string(STR_CONSTRUCTION), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_TRAM);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM);
-			new_engine_text: 				string(STR_NEW_ENGINE_TRAM);
+			autoreplace_text: 			string(STR_AUTOREPLACE_TRAM);
+			new_engine_text: 			string(STR_NEW_ENGINE_TRAM);
 			powered_tramtype_list: 			["RAIL", "NBAN", "NIAN", "ELRL", "NBAE", "NUAE", "NUBE", "NUCE", "NIAE"];
 			alternative_tramtype_list:		["RAIL", "NBAN", "NIAN"];
 			requires_tramtype_list:			["RAIL"];
-			introduction_date:				date(1900,01,01);
-			speed_limit: 					60 km/h;
-			construction_cost: 				11;
-			maintenance_cost:				11;
-			sort_order: 					8;
+			introduction_date:			date(1900,01,01);
+			speed_limit: 				60 km/h;
+			construction_cost: 			11;
+			maintenance_cost:			11;
+			sort_order: 				8;
 			}
 		graphics {
 			track_overlay: 					switch_RAIL_overlay;
-			underlay: 						switch_NIAN_underlay;
-			depots: 						switch_NIAN_depots;
+			underlay: 					switch_NIAN_underlay;
+			depots: 					switch_NIAN_depots;
 			bridge_surfaces: 				switch_NIAN_bridge;
-			tunnels:						switch_NIAN_tunnels;
-			gui: 							switch_NIAN_gui;
+			tunnels:					switch_NIAN_tunnels;
+			gui: 						switch_NIAN_gui;
 			}
 		}
 	}
@@ -5982,35 +5980,35 @@ if (tramtype_available("NIAN") || loading_stage == LOADING_STAGE_RESERVE) {
 if (tramtype_available("NIAE") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_TRAMTYPES, NIAE_tram, 42) {
 		property {
-			label:							"NIAE";
-			name: 							string(STR_STRING_2, string(STR_NAME_NIAN), string(STR_ELECTRIFIELD));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_TRAM), string(STR_CONSTRUCTION));
-			menu_text: 						string(STR_STRING_4, string(STR_NAME_NIAN), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD), string(STR_WHITE));
+			label:					"NIAE";
+			name: 					string(STR_STRING_2, string(STR_NAME_NIAN), string(STR_ELECTRIFIELD));
+			toolbar_caption: 			string(STR_STRING_2, string(STR_TOOLBAR_CAPTION_TRAM), string(STR_CONSTRUCTION));
+			menu_text: 				string(STR_STRING_4, string(STR_NAME_NIAN), string(STR_CONSTRUCTION), string(STR_ELECTRIFIELD), string(STR_WHITE));
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_TRAM_EL);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM_EL);
-			new_engine_text: 				string(STR_NEW_ENGINE_TRAM_EL);
+			autoreplace_text: 			string(STR_AUTOREPLACE_TRAM_EL);
+			new_engine_text: 			string(STR_NEW_ENGINE_TRAM_EL);
 			powered_tramtype_list: 			["ELRL", "NBAE", "NCAE", "NUAE", "NUBE", "NUCE", "NIAE"];
 			alternative_tramtype_list:		["ELRL", "NBAE", "NCAE", "NUAE", "NUBE", "NUCE", "NIAE"];
-			tramtype_flags: 				bitmask(TRAMTYPE_FLAG_CATENARY);
+			tramtype_flags: 			bitmask(TRAMTYPE_FLAG_CATENARY);
 			requires_tramtype_list:			["ELRL"];
-			introduction_date:				date(1900,01,01);
-			speed_limit: 					60 km/h;
-			construction_cost: 				19;
-			maintenance_cost:				19;
-			sort_order: 					9;
+			introduction_date:			date(1900,01,01);
+			speed_limit: 				60 km/h;
+			construction_cost: 			19;
+			maintenance_cost:			19;
+			sort_order: 				9;
 			}
 		graphics {
 			track_overlay: 					switch_RAIL_overlay;
-			underlay: 						switch_NIAN_underlay;
-			depots: 						switch_NIAE_depots;
+			underlay: 					switch_NIAN_underlay;
+			depots: 					switch_NIAE_depots;
 			bridge_surfaces: 				switch_NIAN_bridge;
-			tunnels:						switch_NIAN_tunnels;
+			tunnels:					switch_NIAN_tunnels;
 			catenary_back: 					catenary_back_wood;
 			catenary_front: 				catenary_ELRL_front_wood;
-			gui: 							switch_NIAE_gui;
+			gui: 						switch_NIAE_gui;
 			}
 		}
-	}
+	}	
 //==================================================================================================================================
 //												TUNNELS
 //==================================================================================================================================
