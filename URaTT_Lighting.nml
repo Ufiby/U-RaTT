@@ -3,7 +3,7 @@ grf {
 	name: string(STR_GRF_NAME_LIGHTING);
 	desc: string(STR_GRF_DESCRIPTION_LIGHTING);
 	url:  string(STR_GRF_URL);
-	version: 100;
+	version: 110;
 	min_compatible_version: 90;
 			param 0 {
         param_gui {
@@ -11,179 +11,159 @@ grf {
             name: string(STR_PARAM_GUI_NAME);
             desc: string(STR_PARAM_GUI_DESC);
 			min_value: 0;
-			max_value: 2;
+			max_value: 3;
             def_value: 0;
            names: {
 					0: string(STR_PARAM_GUI_0);
 					1: string(STR_PARAM_GUI_1);
                     2: string(STR_PARAM_GUI_2);
+                    3: string(STR_PARAM_GUI_3);
                     };
 				}
 			}
 		}
 
-if (ttd_platform != PLATFORM_OPENTTD || (openttd_version < version_openttd(1, 13, 0, 0))) {
+if (ttd_platform != PLATFORM_OPENTTD || (openttd_version < version_openttd(13, 0))) {
 		error(FATAL, REQUIRES_OPENTTD, string(STR_OPENTTD_VERSION));
 	}
-
 //==================================================================================================================================
 //								PARAMETR
 //==================================================================================================================================
 if (((grf_future_status("UFI\88"))&&(param["UFI\88", 0] == 0)) || ((grf_future_status("UFI\89"))&&(param["UFI\89", 0] == 0))) {param[0] = 0;}
 if (((grf_future_status("UFI\88"))&&(param["UFI\88", 0] == 1)) || ((grf_future_status("UFI\89"))&&(param["UFI\89", 0] == 1))) {param[0] = 1;}
 if (((grf_future_status("UFI\88"))&&(param["UFI\88", 0] == 2)) || ((grf_future_status("UFI\89"))&&(param["UFI\89", 0] == 2))) {param[0] = 2;}
+if (((grf_future_status("UFI\88"))&&(param["UFI\88", 0] == 3)) || ((grf_future_status("UFI\89"))&&(param["UFI\89", 0] == 3))) {param[0] = 3;}
 //==================================================================================================================================
 //								Templates
 //==================================================================================================================================
-template ground_tile(x, y) { [x, y, 64, 31, -31, 0] }
-template tmpl_underlay_overlay_straight(y) {
-    ground_tile(  1,  y)
-    ground_tile( 70,  y)
+template empty_ground_tile(x,y) { [x,y,1,1,1,1] }
+template tmpl_underlay_overlay_straight() {
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
 }
-template tmpl_underlay_overlay_junctions(y) {
-    ground_tile(139,  y)
-    ground_tile(208,  y)
-    ground_tile(277,  y)
-    ground_tile(346,  y)
-    ground_tile(415,  y)
+template tmpl_underlay_overlay_junctions() {
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
 }
-template tmpl_underlay_overlay_corners(y) {
-    ground_tile(484,  y)
-    ground_tile(553,  y)
-    ground_tile(622,  y)
-    ground_tile(691,  y)
+template tmpl_underlay_overlay_corners() {
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
 }
-template tmpl_underlay_overlay_slope(y) {
-    [    1,   y+36,   64,   39,   -31,   -8]
-    [   70,   y+36,   64,   23,   -31,    0]
-    [  139,   y+36,   64,   23,   -31,    0]
-    [  208,   y+36,   64,   39,   -31,   -8]
+template tmpl_underlay_overlay_slope() {
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
 }
-template tmpl_underlay_overlay_half_tiles(y) {
-    ground_tile(277, y+36)
-    ground_tile(346, y+36)
-    ground_tile(415, y+36)
-    ground_tile(484, y+36)
+template tmpl_underlay_overlay_half_tiles() {
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
 }
-template tmpl_underlay_overlay(y) {
-    tmpl_underlay_overlay_straight(y)
-    tmpl_underlay_overlay_junctions(y)
-    tmpl_underlay_overlay_corners(y)
-    tmpl_underlay_overlay_slope(y)
-    tmpl_underlay_overlay_half_tiles(y)
-}
-
-template tmpl_bridge_straight(x) {
-    ground_tile(  1+x, 401)
-    ground_tile( 70+x, 401)
-}
-template tmpl_bridge_slope(x) {
-    [  139+x,  401,   64,   39,   -31,   -8]
-    [  208+x,  401,   64,   23,   -31,    0]
-    [  277+x,  401,   64,   23,   -31,    0]
-    [  346+x,  401,   64,   39,   -31,   -8]
-}
-template tmpl_bridge_surfaces(x) {
-    tmpl_bridge_straight(x)
-    tmpl_bridge_slope(x)
+template tmpl_underlay_overlay() {
+    tmpl_underlay_overlay_straight()
+    tmpl_underlay_overlay_junctions()
+    tmpl_underlay_overlay_corners()
+    tmpl_underlay_overlay_slope()
+    tmpl_underlay_overlay_half_tiles()
 }
 
-template tmpl_depot(x) {
-    [    1+x,  445,   64,   61,   -31,  -30]
-    [   70+x,  445,   64,   61,    -1,  -45]
-    [  139+x,  445,   64,   61,   -31,  -30]
-    [  208+x,  445,   64,   61,   -61,  -45]
-    [  277+x,  445,   64,   61,   -61,  -45]
-    [  346+x,  445,   64,   61,    -1,  -45]
+template tmpl_bridge_straight() {
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
+}
+template tmpl_bridge_slope() {
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
+}
+template tmpl_bridge_surfaces() {
+    tmpl_bridge_straight()
+    tmpl_bridge_slope()
 }
 
-template tmpl_roadstop(x) {
-    ground_tile(  1+x, 511)
-    ground_tile( 70+x, 511)
-    ground_tile(139+x, 511)
-    ground_tile(208+x, 511)
+template tmpl_depot() {
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
+    empty_ground_tile(1,1)
 }
 
-template tmpl_tunnels(x, y) {
-    ground_tile(  1+x, 583+y)
-    ground_tile( 70+x, 583+y)
-    ground_tile(139+x, 583+y)
-    ground_tile(208+x, 583+y)
+template tmpl_icon_gui(x, y)   { [x, y, 20, 20, 0, 0] }
+template tmpl_cursor_gui(x, y) { [x, y, 32, 32, 0, 0] }
+template tmpl_GFX_gui() {
+    tmpl_icon_gui(  1, 619)
+    tmpl_icon_gui( 22, 619)
+    tmpl_icon_gui( 43, 619)
+    tmpl_icon_gui( 64, 619)
+    tmpl_icon_gui( 85, 619)
+    tmpl_icon_gui(106, 619)
+
+    tmpl_cursor_gui(  1, 640)
+    tmpl_cursor_gui( 34, 640)
+    tmpl_cursor_gui( 67, 640)
+    tmpl_cursor_gui(100, 640)
+    tmpl_cursor_gui(133, 640)
+    tmpl_cursor_gui(166, 640)
 }
 
-template tmpl_marking_oneway() {
-	[    1,   1,   26,   13,   -12,   -7]
-	[   28,   1,   26,   13,   -12,   -7]
-	[   55,   1,   26,   13,   -12,   -7]
-	[   82,   1,   26,   13,   -12,   -7]
-	[  109,   1,   26,   13,   -12,   -7]
-	[  136,   1,   26,   13,   -12,   -7]
-	[  163,   1,   26,   17,   -12,  -10]
-	[  190,   1,   26,   17,   -12,  -10]
-	[  217,   1,   26,   17,   -12,  -10]
-	[  244,   1,   26,   17,   -12,  -10]
-	[  271,   1,   26,   17,   -12,  -10]
-	[  298,   1,   26,   17,   -12,  -10]
-	[  325,   1,   26,   11,   -12,   -5]
-	[  352,   1,   26,   11,   -12,   -5]
-	[  379,   1,   26,   11,   -12,   -5]
-	[  406,   1,   26,   11,   -12,   -5]
-	[  433,   1,   26,   11,   -12,   -5]
-	[  460,   1,   26,   11,   -12,   -5]
+template tmpl_TTD_gui() {
+    tmpl_icon_gui(  1, 619)
+    tmpl_icon_gui( 22, 619)
+    tmpl_icon_gui( 43, 619)
+    tmpl_icon_gui( 64, 619)
+    tmpl_icon_gui( 85, 619)
+    tmpl_icon_gui(106, 619)
+
+    tmpl_cursor_gui(  1, 673)
+    tmpl_cursor_gui( 34, 673)
+    tmpl_cursor_gui( 67, 673)
+    tmpl_cursor_gui(100, 673)
+    tmpl_cursor_gui(133, 673)
+    tmpl_cursor_gui(166, 673)
 }
 
-template tmpl_gui_icon(x, y) { [x, y, 20, 20, 0, 0]
-}
-template tmpl_gui_cursor(x, y) { [x, y, 32, 32, 0, 0]
-}
-template tmpl_gui_gfx() {
-    tmpl_gui_icon(  1, 700)
-    tmpl_gui_icon( 22, 700)
-    tmpl_gui_icon( 43, 700)
-    tmpl_gui_icon( 64, 700)
-    tmpl_gui_icon( 85, 700)
-    tmpl_gui_icon(127, 700)
+template tmpl_GFX_Classic_gui() {
+    tmpl_icon_gui(  1, 619)
+    tmpl_icon_gui( 22, 619)
+    tmpl_icon_gui( 43, 619)
+    tmpl_icon_gui( 64, 619)
+    tmpl_icon_gui( 85, 619)
+    tmpl_icon_gui(106, 619)
 
-    tmpl_gui_cursor(  1, 721)
-    tmpl_gui_cursor( 34, 721)
-    tmpl_gui_cursor( 67, 721)
-    tmpl_gui_cursor(100, 721)
-    tmpl_gui_cursor(133, 721)
-    tmpl_gui_cursor(166, 721)
+    tmpl_cursor_gui(  1, 779)
+    tmpl_cursor_gui( 34, 779)
+    tmpl_cursor_gui( 67, 779)
+    tmpl_cursor_gui(100, 779)
+    tmpl_cursor_gui(133, 779)
+    tmpl_cursor_gui(166, 779)
 }
 
-template tmpl_gui_ttd() {
-    tmpl_gui_icon(  1, 700)
-    tmpl_gui_icon( 22, 700)
-    tmpl_gui_icon( 43, 700)
-    tmpl_gui_icon( 64, 700)
-    tmpl_gui_icon( 85, 700)
-    tmpl_gui_icon(106, 700)
+template tmpl_icon_UGUI(x, y)   { [x, y, 30, 30, 0, 0] }
+template tmpl_cursor_UGUI(x, y) { [x, y, 32, 38, 0, 0] }
+template tmpl_UGUI_gui() {
+    tmpl_icon_UGUI(  1, 706)
+    tmpl_icon_UGUI( 34, 706)
+    tmpl_icon_UGUI( 67, 706)
+    tmpl_icon_UGUI(100, 706)
+    tmpl_icon_UGUI(133, 706)
+    tmpl_icon_UGUI(166, 706)
 
-    [    1,  754,   64,   36,  -18,  -8]
-	[   66,  754,   62,   36,  -16,  -8]
-	[  129,  754,   56,   36,    0,   0]
-    tmpl_gui_cursor(186, 754)
-    tmpl_gui_cursor(219, 754)
-    tmpl_gui_cursor(252, 754)
-}
-
-template tmpl_UGUI_icon(x, y) { [x, y, 33, 33, 0, 0] }
-template tmpl_UGUI_cursor(x, y) { [x, y, 30, 36, 0, 0] }
-template tmpl_gui_UGUI() {
-    tmpl_UGUI_icon(  1, 791)
-    tmpl_UGUI_icon( 35, 791)
-    tmpl_UGUI_icon( 69, 791)
-    tmpl_UGUI_icon(103, 791)
-    tmpl_UGUI_icon(137, 791)
-    tmpl_UGUI_icon(171, 791)
-
-    tmpl_UGUI_cursor(  1, 825)
-    tmpl_UGUI_cursor( 32, 825)
-    tmpl_UGUI_cursor( 63, 825)
-    tmpl_UGUI_cursor( 94, 825)
-    tmpl_UGUI_cursor(125, 825)
-    tmpl_UGUI_cursor(156, 825)
+    tmpl_cursor_UGUI(  1, 740)
+    tmpl_cursor_UGUI( 34, 740)
+    tmpl_cursor_UGUI( 67, 740)
+    tmpl_cursor_UGUI(100, 740)
+    tmpl_cursor_UGUI(133, 740)
+    tmpl_cursor_UGUI(166, 740)
 }
 
 template ground_catenary(x, y) { [x, y, 64, 54, -31, -23] }
@@ -204,7 +184,7 @@ template tmpl_catenary_corners() {
     ground_catenary(196, 58)
 }
 template tmpl_catenary_slopes() {
-	[	 261,	56,	  64,	56,	  -31,	-25]
+ 	[	 261,	56,	  64,	56,	  -31,	-25]
 	[	 326,	58,	  64,	46,	  -31,	-23]
 	[	 391,	58,	  64,	46,	  -31,	-23]
 	[	 456,	56,	  64,	56,	  -31,	-25]
@@ -216,18 +196,18 @@ template tmpl_catenary_dead_ends() {
     ground_catenary(196,113)
 }
 template tmpl_catenary_tunnels() {
-	[	1,	1,	1,	1,	0,	0]
-	[	1,	1,	1,	1,	0,	0]
-	[	1,	1,	1,	1,	0,	0]
-	[	1,	1,	1,	1,	0,	0]
+    ground_catenary(261,113)
+    ground_catenary(326,113)
+    ground_catenary(391,113)
+	ground_catenary(456,113)
 }
 template tmpl_catenary_bridge() {
     ground_catenary(  1,168)
     ground_catenary( 66,168)
-	[	1,	1,	1,	1,	0,	0]
-	[	1,	1,	1,	1,	0,	0]
-	[	1,	1,	1,	1,	0,	0]
-	[	1,	1,	1,	1,	0,	0]
+	ground_catenary(131,168)
+	[    196,  168,	  64,	46,	  -31,	-23]
+	[	 261,  168,	  64,	46,	  -31,	-23]
+    ground_catenary(326,168)
 }
 template tmpl_catenary() {
     tmpl_catenary_combinations()
@@ -244,64 +224,76 @@ template tmpl_catenary() {
 //						EMPTY
 //===========================================================
 spriteset(switch_EMPTY_underlay, "gfx/EMPTY.png") {
-    tmpl_underlay_overlay(1)
+    tmpl_underlay_overlay()
 }
 spriteset(switch_EMPTY_bridge, "gfx/EMPTY.png") {
-    tmpl_bridge_surfaces(0)
+    tmpl_bridge_surfaces()
 }
 spriteset(switch_EMPTY_depots, "gfx/EMPTY.png") {
-    tmpl_depot(0)
+    tmpl_depot()
 }
 //===========================================================
 //						LIGHTING (BOTH) (LT0_)
 //===========================================================
-spriteset(LT0_gui_UGUI, "gfx/T_LT0.png") {											//GUI						
-    tmpl_gui_UGUI()
+spriteset(LT0_gui_UGUI, "gfx/T_LT0.png") {
+    tmpl_UGUI_gui()
 }
-spriteset(LT0_gui_opengfx, "gfx/T_LT0.png") {
-    tmpl_gui_gfx()
+spriteset(LT0_gui_GFX_Classic, "gfx/T_LT0.png") {
+    tmpl_GFX_Classic_gui()
 }
-spriteset(LT0_gui_ttd, "gfx/T_LT0.png") {
-    tmpl_gui_ttd()
+spriteset(LT0_gui_GFX, "gfx/T_LT0.png") {
+    tmpl_GFX_gui()
 }
-switch (FEAT_TRAMTYPES, SELF, switch_LT0_gui, param_gui) {							//GUI
-    1: LT0_gui_opengfx;
-    2: LT0_gui_UGUI;
-	LT0_gui_ttd;
+spriteset(LT0_gui_TTD, "gfx/T_LT0.png") {
+    tmpl_TTD_gui()
+}
+switch (FEAT_TRAMTYPES, SELF, switch_LT0_gui, param_gui) {										//GUI
+    1: LT0_gui_GFX;
+    2: LT0_gui_GFX_Classic;
+    3: LT0_gui_UGUI;
+	LT0_gui_TTD;
 }
 //===========================================================
 //						LIGHTING (RIGHT) (LT1_)
 //===========================================================
-spriteset(LT1_gui_UGUI, "gfx/T_LT1.png") {											//GUI						
-    tmpl_gui_UGUI()
+spriteset(LT1_gui_UGUI, "gfx/T_LT1.png") {
+    tmpl_UGUI_gui()
 }
-spriteset(LT1_gui_opengfx, "gfx/T_LT1.png") {
-    tmpl_gui_gfx()
+spriteset(LT1_gui_GFX_Classic, "gfx/T_LT1.png") {
+    tmpl_GFX_Classic_gui()
 }
-spriteset(LT1_gui_ttd, "gfx/T_LT1.png") {
-    tmpl_gui_ttd()
+spriteset(LT1_gui_GFX, "gfx/T_LT1.png") {
+    tmpl_GFX_gui()
 }
-switch (FEAT_TRAMTYPES, SELF, switch_LT1_gui, param_gui) {							//GUI
-    1: LT1_gui_opengfx;
-    2: LT1_gui_UGUI;
-	LT1_gui_ttd;
+spriteset(LT1_gui_TTD, "gfx/T_LT1.png") {
+    tmpl_TTD_gui()
+}
+switch (FEAT_TRAMTYPES, SELF, switch_LT1_gui, param_gui) {										//GUI
+    1: LT1_gui_GFX;
+    2: LT1_gui_GFX_Classic;
+    3: LT1_gui_UGUI;
+	LT1_gui_TTD;
 }
 //===========================================================
 //						LIGHTING (RIGHT) (LT2_)
 //===========================================================
-spriteset(LT2_gui_UGUI, "gfx/T_LT2.png") {											//GUI						
-    tmpl_gui_UGUI()
+spriteset(LT2_gui_UGUI, "gfx/T_LT2.png") {
+    tmpl_UGUI_gui()
 }
-spriteset(LT2_gui_opengfx, "gfx/T_LT2.png") {
-    tmpl_gui_gfx()
+spriteset(LT2_gui_GFX_Classic, "gfx/T_LT2.png") {
+    tmpl_GFX_Classic_gui()
 }
-spriteset(LT2_gui_ttd, "gfx/T_LT2.png") {
-    tmpl_gui_ttd()
+spriteset(LT2_gui_GFX, "gfx/T_LT2.png") {
+    tmpl_GFX_gui()
 }
-switch (FEAT_TRAMTYPES, SELF, switch_LT2_gui, param_gui) {							//GUI
-    1: LT2_gui_opengfx;
-    2: LT2_gui_UGUI;
-	LT2_gui_ttd;
+spriteset(LT2_gui_TTD, "gfx/T_LT2.png") {
+    tmpl_TTD_gui()
+}
+switch (FEAT_TRAMTYPES, SELF, switch_LT2_gui, param_gui) {										//GUI
+    1: LT2_gui_GFX;
+    2: LT2_gui_GFX_Classic;
+    3: LT2_gui_UGUI;
+	LT2_gui_TTD;
 }
 //==================================================================================================================================
 //									CATENARY
@@ -333,18 +325,17 @@ spriteset(catenary_front_lignting_left, "gfx/CATENARY/FRONT_LIGHTING_LEFT.png") 
 item(FEAT_TRAMTYPES, LT0_tram, 58) {
 		property {
 			label:							"LT0_";
-			name: 							string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_BOTH));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_BOTH));
-			menu_text: 						string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_BOTH));
-			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_TRAM_EL);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM_EL);
-			new_engine_text: 				string(STR_NEW_ENGINE_TRAM_EL);
+			name: 							string(STR_2, string(STR_NAME_LIGHTING), string(STR_BOTH));
+			toolbar_caption: 				string(STR_2, string(STR_NAME_LIGHTING), string(STR_BOTH));
+			menu_text: 						string(STR_3, string(STR_NAME_LIGHTING), string (STR_TRAIN), string(STR_BOTH));
+			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_TRAM);
+			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM);
+			new_engine_text: 				string(STR_NEW_ENGINE_TRAM);
 			powered_tramtype_list: 			["LT0_", "LT1_", "LT2_"];
-			alternative_tramtype_list:		["LT0_", "LT1_", "LT2_"];
 			tramtype_flags: 				bitmask(TRAMTYPE_FLAG_CATENARY, TRAMTYPE_FLAG_NO_LEVEL_CROSSING);
 			introduction_date:				date(1960,01,01);
-			construction_cost: 				20;
-			maintenance_cost:				20;
+			construction_cost: 				40;
+			maintenance_cost:				40;
 			sort_order: 					58;
 			}
 		graphics {
@@ -362,14 +353,13 @@ item(FEAT_TRAMTYPES, LT0_tram, 58) {
 item(FEAT_TRAMTYPES, LT1_tram, 59) {
 		property {
 			label:							"LT1_";
-			name: 							string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_RIGHT));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_RIGHT));
-			menu_text: 						string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_RIGHT));
-			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_TRAM_EL);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM_EL);
-			new_engine_text: 				string(STR_NEW_ENGINE_TRAM_EL);
+			name: 							string(STR_2, string(STR_NAME_LIGHTING), string(STR_RIGHT));
+			toolbar_caption: 				string(STR_2, string(STR_NAME_LIGHTING), string(STR_RIGHT));
+			menu_text: 						string(STR_3, string(STR_NAME_LIGHTING), string (STR_TRAIN), string(STR_RIGHT));
+			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_TRAM);
+			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM);
+			new_engine_text: 				string(STR_NEW_ENGINE_TRAM);
 			powered_tramtype_list: 			["LT0_", "LT1_", "LT2_"];
-			alternative_tramtype_list:		["LT0_", "LT1_", "LT2_"];
 			tramtype_flags: 				bitmask(TRAMTYPE_FLAG_CATENARY, TRAMTYPE_FLAG_NO_LEVEL_CROSSING);
 			introduction_date:				date(1960,01,01);
 			construction_cost: 				20;
@@ -391,14 +381,13 @@ item(FEAT_TRAMTYPES, LT1_tram, 59) {
 item(FEAT_TRAMTYPES, LT2_tram, 60) {
 		property {
 			label:							"LT2_";
-			name: 							string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_LEFT));
-			toolbar_caption: 				string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_LEFT));
-			menu_text: 						string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_LEFT));
-			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_TRAM_EL);
-			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM_EL);
-			new_engine_text: 				string(STR_NEW_ENGINE_TRAM_EL);
+			name: 							string(STR_2, string(STR_NAME_LIGHTING), string(STR_LEFT));
+			toolbar_caption: 				string(STR_2, string(STR_NAME_LIGHTING), string(STR_LEFT));
+			menu_text: 						string(STR_3, string(STR_NAME_LIGHTING), string (STR_TRAIN), string(STR_LEFT));
+			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_TRAM);
+			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM);
+			new_engine_text: 				string(STR_NEW_ENGINE_TRAM);
 			powered_tramtype_list: 			["LT0_", "LT1_", "LT2_"];
-			alternative_tramtype_list:		["LT0_", "LT1_", "LT2_"];
 			tramtype_flags: 				bitmask(TRAMTYPE_FLAG_CATENARY, TRAMTYPE_FLAG_NO_LEVEL_CROSSING);
 			introduction_date:				date(1960,01,01);
 			construction_cost: 				20;
