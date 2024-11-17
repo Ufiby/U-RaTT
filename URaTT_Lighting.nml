@@ -3,7 +3,7 @@ grf {
 	name: string(STR_GRF_NAME_LIGHTING);
 	desc: string(STR_GRF_DESCRIPTION_LIGHTING);
 	url:  string(STR_GRF_URL);
-	version: 110;
+	version: 120;
 	min_compatible_version: 90;
 			param 0 {
         param_gui {
