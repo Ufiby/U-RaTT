@@ -22,6 +22,7 @@ STR_PARAM_GUI_0							:TTD
 STR_PARAM_GUI_1							:OpenGFX
 STR_PARAM_GUI_2							:OpenGFX Classic
 STR_PARAM_GUI_3							:U&GUI
+STR_PARAM_GUI_4             :Auto
 
 STR_PARAM_AVAILABLE_NAME                :Road landscape
 STR_PARAM_AVAILABLE_DESC                :A road landscape that will show you the beauty of nature in an urban area and in different corners of the streets. Enjoy the beautiful views and feel the freedom of the road!
