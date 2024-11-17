@@ -337,7 +337,7 @@ item(FEAT_TRAMTYPES, LT0_tram, 58) {
 			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM);
 			new_engine_text: 				string(STR_NEW_ENGINE_TRAM);
 			powered_tramtype_list: 			["LT0_", "LT1_", "LT2_"];
-			tramtype_flags: 				bitmask(TRAMTYPE_FLAG_CATENARY, TRAMTYPE_FLAG_NO_LEVEL_CROSSING);
+			tramtype_flags: 				bitmask(TRAMTYPE_FLAG_CATENARY, TRAMTYPE_FLAG_NO_HOUSES, TRAMTYPE_FLAG_NO_LEVEL_CROSSING);
 			introduction_date:				date(1960,01,01);
 			construction_cost: 				40;
 			maintenance_cost:				40;
@@ -365,7 +365,7 @@ item(FEAT_TRAMTYPES, LT1_tram, 59) {
 			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM);
 			new_engine_text: 				string(STR_NEW_ENGINE_TRAM);
 			powered_tramtype_list: 			["LT0_", "LT1_", "LT2_"];
-			tramtype_flags: 				bitmask(TRAMTYPE_FLAG_CATENARY, TRAMTYPE_FLAG_NO_LEVEL_CROSSING);
+			tramtype_flags: 				bitmask(TRAMTYPE_FLAG_CATENARY, TRAMTYPE_FLAG_NO_HOUSES, TRAMTYPE_FLAG_NO_LEVEL_CROSSING);
 			introduction_date:				date(1960,01,01);
 			construction_cost: 				20;
 			maintenance_cost:				20;
@@ -393,7 +393,7 @@ item(FEAT_TRAMTYPES, LT2_tram, 60) {
 			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM);
 			new_engine_text: 				string(STR_NEW_ENGINE_TRAM);
 			powered_tramtype_list: 			["LT0_", "LT1_", "LT2_"];
-			tramtype_flags: 				bitmask(TRAMTYPE_FLAG_CATENARY, TRAMTYPE_FLAG_NO_LEVEL_CROSSING);
+			tramtype_flags: 				bitmask(TRAMTYPE_FLAG_CATENARY, TRAMTYPE_FLAG_NO_HOUSES, TRAMTYPE_FLAG_NO_LEVEL_CROSSING);
 			introduction_date:				date(1960,01,01);
 			construction_cost: 				20;
 			maintenance_cost:				20;
