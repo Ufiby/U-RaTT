@@ -11,13 +11,14 @@ grf {
             name: string(STR_PARAM_GUI_NAME);
             desc: string(STR_PARAM_GUI_DESC);
 			min_value: 0;
-			max_value: 3;
-            def_value: 0;
+			max_value: 4;
+            def_value: 4;
            names: {
 					0: string(STR_PARAM_GUI_0);
 					1: string(STR_PARAM_GUI_1);
                     2: string(STR_PARAM_GUI_2);
                     3: string(STR_PARAM_GUI_3);
+                    4: string(STR_PARAM_GUI_4);
                     };
 				}
 			}
@@ -26,13 +27,16 @@ grf {
 if (ttd_platform != PLATFORM_OPENTTD || (openttd_version < version_openttd(13, 0))) {
 		error(FATAL, REQUIRES_OPENTTD, string(STR_OPENTTD_VERSION));
 	}
+if ((param[0] == 3) && (grf_future_status("UFI\70") != 1)) { param[0] = 0; }
 //==================================================================================================================================
 //								PARAMETR
 //==================================================================================================================================
-if (((grf_future_status("UFI\88"))&&(param["UFI\88", 0] == 0)) || ((grf_future_status("UFI\89"))&&(param["UFI\89", 0] == 0))) {param[0] = 0;}
-if (((grf_future_status("UFI\88"))&&(param["UFI\88", 0] == 1)) || ((grf_future_status("UFI\89"))&&(param["UFI\89", 0] == 1))) {param[0] = 1;}
-if (((grf_future_status("UFI\88"))&&(param["UFI\88", 0] == 2)) || ((grf_future_status("UFI\89"))&&(param["UFI\89", 0] == 2))) {param[0] = 2;}
-if (((grf_future_status("UFI\88"))&&(param["UFI\88", 0] == 3)) || ((grf_future_status("UFI\89"))&&(param["UFI\89", 0] == 3))) {param[0] = 3;}
+if (param[0] == 4) {
+if ((param["UFI\88", 0] == 0) || (param["UFI\89", 0] == 0) || (param["UFI\50", 0] == 0)) {param[0] = 0;}
+if ((param["UFI\88", 0] == 1) || (param["UFI\89", 0] == 1) || (param["UFI\50", 0] == 1)) {param[0] = 1;}
+if ((param["UFI\88", 0] == 2) || (param["UFI\89", 0] == 2) || (param["UFI\50", 0] == 2)) {param[0] = 2;}
+if ((param["UFI\88", 0] == 3) || (param["UFI\89", 0] == 3) || (param["UFI\50", 0] == 3)) {param[0] = 3;}
+}
 //==================================================================================================================================
 //								PARAMETR COST
 //==================================================================================================================================
