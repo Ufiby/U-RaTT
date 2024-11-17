@@ -3,7 +3,7 @@ grf {
 	name: string(STR_GRF_NAME_METRO);
 	desc: string(STR_GRF_DESCRIPTION_METRO);
 	url:  string(STR_GRF_URL);
-	version: 20;
+	version: 22;
 	min_compatible_version: 10;
 			param 0 {
         param_gui {
